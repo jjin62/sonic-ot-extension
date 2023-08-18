@@ -4,6 +4,7 @@
 
 ## Getting started
 First clone sonic-buildimage to local dist, assume the directory is '~/sonic/sonic-buildimage'.
+
 Make all ot extensions to sonic-buildimage by the following command:
 ```
 git clone https://kochsource.io/oplinkoms/sonic-ot-extension.git
