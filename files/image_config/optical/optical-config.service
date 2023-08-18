@@ -1,0 +1,16 @@
+[Unit]
+Description=Update Optical configuration
+Requires=database.service
+After=database.service
+After=config-setup.service
+Requires=olssyncd.service
+Requires=config-setup.service
+BindsTo=sonic.target
+After=sonic.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/optical-config.sh
+
+[Install]
+WantedBy=sonic.target

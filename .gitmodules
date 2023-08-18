@@ -1,0 +1,6 @@
+[submodule "src/sonic-swss"]
+	path = src/sonic-swss
+	url = https://kochsource.io/oplinkoms/swss-otaiextension.git
+[submodule "src/sonic-sairedis"]
+	path = src/sonic-sairedis
+	url = https://kochsource.io/oplinkoms/sairedis-otaiextension.git
