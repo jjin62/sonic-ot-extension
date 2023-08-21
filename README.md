@@ -7,7 +7,7 @@ First clone sonic-buildimage to local dist, assume the directory is '~/sonic/son
 
 initialize sonic-buildimage
 ```
-cd ~/sonic/buildimage
+cd ~/sonic/sonic-buildimage
 make init
 ```
 
