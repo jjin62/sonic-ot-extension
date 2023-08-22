@@ -13,16 +13,15 @@ make init
 
 Make all ot extensions to sonic-buildimage by the following command:
 ```
-git clone https://kochsource.io/oplinkoms/sonic-ot-extension.git
 cd sonic-ot-extension
 git submodule update --init --recursive
-./extension.sh ~/sonic/sonic-buildimage
+./extension.sh
 ```
 
 Clean all ot extensions in sonic-buildimage by the following command:
 ```
 cd sonic-ot-extension
-./extension.sh ~/sonic/sonic-buildimage clean
+./extension.sh clean
 ```
 
 ## Suggestions for a good README

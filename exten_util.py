@@ -79,7 +79,7 @@ def MergePath(parent, child):
 
 def CheckArgv(argv):
     if len(argv) < 2:
-        print('Error!!! Please input argument!\nargv 1: mandatory, path of sonic-buildimage directory\nargv 2: optional, clean')
+        print('Incorrect argument!\nargv 1: mandatory, path of sonic-buildimage directory\nargv 2: optional, build|clean')
         return False
     return True
 
