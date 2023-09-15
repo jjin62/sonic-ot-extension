@@ -37,7 +37,7 @@ def main(argv):
 #define OSC_STATS_PLUGIN_FIELD              "OSC_STATS_PLUGIN_FIELD"
 #define OTDR_COUNTER_STATS_LIST             "OTDR_COUNTER_STATS_LIST"
 #define OTDR_STATS_PLUGIN_FIELD             "OTDR_STATS_PLUGIN_FIELD"\n\n''',
-         '''#define CFG_ATTENUATOR_TABLE_NAME                   "ATTENUATOR_TABLE"
+         '''#define CFG_ATTENUATOR_TABLE_NAME                   "ATTENUATOR"
 #define CFG_OA_TABLE_NAME                           "AMPLIFIER"
 #define CFG_OCM_TABLE_NAME                          "OCM"
 #define CFG_OSC_TABLE_NAME                          "OSC"
