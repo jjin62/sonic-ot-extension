@@ -12,10 +12,10 @@ def main(argv):
     CreateFolder(path)
 
     if not clean:
-        copys = [['./optical_config.j2', './optical-config.service', './optical-config.sh']]
+        copys = [['./optical-config.service', './optical-config.sh']]
         CopyFiles(copys, path)
 
-    path = MergePath(argv[1], 'files/image_config')
+    path = MergePath(argv[1], 'files/build_templates')
     files = ['sonic_debian_extension.j2']
     RestoreFiles(files, path)
 
@@ -29,7 +29,6 @@ def main(argv):
         ['''\n# Copy Optical configuration files and templates
 sudo cp $IMAGE_CONFIGS/optical/optical-config.service $FILESYSTEM_ROOT_USR_LIB_SYSTEMD_SYSTEM
 sudo cp $IMAGE_CONFIGS/optical/optical-config.sh $FILESYSTEM_ROOT/usr/bin/
-sudo cp $IMAGE_CONFIGS/optical/optical_config.j2 $FILESYSTEM_ROOT_USR_SHARE_SONIC_TEMPLATES/
 echo "optical-config.service" | sudo tee -a $GENERATED_SERVICE_FILE\n'''
         ]
     ]

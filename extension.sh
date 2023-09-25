@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SUB_DIRS='dockers/docker-orchagent
+          files/image_config/optical
           src/sonic-swss-common
           src/sonic-sairedis/debian
           src/sonic-sairedis/lib
