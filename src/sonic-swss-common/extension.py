@@ -41,12 +41,14 @@ def main(argv):
 #define CFG_OA_TABLE_NAME                           "AMPLIFIER"
 #define CFG_OCM_TABLE_NAME                          "OCM"
 #define CFG_OSC_TABLE_NAME                          "OSC"
-#define CFG_OTDR_TABLE_NAME                         "OTDR"\n\n''',
+#define CFG_OTDR_TABLE_NAME                         "OTDR"
+#define CFG_AUTO_TABLE_NAME                         "AUTO_GAIN"\n\n''',
          '''#define STATE_ATTENUATOR_TABLE_NAME                 "ATTENUATOR"
 #define STATE_OA_TABLE_NAME                         "AMPLIFIER"
 #define STATE_OCM_TABLE_NAME                        "OCM"
 #define STATE_OSC_TABLE_NAME                        "OSC"
-#define STATE_OTDR_TABLE_NAME                       "OTDR"\n\n'''
+#define STATE_OTDR_TABLE_NAME                       "OTDR"
+#define STATE_AUTO_GAIN_TABLE_NAME                  "AUTO_GAIN"\n\n'''
         ]
     ]
     options = [

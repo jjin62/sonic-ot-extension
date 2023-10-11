@@ -1,0 +1,138 @@
+#!/usr/bin/env python3
+
+"""
+    olsmgrd
+
+    OLS manager daemon manages optical control applications.
+
+    Manage auotgaind:
+    - listens for changes in the AUTO_GAIN table of the CONFIG DB
+      and updates the change to autogaind accordingly.
+    - retrieval status from autogaind and update AUTO_GAIN in STATE DB
+    - accept auto-gain request, send it to auotgaind, wait for response and
+      update ATEENUATOR/AMPLIFIER TALES in CONFIG DB
+
+"""
+try:
+    import os
+    import threading
+    import sys
+    import time
+
+    from sonic_py_common import daemon_base
+    from swsscommon import swsscommon
+    from sonic_py_common.interface import inband_prefix, recirc_prefix
+except ImportError as err:
+    raise ImportError("%s - required module not found" % str(err))
+
+VERSION = "1.0"
+
+SYSLOG_IDENTIFIER = "olsmgrd"
+AUTO_GAIN_TIMEOUT = 300
+FAILED_CMD_TIMEOUT = 6
+RETRY_LIMIT = 5
+
+
+class OlsManager(daemon_base.DaemonBase):
+    """
+    Attributes:
+        state_db: Handle to Redis State database via swsscommon lib
+        config_db: Handle to Redis Config database via swsscommon lib
+    """
+    REDIS_TIMEOUT_MS = 0
+
+    def __init__(self, log_identifier):
+        super(OlsManager, self).__init__(log_identifier)
+
+        # Open a handle to the Config database
+        self.config_db = swsscommon.DBConnector("CONFIG_DB",
+                                                self.REDIS_TIMEOUT_MS,
+                                                False)
+
+        # Open a handle to the State database
+        self.state_db = swsscommon.DBConnector("STATE_DB",
+                                              self.REDIS_TIMEOUT_MS,
+                                              False)
+
+        self.config_auto_gain_table = swsscommon.Table(self.config_db, swsscommon.CFG_AUTO_GAIN_TABLE_NAME)
+        self.state_auot_gain_table = swsscommon.Table(self.state_db, swsscommon.STATE_AUTO_GAIN_TABLE_NAME)
+        self.config_amplifier_table = swsscommon.Table(self.config_db, swsscommon.CFG_OA_TABLE_NAME)
+        self.state_ampliefier_table = swsscommon.Table(self.state_db, swsscommon.STATE_OA_TABLE_NAME)
+        self.config_attenuator_table = swsscommon.Table(self.config_db, swsscommon.CFG_ATTENUATOR_TABLE_NAME)
+        self.state_attenuator_table = swsscommon.Table(self.state_db, swsscommon.STATE_ATTENUATOR_TABLE_NAME)
+        return
+
+    def ols_process_auto_gain_change(self, op, auto_gain_dict, key):
+        if not op != "SET":
+            return
+        self.log_info("Auto_Gain Config Opcode: {} Dict {} Key {}".format(op, auto_gain_dict, key)
+        # serialize auto_gain_dict and send to autogaind using thrift
+
+        return
+    
+    def ols_start_auto_gain(self):
+        # send auto_gain_start to autogaind
+        return
+
+    def run(self):
+        """
+        Subscribe to CONFIG_DB - get notified of autogain config changes
+        Update autogaind configuration accordingly.
+        """
+        self.log_info("Starting up...")
+
+        if not os.geteuid() == 0:
+            self.log_error("Must be root to run this daemon")
+            print("Error: Must be root to run this daemon")
+            sys.exit(1)
+
+        # Set select timeout to 10 seconds
+        SELECT_TIMEOUT_MS = 1000 * 10
+
+        # Daemon is paused on the configuration file to avoid ols packets with wrong information
+        # until all interfaces are well configured on olsd
+        resume_ols_sent = False
+        start_time = time.time()
+
+        sel = swsscommon.Select()
+
+        # Subscribe to AUTO_GAIN table notifications in the Config DB
+        sst_auto_gain_confdb = swsscommon.SubscriberStateTable(self.config_db, swsscommon.CFG_AUTO_GAIN_TABLE_NAME)
+        sel.addSelectable(sst_auto_gain_confdb)
+
+        # Listen for changes to the AUOTO_GAIN table in the CONFIG_DB
+        while True:
+            (state, selectableObj) = sel.select(SELECT_TIMEOUT_MS)
+
+            if state == swsscommon.Select.OBJECT:
+                if selectableObj.getFd() == sst_auto_gain_confdb.getFd():
+                    (key, op, fvp) = sst_auto_gain_confdb.pop()
+                    self.ols_process_auto_gain_change(op, dict(fvp), key)
+                else:
+                    self.log_error("Got unexpected selectable object")
+
+# ============================= Functions =============================
+
+
+def main():
+    # Instantiate a LldpManager object
+    olsmgr = OlsManager(SYSLOG_IDENTIFIER)
+
+    # Log all messages from INFO level and higher
+    olsmgr.set_min_log_priority_info()
+
+    ols_syncd_thread = threading.Thread(target=ols_syncd, args=(1,))
+
+    ols_syncd_thread.start()
+
+    olsmgr.run()
+
+def ols_syncd():
+    while True:
+        #get auto gain state from autogaind and update AUTO_GAIN table in STATE DB
+        time.sleep(2)
+    return
+
+
+if __name__ == "__main__":
+    main()
