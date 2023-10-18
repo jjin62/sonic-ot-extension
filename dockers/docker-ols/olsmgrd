@@ -36,7 +36,6 @@ RETRY_LIMIT = 5
 class OlsManager(daemon_base.DaemonBase):
     """
     Attributes:
-        state_db: Handle to Redis State database via swsscommon lib
         config_db: Handle to Redis Config database via swsscommon lib
     """
     REDIS_TIMEOUT_MS = 0
@@ -49,17 +48,7 @@ class OlsManager(daemon_base.DaemonBase):
                                                 self.REDIS_TIMEOUT_MS,
                                                 False)
 
-        # Open a handle to the State database
-        self.state_db = swsscommon.DBConnector("STATE_DB",
-                                              self.REDIS_TIMEOUT_MS,
-                                              False)
-
         self.config_auto_gain_table = swsscommon.Table(self.config_db, swsscommon.CFG_AUTO_GAIN_TABLE_NAME)
-        self.state_auot_gain_table = swsscommon.Table(self.state_db, swsscommon.STATE_AUTO_GAIN_TABLE_NAME)
-        self.config_amplifier_table = swsscommon.Table(self.config_db, swsscommon.CFG_OA_TABLE_NAME)
-        self.state_ampliefier_table = swsscommon.Table(self.state_db, swsscommon.STATE_OA_TABLE_NAME)
-        self.config_attenuator_table = swsscommon.Table(self.config_db, swsscommon.CFG_ATTENUATOR_TABLE_NAME)
-        self.state_attenuator_table = swsscommon.Table(self.state_db, swsscommon.STATE_ATTENUATOR_TABLE_NAME)
         return
 
     def ols_process_auto_gain_change(self, op, auto_gain_dict, key):
@@ -88,12 +77,6 @@ class OlsManager(daemon_base.DaemonBase):
 
         # Set select timeout to 10 seconds
         SELECT_TIMEOUT_MS = 1000 * 10
-
-        # Daemon is paused on the configuration file to avoid ols packets with wrong information
-        # until all interfaces are well configured on olsd
-        resume_ols_sent = False
-        start_time = time.time()
-
         sel = swsscommon.Select()
 
         # Subscribe to AUTO_GAIN table notifications in the Config DB
@@ -121,18 +104,7 @@ def main():
     # Log all messages from INFO level and higher
     olsmgr.set_min_log_priority_info()
 
-    ols_syncd_thread = threading.Thread(target=ols_syncd, args=(1,))
-
-    ols_syncd_thread.start()
-
     olsmgr.run()
 
-def ols_syncd():
-    while True:
-        #get auto gain state from autogaind and update AUTO_GAIN table in STATE DB
-        time.sleep(2)
-    return
-
-
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+        main()

@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+
+"""
+    ols_syncd
+
+    OLS Syncd interfaces with ols application daemons
+     -  auto-gain for PtoP connection
+     -  ???
+
+    Manage auotgaind:
+    - This is a thrift server listening for message from Auto-gaind
+    - retrieval status from autogaind and update AUTO_GAIN in STATE DB
+    - When BA and PA auto-gain is done
+      update ATEENUATOR/AMPLIFIER TALES in CONFIG DB
+
+"""
+try:
+    import os
+    import threading
+    import sys
+    import time
+
+    from sonic_py_common import daemon_base
+    from swsscommon import swsscommon
+    from sonic_py_common.interface import inband_prefix, recirc_prefix
+except ImportError as err:
+    raise ImportError("%s - required module not found" % str(err))
+
+VERSION = "1.0"
+
+SYSLOG_IDENTIFIER = "ols_syncd"
+
+
+class Ols_syncd(daemon_base.DaemonBase):
+    """
+    Attributes:
+        state_db: Handle to Redis State database via swsscommon lib
+        config_db: Handle to Redis Config database via swsscommon lib
+    """
+    REDIS_TIMEOUT_MS = 0
+
+    def __init__(self, log_identifier):
+        super(Ols_syncd, self).__init__(log_identifier)
+
+        # Open a handle to the Config database
+        self.config_db = swsscommon.DBConnector("CONFIG_DB",
+                                                self.REDIS_TIMEOUT_MS,
+                                                False)
+
+        # Open a handle to the State database
+        self.state_db = swsscommon.DBConnector("STATE_DB",
+                                              self.REDIS_TIMEOUT_MS,
+                                              False)
+
+        #polling auto_gain daemon status and update suot-gain State DB
+        self.state_auto_gain_table = swsscommon.Table(self.state_db, swsscommon.STATE_AUTO_GAIN_TABLE_NAME)
+        #config amplifiers and voa when auto-gain is completed
+        self.config_amplifier_table = swsscommon.Table(self.config_db, swsscommon.CFG_OA_TABLE_NAME)
+        self.config_attenuator_table = swsscommon.Table(self.config_db, swsscommon.CFG_ATTENUATOR_TABLE_NAME)
+        
+        return
+
+    def ols_process_auto_gain_status(self):
+        #
+        return
+    
+    def ols_start_auto_gain(self):
+        # send auto_gain_start to autogaind
+        return
+
+    def run(self):
+        """
+        After a auto-gain RPC complete the BA control, config the BA;
+        After PA complete, config PA
+        """
+        self.log_info("Starting up...")
+
+        if not os.geteuid() == 0:
+            self.log_error("Must be root to run this daemon")
+            print("Error: Must be root to run this daemon")
+            sys.exit(1)
+
+        #start thrift server
+
+# ============================= Functions =============================
+
+def main():
+    # Instantiate a LldpManager object
+    ols_syncd = Ols_syncd(SYSLOG_IDENTIFIER)
+
+    # Log all messages from INFO level and higher
+    ols_syncd.set_min_log_priority_info()
+
+    ols_syncd.run()
+
+
+if __name__ == "__main__":
+    main()
