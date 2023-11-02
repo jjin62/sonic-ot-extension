@@ -1,0 +1,8 @@
+{
+    "DEVICE_METADATA": {
+        "localhost": {
+            "type": "SonicOt",
+            "switch_type": "ot"
+        }
+    }
+}

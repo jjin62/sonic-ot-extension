@@ -1,0 +1,2 @@
+#DPKG FRK
+$(OTKVM_LIBHAL_DEB)_CACHE_MODE  := none

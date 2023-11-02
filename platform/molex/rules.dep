@@ -1,0 +1,10 @@
+include $(PLATFORM_PATH)/oplinkutil.dep
+include $(PLATFORM_PATH)/oplinkhal.dep
+include $(PLATFORM_PATH)/sonic-fairedis.dep
+include $(PLATFORM_PATH)/docker-olssyncd-molex.dep
+include $(PLATFORM_PATH)/platform-modules-ot-kvm.dep
+include $(PLATFORM_PATH)/sonic-version.dep
+include $(PLATFORM_PATH)/one-image.dep
+include $(PLATFORM_PATH)/onie.dep
+include $(PLATFORM_PATH)/kvm-image.dep
+

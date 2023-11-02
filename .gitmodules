@@ -4,3 +4,9 @@
 [submodule "src/sonic-sairedis"]
 	path = src/sonic-sairedis
 	url = https://kochsource.io/oplinkoms/sairedis-otaiextension.git
+[submodule "src/sonic-mgmt-common"]
+	path = src/sonic-mgmt-common
+	url = https://kochsource.io/oplinkoms/mgmt-common-ot-extension
+[submodule "src/sonic-mgmt-framework"]
+	path = src/sonic-mgmt-framework
+	url = https://kochsource.io/oplinkoms/mgmt-framework-ot-extension
