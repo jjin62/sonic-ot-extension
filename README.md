@@ -18,6 +18,12 @@ cd ~/sonic/sonic-buildimage
 make init
 ```
 
+Then clone sonic-ot-extension to directory at the same level with sonic-buildimage, '~/sonic' for example.
+```
+cd ~/sonic
+git clone --recurse-submodules https://kochsource.io/oplinkoms/sonic-ot-extension.git
+```
+
 Make all ot extensions to sonic-buildimage by the following command:
 ```
 cd sonic-ot-extension
@@ -30,3 +36,12 @@ Clean all ot extensions in sonic-buildimage by the following command:
 cd sonic-ot-extension
 ./extension.sh clean
 ```
+
+For easy review, the code diff between SONiC and SONiC-OT can be viewed in html:
+```
+cd sonic-ot-extension
+firefox snapshot/index.html
+```
+
+<img src="https://kochsource.io/oplinkoms/sonic-ot-extension/-/raw/dev/snapshot/sample/snapshot1.png">
+<img src="https://kochsource.io/oplinkoms/sonic-ot-extension/-/raw/dev/snapshot/sample/snapshot2.png">

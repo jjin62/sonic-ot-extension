@@ -15,6 +15,7 @@ def diff(cur, sonic):
     diff = 'git show HEAD --color | ' + cur + '/ansi2html.sh > ' + cur + '/'
 
     for key,value in g_gits.items():
+        print('generating', value)
         f = MergePath(sonic, key)
         sha = GitSha(f)
 
