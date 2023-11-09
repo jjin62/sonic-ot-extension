@@ -59,5 +59,8 @@ environment=ASAN_OPTIONS="log_path=/var/log/asan/otaimgrd-asan.log{{ asan_extra_
         InsertContext(file, filter, context, option, rfind)
 
 
+    GitAdd(path, files)
+
+
 if __name__ == "__main__":
     main(sys.argv)

@@ -1,0 +1,2253 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+pre { white-space: pre-wrap; }
+.ef0,.f0 { color: #000000; } .eb0,.b0 { background-color: #000000; }
+.ef1,.f1 { color: #AA0000; } .eb1,.b1 { background-color: #AA0000; }
+.ef2,.f2 { color: #00AA00; } .eb2,.b2 { background-color: #00AA00; }
+.ef3,.f3 { color: #AA5500; } .eb3,.b3 { background-color: #AA5500; }
+.ef4,.f4 { color: #0000AA; } .eb4,.b4 { background-color: #0000AA; }
+.ef5,.f5 { color: #AA00AA; } .eb5,.b5 { background-color: #AA00AA; }
+.ef6,.f6 { color: #00AAAA; } .eb6,.b6 { background-color: #00AAAA; }
+.ef7,.f7 { color: #AAAAAA; } .eb7,.b7 { background-color: #AAAAAA; }
+.ef8, .f0 > .bold,.bold > .f0 { color: #555555; font-weight: normal; }
+.ef9, .f1 > .bold,.bold > .f1 { color: #FF5555; font-weight: normal; }
+.ef10,.f2 > .bold,.bold > .f2 { color: #55FF55; font-weight: normal; }
+.ef11,.f3 > .bold,.bold > .f3 { color: #FFFF55; font-weight: normal; }
+.ef12,.f4 > .bold,.bold > .f4 { color: #5555FF; font-weight: normal; }
+.ef13,.f5 > .bold,.bold > .f5 { color: #FF55FF; font-weight: normal; }
+.ef14,.f6 > .bold,.bold > .f6 { color: #55FFFF; font-weight: normal; }
+.ef15,.f7 > .bold,.bold > .f7 { color: #FFFFFF; font-weight: normal; }
+.eb8  { background-color: #555555; }
+.eb9  { background-color: #FF5555; }
+.eb10 { background-color: #55FF55; }
+.eb11 { background-color: #FFFF55; }
+.eb12 { background-color: #5555FF; }
+.eb13 { background-color: #FF55FF; }
+.eb14 { background-color: #55FFFF; }
+.eb15 { background-color: #FFFFFF; }
+.ef16 { color: #000000; } .eb16 { background-color: #000000; }
+.ef17 { color: #00005f; } .eb17 { background-color: #00005f; }
+.ef18 { color: #000087; } .eb18 { background-color: #000087; }
+.ef19 { color: #0000af; } .eb19 { background-color: #0000af; }
+.ef20 { color: #0000d7; } .eb20 { background-color: #0000d7; }
+.ef21 { color: #0000ff; } .eb21 { background-color: #0000ff; }
+.ef22 { color: #005f00; } .eb22 { background-color: #005f00; }
+.ef23 { color: #005f5f; } .eb23 { background-color: #005f5f; }
+.ef24 { color: #005f87; } .eb24 { background-color: #005f87; }
+.ef25 { color: #005faf; } .eb25 { background-color: #005faf; }
+.ef26 { color: #005fd7; } .eb26 { background-color: #005fd7; }
+.ef27 { color: #005fff; } .eb27 { background-color: #005fff; }
+.ef28 { color: #008700; } .eb28 { background-color: #008700; }
+.ef29 { color: #00875f; } .eb29 { background-color: #00875f; }
+.ef30 { color: #008787; } .eb30 { background-color: #008787; }
+.ef31 { color: #0087af; } .eb31 { background-color: #0087af; }
+.ef32 { color: #0087d7; } .eb32 { background-color: #0087d7; }
+.ef33 { color: #0087ff; } .eb33 { background-color: #0087ff; }
+.ef34 { color: #00af00; } .eb34 { background-color: #00af00; }
+.ef35 { color: #00af5f; } .eb35 { background-color: #00af5f; }
+.ef36 { color: #00af87; } .eb36 { background-color: #00af87; }
+.ef37 { color: #00afaf; } .eb37 { background-color: #00afaf; }
+.ef38 { color: #00afd7; } .eb38 { background-color: #00afd7; }
+.ef39 { color: #00afff; } .eb39 { background-color: #00afff; }
+.ef40 { color: #00d700; } .eb40 { background-color: #00d700; }
+.ef41 { color: #00d75f; } .eb41 { background-color: #00d75f; }
+.ef42 { color: #00d787; } .eb42 { background-color: #00d787; }
+.ef43 { color: #00d7af; } .eb43 { background-color: #00d7af; }
+.ef44 { color: #00d7d7; } .eb44 { background-color: #00d7d7; }
+.ef45 { color: #00d7ff; } .eb45 { background-color: #00d7ff; }
+.ef46 { color: #00ff00; } .eb46 { background-color: #00ff00; }
+.ef47 { color: #00ff5f; } .eb47 { background-color: #00ff5f; }
+.ef48 { color: #00ff87; } .eb48 { background-color: #00ff87; }
+.ef49 { color: #00ffaf; } .eb49 { background-color: #00ffaf; }
+.ef50 { color: #00ffd7; } .eb50 { background-color: #00ffd7; }
+.ef51 { color: #00ffff; } .eb51 { background-color: #00ffff; }
+.ef52 { color: #5f0000; } .eb52 { background-color: #5f0000; }
+.ef53 { color: #5f005f; } .eb53 { background-color: #5f005f; }
+.ef54 { color: #5f0087; } .eb54 { background-color: #5f0087; }
+.ef55 { color: #5f00af; } .eb55 { background-color: #5f00af; }
+.ef56 { color: #5f00d7; } .eb56 { background-color: #5f00d7; }
+.ef57 { color: #5f00ff; } .eb57 { background-color: #5f00ff; }
+.ef58 { color: #5f5f00; } .eb58 { background-color: #5f5f00; }
+.ef59 { color: #5f5f5f; } .eb59 { background-color: #5f5f5f; }
+.ef60 { color: #5f5f87; } .eb60 { background-color: #5f5f87; }
+.ef61 { color: #5f5faf; } .eb61 { background-color: #5f5faf; }
+.ef62 { color: #5f5fd7; } .eb62 { background-color: #5f5fd7; }
+.ef63 { color: #5f5fff; } .eb63 { background-color: #5f5fff; }
+.ef64 { color: #5f8700; } .eb64 { background-color: #5f8700; }
+.ef65 { color: #5f875f; } .eb65 { background-color: #5f875f; }
+.ef66 { color: #5f8787; } .eb66 { background-color: #5f8787; }
+.ef67 { color: #5f87af; } .eb67 { background-color: #5f87af; }
+.ef68 { color: #5f87d7; } .eb68 { background-color: #5f87d7; }
+.ef69 { color: #5f87ff; } .eb69 { background-color: #5f87ff; }
+.ef70 { color: #5faf00; } .eb70 { background-color: #5faf00; }
+.ef71 { color: #5faf5f; } .eb71 { background-color: #5faf5f; }
+.ef72 { color: #5faf87; } .eb72 { background-color: #5faf87; }
+.ef73 { color: #5fafaf; } .eb73 { background-color: #5fafaf; }
+.ef74 { color: #5fafd7; } .eb74 { background-color: #5fafd7; }
+.ef75 { color: #5fafff; } .eb75 { background-color: #5fafff; }
+.ef76 { color: #5fd700; } .eb76 { background-color: #5fd700; }
+.ef77 { color: #5fd75f; } .eb77 { background-color: #5fd75f; }
+.ef78 { color: #5fd787; } .eb78 { background-color: #5fd787; }
+.ef79 { color: #5fd7af; } .eb79 { background-color: #5fd7af; }
+.ef80 { color: #5fd7d7; } .eb80 { background-color: #5fd7d7; }
+.ef81 { color: #5fd7ff; } .eb81 { background-color: #5fd7ff; }
+.ef82 { color: #5fff00; } .eb82 { background-color: #5fff00; }
+.ef83 { color: #5fff5f; } .eb83 { background-color: #5fff5f; }
+.ef84 { color: #5fff87; } .eb84 { background-color: #5fff87; }
+.ef85 { color: #5fffaf; } .eb85 { background-color: #5fffaf; }
+.ef86 { color: #5fffd7; } .eb86 { background-color: #5fffd7; }
+.ef87 { color: #5fffff; } .eb87 { background-color: #5fffff; }
+.ef88 { color: #870000; } .eb88 { background-color: #870000; }
+.ef89 { color: #87005f; } .eb89 { background-color: #87005f; }
+.ef90 { color: #870087; } .eb90 { background-color: #870087; }
+.ef91 { color: #8700af; } .eb91 { background-color: #8700af; }
+.ef92 { color: #8700d7; } .eb92 { background-color: #8700d7; }
+.ef93 { color: #8700ff; } .eb93 { background-color: #8700ff; }
+.ef94 { color: #875f00; } .eb94 { background-color: #875f00; }
+.ef95 { color: #875f5f; } .eb95 { background-color: #875f5f; }
+.ef96 { color: #875f87; } .eb96 { background-color: #875f87; }
+.ef97 { color: #875faf; } .eb97 { background-color: #875faf; }
+.ef98 { color: #875fd7; } .eb98 { background-color: #875fd7; }
+.ef99 { color: #875fff; } .eb99 { background-color: #875fff; }
+.ef100 { color: #878700; } .eb100 { background-color: #878700; }
+.ef101 { color: #87875f; } .eb101 { background-color: #87875f; }
+.ef102 { color: #878787; } .eb102 { background-color: #878787; }
+.ef103 { color: #8787af; } .eb103 { background-color: #8787af; }
+.ef104 { color: #8787d7; } .eb104 { background-color: #8787d7; }
+.ef105 { color: #8787ff; } .eb105 { background-color: #8787ff; }
+.ef106 { color: #87af00; } .eb106 { background-color: #87af00; }
+.ef107 { color: #87af5f; } .eb107 { background-color: #87af5f; }
+.ef108 { color: #87af87; } .eb108 { background-color: #87af87; }
+.ef109 { color: #87afaf; } .eb109 { background-color: #87afaf; }
+.ef110 { color: #87afd7; } .eb110 { background-color: #87afd7; }
+.ef111 { color: #87afff; } .eb111 { background-color: #87afff; }
+.ef112 { color: #87d700; } .eb112 { background-color: #87d700; }
+.ef113 { color: #87d75f; } .eb113 { background-color: #87d75f; }
+.ef114 { color: #87d787; } .eb114 { background-color: #87d787; }
+.ef115 { color: #87d7af; } .eb115 { background-color: #87d7af; }
+.ef116 { color: #87d7d7; } .eb116 { background-color: #87d7d7; }
+.ef117 { color: #87d7ff; } .eb117 { background-color: #87d7ff; }
+.ef118 { color: #87ff00; } .eb118 { background-color: #87ff00; }
+.ef119 { color: #87ff5f; } .eb119 { background-color: #87ff5f; }
+.ef120 { color: #87ff87; } .eb120 { background-color: #87ff87; }
+.ef121 { color: #87ffaf; } .eb121 { background-color: #87ffaf; }
+.ef122 { color: #87ffd7; } .eb122 { background-color: #87ffd7; }
+.ef123 { color: #87ffff; } .eb123 { background-color: #87ffff; }
+.ef124 { color: #af0000; } .eb124 { background-color: #af0000; }
+.ef125 { color: #af005f; } .eb125 { background-color: #af005f; }
+.ef126 { color: #af0087; } .eb126 { background-color: #af0087; }
+.ef127 { color: #af00af; } .eb127 { background-color: #af00af; }
+.ef128 { color: #af00d7; } .eb128 { background-color: #af00d7; }
+.ef129 { color: #af00ff; } .eb129 { background-color: #af00ff; }
+.ef130 { color: #af5f00; } .eb130 { background-color: #af5f00; }
+.ef131 { color: #af5f5f; } .eb131 { background-color: #af5f5f; }
+.ef132 { color: #af5f87; } .eb132 { background-color: #af5f87; }
+.ef133 { color: #af5faf; } .eb133 { background-color: #af5faf; }
+.ef134 { color: #af5fd7; } .eb134 { background-color: #af5fd7; }
+.ef135 { color: #af5fff; } .eb135 { background-color: #af5fff; }
+.ef136 { color: #af8700; } .eb136 { background-color: #af8700; }
+.ef137 { color: #af875f; } .eb137 { background-color: #af875f; }
+.ef138 { color: #af8787; } .eb138 { background-color: #af8787; }
+.ef139 { color: #af87af; } .eb139 { background-color: #af87af; }
+.ef140 { color: #af87d7; } .eb140 { background-color: #af87d7; }
+.ef141 { color: #af87ff; } .eb141 { background-color: #af87ff; }
+.ef142 { color: #afaf00; } .eb142 { background-color: #afaf00; }
+.ef143 { color: #afaf5f; } .eb143 { background-color: #afaf5f; }
+.ef144 { color: #afaf87; } .eb144 { background-color: #afaf87; }
+.ef145 { color: #afafaf; } .eb145 { background-color: #afafaf; }
+.ef146 { color: #afafd7; } .eb146 { background-color: #afafd7; }
+.ef147 { color: #afafff; } .eb147 { background-color: #afafff; }
+.ef148 { color: #afd700; } .eb148 { background-color: #afd700; }
+.ef149 { color: #afd75f; } .eb149 { background-color: #afd75f; }
+.ef150 { color: #afd787; } .eb150 { background-color: #afd787; }
+.ef151 { color: #afd7af; } .eb151 { background-color: #afd7af; }
+.ef152 { color: #afd7d7; } .eb152 { background-color: #afd7d7; }
+.ef153 { color: #afd7ff; } .eb153 { background-color: #afd7ff; }
+.ef154 { color: #afff00; } .eb154 { background-color: #afff00; }
+.ef155 { color: #afff5f; } .eb155 { background-color: #afff5f; }
+.ef156 { color: #afff87; } .eb156 { background-color: #afff87; }
+.ef157 { color: #afffaf; } .eb157 { background-color: #afffaf; }
+.ef158 { color: #afffd7; } .eb158 { background-color: #afffd7; }
+.ef159 { color: #afffff; } .eb159 { background-color: #afffff; }
+.ef160 { color: #d70000; } .eb160 { background-color: #d70000; }
+.ef161 { color: #d7005f; } .eb161 { background-color: #d7005f; }
+.ef162 { color: #d70087; } .eb162 { background-color: #d70087; }
+.ef163 { color: #d700af; } .eb163 { background-color: #d700af; }
+.ef164 { color: #d700d7; } .eb164 { background-color: #d700d7; }
+.ef165 { color: #d700ff; } .eb165 { background-color: #d700ff; }
+.ef166 { color: #d75f00; } .eb166 { background-color: #d75f00; }
+.ef167 { color: #d75f5f; } .eb167 { background-color: #d75f5f; }
+.ef168 { color: #d75f87; } .eb168 { background-color: #d75f87; }
+.ef169 { color: #d75faf; } .eb169 { background-color: #d75faf; }
+.ef170 { color: #d75fd7; } .eb170 { background-color: #d75fd7; }
+.ef171 { color: #d75fff; } .eb171 { background-color: #d75fff; }
+.ef172 { color: #d78700; } .eb172 { background-color: #d78700; }
+.ef173 { color: #d7875f; } .eb173 { background-color: #d7875f; }
+.ef174 { color: #d78787; } .eb174 { background-color: #d78787; }
+.ef175 { color: #d787af; } .eb175 { background-color: #d787af; }
+.ef176 { color: #d787d7; } .eb176 { background-color: #d787d7; }
+.ef177 { color: #d787ff; } .eb177 { background-color: #d787ff; }
+.ef178 { color: #d7af00; } .eb178 { background-color: #d7af00; }
+.ef179 { color: #d7af5f; } .eb179 { background-color: #d7af5f; }
+.ef180 { color: #d7af87; } .eb180 { background-color: #d7af87; }
+.ef181 { color: #d7afaf; } .eb181 { background-color: #d7afaf; }
+.ef182 { color: #d7afd7; } .eb182 { background-color: #d7afd7; }
+.ef183 { color: #d7afff; } .eb183 { background-color: #d7afff; }
+.ef184 { color: #d7d700; } .eb184 { background-color: #d7d700; }
+.ef185 { color: #d7d75f; } .eb185 { background-color: #d7d75f; }
+.ef186 { color: #d7d787; } .eb186 { background-color: #d7d787; }
+.ef187 { color: #d7d7af; } .eb187 { background-color: #d7d7af; }
+.ef188 { color: #d7d7d7; } .eb188 { background-color: #d7d7d7; }
+.ef189 { color: #d7d7ff; } .eb189 { background-color: #d7d7ff; }
+.ef190 { color: #d7ff00; } .eb190 { background-color: #d7ff00; }
+.ef191 { color: #d7ff5f; } .eb191 { background-color: #d7ff5f; }
+.ef192 { color: #d7ff87; } .eb192 { background-color: #d7ff87; }
+.ef193 { color: #d7ffaf; } .eb193 { background-color: #d7ffaf; }
+.ef194 { color: #d7ffd7; } .eb194 { background-color: #d7ffd7; }
+.ef195 { color: #d7ffff; } .eb195 { background-color: #d7ffff; }
+.ef196 { color: #ff0000; } .eb196 { background-color: #ff0000; }
+.ef197 { color: #ff005f; } .eb197 { background-color: #ff005f; }
+.ef198 { color: #ff0087; } .eb198 { background-color: #ff0087; }
+.ef199 { color: #ff00af; } .eb199 { background-color: #ff00af; }
+.ef200 { color: #ff00d7; } .eb200 { background-color: #ff00d7; }
+.ef201 { color: #ff00ff; } .eb201 { background-color: #ff00ff; }
+.ef202 { color: #ff5f00; } .eb202 { background-color: #ff5f00; }
+.ef203 { color: #ff5f5f; } .eb203 { background-color: #ff5f5f; }
+.ef204 { color: #ff5f87; } .eb204 { background-color: #ff5f87; }
+.ef205 { color: #ff5faf; } .eb205 { background-color: #ff5faf; }
+.ef206 { color: #ff5fd7; } .eb206 { background-color: #ff5fd7; }
+.ef207 { color: #ff5fff; } .eb207 { background-color: #ff5fff; }
+.ef208 { color: #ff8700; } .eb208 { background-color: #ff8700; }
+.ef209 { color: #ff875f; } .eb209 { background-color: #ff875f; }
+.ef210 { color: #ff8787; } .eb210 { background-color: #ff8787; }
+.ef211 { color: #ff87af; } .eb211 { background-color: #ff87af; }
+.ef212 { color: #ff87d7; } .eb212 { background-color: #ff87d7; }
+.ef213 { color: #ff87ff; } .eb213 { background-color: #ff87ff; }
+.ef214 { color: #ffaf00; } .eb214 { background-color: #ffaf00; }
+.ef215 { color: #ffaf5f; } .eb215 { background-color: #ffaf5f; }
+.ef216 { color: #ffaf87; } .eb216 { background-color: #ffaf87; }
+.ef217 { color: #ffafaf; } .eb217 { background-color: #ffafaf; }
+.ef218 { color: #ffafd7; } .eb218 { background-color: #ffafd7; }
+.ef219 { color: #ffafff; } .eb219 { background-color: #ffafff; }
+.ef220 { color: #ffd700; } .eb220 { background-color: #ffd700; }
+.ef221 { color: #ffd75f; } .eb221 { background-color: #ffd75f; }
+.ef222 { color: #ffd787; } .eb222 { background-color: #ffd787; }
+.ef223 { color: #ffd7af; } .eb223 { background-color: #ffd7af; }
+.ef224 { color: #ffd7d7; } .eb224 { background-color: #ffd7d7; }
+.ef225 { color: #ffd7ff; } .eb225 { background-color: #ffd7ff; }
+.ef226 { color: #ffff00; } .eb226 { background-color: #ffff00; }
+.ef227 { color: #ffff5f; } .eb227 { background-color: #ffff5f; }
+.ef228 { color: #ffff87; } .eb228 { background-color: #ffff87; }
+.ef229 { color: #ffffaf; } .eb229 { background-color: #ffffaf; }
+.ef230 { color: #ffffd7; } .eb230 { background-color: #ffffd7; }
+.ef231 { color: #ffffff; } .eb231 { background-color: #ffffff; }
+.ef232 { color: #080808; } .eb232 { background-color: #080808; }
+.ef233 { color: #121212; } .eb233 { background-color: #121212; }
+.ef234 { color: #1c1c1c; } .eb234 { background-color: #1c1c1c; }
+.ef235 { color: #262626; } .eb235 { background-color: #262626; }
+.ef236 { color: #303030; } .eb236 { background-color: #303030; }
+.ef237 { color: #3a3a3a; } .eb237 { background-color: #3a3a3a; }
+.ef238 { color: #444444; } .eb238 { background-color: #444444; }
+.ef239 { color: #4e4e4e; } .eb239 { background-color: #4e4e4e; }
+.ef240 { color: #585858; } .eb240 { background-color: #585858; }
+.ef241 { color: #626262; } .eb241 { background-color: #626262; }
+.ef242 { color: #6c6c6c; } .eb242 { background-color: #6c6c6c; }
+.ef243 { color: #767676; } .eb243 { background-color: #767676; }
+.ef244 { color: #808080; } .eb244 { background-color: #808080; }
+.ef245 { color: #8a8a8a; } .eb245 { background-color: #8a8a8a; }
+.ef246 { color: #949494; } .eb246 { background-color: #949494; }
+.ef247 { color: #9e9e9e; } .eb247 { background-color: #9e9e9e; }
+.ef248 { color: #a8a8a8; } .eb248 { background-color: #a8a8a8; }
+.ef249 { color: #b2b2b2; } .eb249 { background-color: #b2b2b2; }
+.ef250 { color: #bcbcbc; } .eb250 { background-color: #bcbcbc; }
+.ef251 { color: #c6c6c6; } .eb251 { background-color: #c6c6c6; }
+.ef252 { color: #d0d0d0; } .eb252 { background-color: #d0d0d0; }
+.ef253 { color: #dadada; } .eb253 { background-color: #dadada; }
+.ef254 { color: #e4e4e4; } .eb254 { background-color: #e4e4e4; }
+.ef255 { color: #eeeeee; } .eb255 { background-color: #eeeeee; }
+
+.f9 { color: #000000; }
+.b9 { background-color: #FFFFFF; }
+.f9 > .bold,.bold > .f9, body.f9 > pre > .bold {
+  /* Bold is heavy black on white, or bright white
+     depending on the default background */
+  color: #000000;
+  font-weight: bold;
+}
+.reverse {
+  /* CSS does not support swapping fg and bg colours unfortunately,
+     so just hardcode something that will look OK on all backgrounds. */
+  color: #000000; background-color: #AAAAAA;
+}
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.blink { text-decoration: blink; }
+
+/* Avoid pixels between adjacent span elements.
+   Note this only works for lines less than 80 chars
+   where we close span elements on the same line.
+span { display: inline-block; }
+*/
+</style>
+</head>
+
+<body class="f9 b9">
+<pre>
+<span class="f3">commit 68fd766e444bd0299254761543b88920ef2398a2</span>
+Author: Lu.Mao &lt;lu.mao@molex.com&gt;
+Date:   Thu Nov 9 00:11:43 2023 -0800
+
+    Support SONiC OT
+
+<span class="bold">diff --git a/cfgmgr/Makefile.am b/cfgmgr/Makefile.am</span>
+<span class="bold">index 685ab044..10da3e4d 100644</span>
+<span class="bold">--- a/cfgmgr/Makefile.am</span>
+<span class="bold">+++ b/cfgmgr/Makefile.am</span>
+<span class="f6">@@ -5,7 +5,7 @@</span> LIBNL_LIBS = -lnl-genl-3 -lnl-route-3 -lnl-3
+ SAIMETA_LIBS = -lsaimeta -lsaimetadata -lzmq
+ COMMON_LIBS = -lswsscommon
+ 
+<span class="f1">-bin_PROGRAMS = vlanmgrd teammgrd portmgrd intfmgrd buffermgrd vrfmgrd nbrmgrd vxlanmgrd sflowmgrd natmgrd coppmgrd tunnelmgrd macsecmgrd
+</span><span class="f2">+bin_PROGRAMS = vlanmgrd teammgrd portmgrd intfmgrd buffermgrd vrfmgrd nbrmgrd vxlanmgrd sflowmgrd natmgrd coppmgrd tunnelmgrd macsecmgrd otaimgrd
+</span> 
+ cfgmgrdir = $(datadir)/swss
+ 
+<span class="f6">@@ -96,6 +96,11 @@</span> macsecmgrd_CFLAGS = $(DBGFLAGS) $(AM_CFLAGS) $(CFLAGS_COMMON) $(CFLAGS_SAI) $(CF
+ macsecmgrd_CPPFLAGS = $(DBGFLAGS) $(AM_CFLAGS) $(CFLAGS_COMMON) $(CFLAGS_SAI) $(CFLAGS_ASAN)
+ macsecmgrd_LDADD = $(LDFLAGS_ASAN) $(COMMON_LIBS) $(SAIMETA_LIBS)
+ 
+<span class="f2">+otaimgrd_SOURCES = otaimgrd.cpp otaimgr.cpp $(top_srcdir)/orchagent/orch.cpp $(top_srcdir)/orchagent/request_parser.cpp $(top_srcdir)/orchagent/response_publisher.cpp shellcmd.h
++otaimgrd_CFLAGS = $(DBGFLAGS) $(AM_CFLAGS) $(CFLAGS_COMMON) $(CFLAGS_SAI) $(CFLAGS_ASAN)</span>
+<span class="f2">+otaimgrd_CPPFLAGS = $(DBGFLAGS) $(AM_CFLAGS) $(CFLAGS_COMMON) $(CFLAGS_SAI) $(CFLAGS_ASAN)</span>
+<span class="f2">+otaimgrd_LDADD = $(LDFLAGS_ASAN) $(COMMON_LIBS) $(SAIMETA_LIBS)</span>
+<span class="f2">+</span>
+ if GCOV_ENABLED
+ vlanmgrd_LDADD += -lgcovpreload
+ teammgrd_LDADD += -lgcovpreload
+<span class="f6">@@ -110,6 +115,7 @@</span> natmgrd_LDADD += -lgcovpreload
+ coppmgrd_LDADD += -lgcovpreload
+ tunnelmgrd_LDADD += -lgcovpreload
+ macsecmgrd_LDADD += -lgcovpreload
+<span class="f2">+otaimgrd_LDADD += -lgcovpreload</span>
+ endif
+ 
+ if ASAN_ENABLED
+<span class="f6">@@ -126,5 +132,6 @@</span> natmgrd_SOURCES += $(top_srcdir)/lib/asan.cpp
+ coppmgrd_SOURCES += $(top_srcdir)/lib/asan.cpp
+ tunnelmgrd_SOURCES += $(top_srcdir)/lib/asan.cpp
+ macsecmgrd_SOURCES += $(top_srcdir)/lib/asan.cpp
+<span class="f2">+otaimgrd_SOURCES += $(top_srcdir)/lib/asan.cpp</span>
+ endif
+ 
+<span class="bold">diff --git a/cfgmgr/otaimgr.cpp b/cfgmgr/otaimgr.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..82754fa6</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/cfgmgr/otaimgr.cpp</span>
+<span class="f6">@@ -0,0 +1,92 @@</span>
+<span class="f2">+#include &quot;logger.h&quot;</span>
+<span class="f2">+#include &quot;dbconnector.h&quot;</span>
+<span class="f2">+#include &quot;tokenize.h&quot;</span>
+<span class="f2">+#include &quot;ipprefix.h&quot;</span>
+<span class="f2">+#include &quot;otaimgr.h&quot;</span>
+<span class="f2">+#include &quot;exec.h&quot;</span>
+<span class="f2">+#include &quot;shellcmd.h&quot;</span>
+<span class="f2">+#include &lt;swss/redisutility.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+OtaiMgr::OtaiMgr(DBConnector *cfgDb, DBConnector *appDb, DBConnector *stateDb, const std::vector&lt;std::string&gt; &amp;tableNames, const std::map&lt;std::string, std::string&gt; &amp;tableMaps) :
++        Orch(cfgDb, tableNames),</span>
+<span class="f2">+        m_appl_db(appDb),</span>
+<span class="f2">+        m_state_db(stateDb),</span>
+<span class="f2">+        m_tableMaps(tableMaps)</span>
+<span class="f2">+{</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OtaiMgr::doTask(Consumer &amp;consumer)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    string cfgName = consumer.getTableName();</span>
+<span class="f2">+</span>
+<span class="f2">+    /* get app table by name */</span>
+<span class="f2">+    auto itApp = m_tableMaps.find(cfgName);</span>
+<span class="f2">+    if (itApp == m_tableMaps.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;otaimgr|%s is invalid&quot;, cfgName.c_str());</span>
+<span class="f2">+        return;</span>
+<span class="f2">+    }</span>
+<span class="f2">+    const string &amp;appName = itApp-&gt;second;</span>
+<span class="f2">+    shared_ptr&lt;ProducerStateTable&gt; appTable;</span><span class="b1"> </span>
+<span class="f2">+    auto itTable = m_appTables.find(appName);</span>
+<span class="f2">+    if (itTable == m_appTables.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        appTable = make_shared&lt;ProducerStateTable&gt;(m_appl_db, appName);</span>
+<span class="f2">+        m_appTables[appName] = appTable;</span>
+<span class="f2">+    }</span>
+<span class="f2">+    else</span>
+<span class="f2">+    {</span>
+<span class="f2">+        appTable = itTable-&gt;second;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    auto it = consumer.m_toSync.begin();</span>
+<span class="f2">+    while (it != consumer.m_toSync.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        KeyOpFieldsValuesTuple t = it-&gt;second;</span>
+<span class="f2">+        string alias = kfvKey(t);</span>
+<span class="f2">+        string op = kfvOp(t);</span>
+<span class="f2">+</span>
+<span class="f2">+        SWSS_LOG_NOTICE(&quot;otaimgr doTask, cfg=%s, app=%s, key=%s, op=%s&quot;, cfgName.c_str(), appName.c_str(), alias.c_str(), op.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+        if (op == SET_COMMAND)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            auto values = kfvFieldsValues(t);</span>
+<span class="f2">+            for (auto value : values)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_NOTICE(&quot;otaimgr doTask, key=%s, value=%s&quot;, value.first.c_str(), value.second.c_str());</span>
+<span class="f2">+            }</span>
+<span class="f2">+            if (values.size())</span>
+<span class="f2">+            {</span>
+<span class="f2">+                writeConfigToAppDb(appTable, alias, values);</span>
+<span class="f2">+            }</span>
+<span class="f2">+        }</span>
+<span class="f2">+        else if (op == DEL_COMMAND)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            SWSS_LOG_NOTICE(&quot;Delete component: %s&quot;, alias.c_str());</span>
+<span class="f2">+            appTable-&gt;del(alias);</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        it = consumer.m_toSync.erase(it);</span>
+<span class="f2">+    }</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+bool OtaiMgr::writeConfigToAppDb(std::shared_ptr&lt;ProducerStateTable&gt; &amp;table, const std::string &amp;alias, const std::string &amp;field, const std::string &amp;value)</span>
+<span class="f2">+{</span>
+<span class="f2">+    vector&lt;FieldValueTuple&gt; fvs;</span>
+<span class="f2">+    FieldValueTuple fv(field, value);</span>
+<span class="f2">+    fvs.push_back(fv);</span>
+<span class="f2">+    table-&gt;set(alias, fvs);</span>
+<span class="f2">+</span>
+<span class="f2">+    return true;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+bool OtaiMgr::writeConfigToAppDb(std::shared_ptr&lt;ProducerStateTable&gt; &amp;table, const std::string &amp;alias, std::vector&lt;FieldValueTuple&gt; &amp;field_values)</span>
+<span class="f2">+{</span>
+<span class="f2">+    table-&gt;set(alias, field_values);</span>
+<span class="f2">+    return true;</span>
+<span class="f2">+}</span>
+<span class="bold">diff --git a/cfgmgr/otaimgr.h b/cfgmgr/otaimgr.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..9a38aee7</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/cfgmgr/otaimgr.h</span>
+<span class="f6">@@ -0,0 +1,30 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;dbconnector.h&quot;</span>
+<span class="f2">+#include &quot;orch.h&quot;</span>
+<span class="f2">+#include &quot;producerstatetable.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;map&gt;</span>
+<span class="f2">+#include &lt;string&gt;</span>
+<span class="f2">+#include &lt;memory&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+namespace swss {</span>
+<span class="f2">+</span>
+<span class="f2">+class OtaiMgr : public Orch</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    OtaiMgr(DBConnector *cfgDb, DBConnector *appDb, DBConnector *stateDb, const std::vector&lt;std::string&gt; &amp;tableNames, const std::map&lt;std::string, std::string&gt; &amp;tableMaps);</span>
+<span class="f2">+</span>
+<span class="f2">+    using Orch::doTask;</span>
+<span class="f2">+private:</span>
+<span class="f2">+    DBConnector *m_appl_db;</span>
+<span class="f2">+    DBConnector *m_state_db;</span>
+<span class="f2">+    const std::map&lt;std::string, std::string&gt; &amp;m_tableMaps;</span>
+<span class="f2">+    std::map&lt;std::string, std::shared_ptr&lt;ProducerStateTable&gt;&gt; m_appTables;</span>
+<span class="f2">+</span>
+<span class="f2">+    void doTask(Consumer &amp;consumer);</span>
+<span class="f2">+    bool writeConfigToAppDb(std::shared_ptr&lt;ProducerStateTable&gt; &amp;table, const std::string &amp;alias, const std::string &amp;field, const std::string &amp;value);</span>
+<span class="f2">+    bool writeConfigToAppDb(std::shared_ptr&lt;ProducerStateTable&gt; &amp;table, const std::string &amp;alias, std::vector&lt;FieldValueTuple&gt; &amp;field_values);</span>
+<span class="f2">+};</span>
+<span class="f2">+</span>
+<span class="f2">+}</span>
+<span class="bold">diff --git a/cfgmgr/otaimgrd.cpp b/cfgmgr/otaimgrd.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..6a2a468c</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/cfgmgr/otaimgrd.cpp</span>
+<span class="f6">@@ -0,0 +1,103 @@</span>
+<span class="f2">+#include &lt;fstream&gt;</span>
+<span class="f2">+#include &lt;iostream&gt;</span>
+<span class="f2">+#include &lt;mutex&gt;</span>
+<span class="f2">+#include &lt;unistd.h&gt;</span>
+<span class="f2">+#include &lt;vector&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;exec.h&quot;</span>
+<span class="f2">+#include &quot;otaimgr.h&quot;</span>
+<span class="f2">+#include &quot;schema.h&quot;</span>
+<span class="f2">+#include &quot;select.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+/* select() function timeout retry time, in millisecond */</span>
+<span class="f2">+#define SELECT_TIMEOUT 1000</span>
+<span class="f2">+</span>
+<span class="f2">+/*</span>
+<span class="f2">+ * Following global variables are defined here for the purpose of</span>
+<span class="f2">+ * using existing Orch class which is to be refactored soon to</span>
+<span class="f2">+ * eliminate the direct exposure of the global variables.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Once Orch class refactoring is done, these global variables</span>
+<span class="f2">+ * should be removed from here.</span>
+<span class="f2">+ */</span>
+<span class="f2">+int gBatchSize = 0;</span>
+<span class="f2">+bool gSwssRecord = false;</span>
+<span class="f2">+bool gLogRotate = false;</span>
+<span class="f2">+ofstream gRecordOfs;</span>
+<span class="f2">+string gRecordFile;</span>
+<span class="f2">+bool gResponsePublisherRecord = false;</span>
+<span class="f2">+bool gResponsePublisherLogRotate = false;</span>
+<span class="f2">+ofstream gResponsePublisherRecordOfs;</span>
+<span class="f2">+string gResponsePublisherRecordFile;</span>
+<span class="f2">+/* Global database mutex */</span>
+<span class="f2">+mutex gDbMutex;</span>
+<span class="f2">+</span>
+<span class="f2">+int main(int argc, char **argv)</span>
+<span class="f2">+{</span>
+<span class="f2">+    Logger::linkToDbNative(&quot;otaimgrd&quot;);</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;--- Starting otaimgrd ---&quot;);</span>
+<span class="f2">+</span>
+<span class="f2">+    try</span>
+<span class="f2">+    {</span>
+<span class="f2">+        map&lt;string, string&gt; cfg_maps =</span>
+<span class="f2">+        {</span>
+<span class="f2">+            { CFG_ATTENUATOR_TABLE_NAME, APP_ATTENUATOR_TABLE_NAME },</span>
+<span class="f2">+            { CFG_OA_TABLE_NAME, APP_OA_TABLE_NAME },</span>
+<span class="f2">+            { CFG_OCM_TABLE_NAME, APP_OCM_TABLE_NAME },</span>
+<span class="f2">+            { CFG_OSC_TABLE_NAME, APP_OSC_TABLE_NAME },</span>
+<span class="f2">+            { CFG_OTDR_TABLE_NAME, APP_OTDR_TABLE_NAME }</span>
+<span class="f2">+        };</span>
+<span class="f2">+</span>
+<span class="f2">+        vector&lt;string&gt; cfg_tables;</span>
+<span class="f2">+        for (auto const &amp;it : cfg_maps)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            cfg_tables.push_back(it.first);</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        DBConnector cfgDb(&quot;CONFIG_DB&quot;, 0);</span>
+<span class="f2">+        DBConnector appDb(&quot;APPL_DB&quot;, 0);</span>
+<span class="f2">+        DBConnector stateDb(&quot;STATE_DB&quot;, 0);</span>
+<span class="f2">+</span>
+<span class="f2">+        OtaiMgr otaimgr(&amp;cfgDb, &amp;appDb, &amp;stateDb, cfg_tables, cfg_maps);</span>
+<span class="f2">+</span>
+<span class="f2">+        // TODO: add tables in stateDB which interface depends on to monitor list</span>
+<span class="f2">+        vector&lt;Orch *&gt; cfgOrchList = { &amp;otaimgr };</span>
+<span class="f2">+</span>
+<span class="f2">+        swss::Select s;</span>
+<span class="f2">+        for (Orch *o : cfgOrchList)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            s.addSelectables(o-&gt;getSelectables());</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        while (true)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            Selectable *sel;</span>
+<span class="f2">+            int ret;</span>
+<span class="f2">+</span>
+<span class="f2">+            ret = s.select(&amp;sel, SELECT_TIMEOUT);</span>
+<span class="f2">+            if (ret == Select::ERROR)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_NOTICE(&quot;Error: %s!&quot;, strerror(errno));</span>
+<span class="f2">+                continue;</span>
+<span class="f2">+            }</span>
+<span class="f2">+            if (ret == Select::TIMEOUT)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                otaimgr.doTask();</span>
+<span class="f2">+                continue;</span>
+<span class="f2">+            }</span>
+<span class="f2">+</span>
+<span class="f2">+            auto *c = (Executor *)sel;</span>
+<span class="f2">+            c-&gt;execute();</span>
+<span class="f2">+        }</span>
+<span class="f2">+    }</span>
+<span class="f2">+    catch (const exception &amp;e)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Runtime error: %s&quot;, e.what());</span>
+<span class="f2">+    }</span>
+<span class="f2">+    return -1;</span>
+<span class="f2">+}</span>
+<span class="bold">diff --git a/orchagent/Makefile.am b/orchagent/Makefile.am</span>
+<span class="bold">index 153e91f1..ca4f9e6b 100644</span>
+<span class="bold">--- a/orchagent/Makefile.am</span>
+<span class="bold">+++ b/orchagent/Makefile.am</span>
+<span class="f6">@@ -112,7 +112,16 @@</span> orchagent_SOURCES = \
+             dash/dashaclorch.cpp \
+             dash/dashaclgroupmgr.cpp \
+             dash/dashtagmgr.cpp \
+<span class="f1">-            dash/pbutils.cpp</span>
+<span class="f2">+            dash/pbutils.cpp \</span>
+<span class="f2">+            orchfsm.cpp \</span>
+<span class="f2">+            otaihelper.cpp \</span>
+<span class="f2">+            otaiobjectorch.cpp \</span>
+<span class="f2">+            attenuatororch.cpp \</span>
+<span class="f2">+            oaorch.cpp \</span>
+<span class="f2">+            ocmorch.cpp \</span>
+<span class="f2">+            oscorch.cpp \</span>
+<span class="f2">+            otdrorch.cpp \</span>
+<span class="f2">+            otaiorchdaemon.cpp</span>
+ 
+ orchagent_SOURCES += flex_counter/flex_counter_manager.cpp flex_counter/flex_counter_stat_manager.cpp flex_counter/flow_counter_handler.cpp flex_counter/flowcounterrouteorch.cpp
+ orchagent_SOURCES += debug_counter/debug_counter.cpp debug_counter/drop_counter.cpp
+<span class="bold">diff --git a/orchagent/attenuatororch.cpp b/orchagent/attenuatororch.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..7b18d54e</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/attenuatororch.cpp</span>
+<span class="f6">@@ -0,0 +1,71 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2023 Alibaba Group Holding Limited</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;attenuatororch.h&quot;</span>
+<span class="f2">+#include &quot;sai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;otai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;schema.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+extern sai_otai_attenuator_api_t    *sai_otai_attenuator_api;</span>
+<span class="f2">+</span>
+<span class="f2">+#define ATTENUATOR_NOTIFICATION                         &quot;ATTENUATOR_NOTIFICATION&quot;</span>
+<span class="f2">+#define ATTENUATOR_REPLY                                &quot;ATTENUATOR_REPLY&quot;</span>
+<span class="f2">+#define ATTENUATOR_STAT_FLEX_COUNTER_GROUP              &quot;ATTENUATOR_STAT_COUNTER&quot;</span>
+<span class="f2">+#define ATTENUATOR_COUNTER_DEFAULT_POLLING_INTERVAL_MS  10000 // ms</span>
+<span class="f2">+#define ATTENUATOR_COUNTER_DEFAULT_ENABLED_STATE        true</span>
+<span class="f2">+</span>
+<span class="f2">+AttenuatorOrch::AttenuatorOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names) :</span>
+<span class="f2">+    OtaiObjectOrch(db, table_names, (sai_object_type_t)SAI_OBJECT_TYPE_OTAI_ATTENUATOR)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    string scriptPath = &quot;attenuator_stats.lua&quot;;</span>
+<span class="f2">+    loadFlexCounterScript(scriptPath,</span>
+<span class="f2">+                         ATTENUATOR_STATS_PLUGIN_FIELD,</span>
+<span class="f2">+                         ATTENUATOR_STAT_FLEX_COUNTER_GROUP,</span>
+<span class="f2">+                         StatsMode::READ,</span>
+<span class="f2">+                         ATTENUATOR_COUNTER_DEFAULT_POLLING_INTERVAL_MS,</span>
+<span class="f2">+                         ATTENUATOR_COUNTER_DEFAULT_ENABLED_STATE);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_stateTable = unique_ptr&lt;Table&gt;(new Table(m_stateDb.get(), STATE_ATTENUATOR_TABLE_NAME));</span>
+<span class="f2">+    m_nameMapTable = unique_ptr&lt;Table&gt;(new Table(m_countersDb.get(), COUNTERS_ATTENUATOR_NAME_MAP));</span>
+<span class="f2">+</span>
+<span class="f2">+    m_notificationConsumer = new NotificationConsumer(db, ATTENUATOR_NOTIFICATION);</span>
+<span class="f2">+    auto notifier = new Notifier(m_notificationConsumer, this, ATTENUATOR_NOTIFICATION);</span>
+<span class="f2">+    Orch::addExecutor(notifier);</span>
+<span class="f2">+    m_notificationProducer = new NotificationProducer(db, ATTENUATOR_REPLY);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_createFunc = sai_otai_attenuator_api-&gt;create_otai_attenuator;</span>
+<span class="f2">+    m_removeFunc = sai_otai_attenuator_api-&gt;remove_otai_attenuator;</span>
+<span class="f2">+    m_setFunc = sai_otai_attenuator_api-&gt;set_otai_attenuator_attribute;</span>
+<span class="f2">+    m_getFunc = sai_otai_attenuator_api-&gt;get_otai_attenuator_attribute;</span>
+<span class="f2">+</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void AttenuatorOrch::setFlexCounter(sai_object_id_t id)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    std::unordered_set&lt;std::string&gt; counter_stats;</span>
+<span class="f2">+    for (const auto&amp; it : m_statValues) {</span>
+<span class="f2">+        counter_stats.emplace(it.first);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    m_flex_stat_manager-&gt;setCounterIdList(id, CounterType::OTAI_ATTENUATOR_STATS, counter_stats);</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/attenuatororch.h b/orchagent/attenuatororch.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..8d5b1035</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/attenuatororch.h</span>
+<span class="f6">@@ -0,0 +1,10 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;otaiobjectorch.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+class AttenuatorOrch: public OtaiObjectOrch</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    AttenuatorOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names);</span>
+<span class="f2">+    void setFlexCounter(sai_object_id_t id);</span>
+<span class="f2">+};</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/flex_counter/flex_counter_manager.cpp b/orchagent/flex_counter/flex_counter_manager.cpp</span>
+<span class="bold">index 95fb2817..056826f1 100644</span>
+<span class="bold">--- a/orchagent/flex_counter/flex_counter_manager.cpp</span>
+<span class="bold">+++ b/orchagent/flex_counter/flex_counter_manager.cpp</span>
+<span class="f6">@@ -45,6 +45,11 @@</span> const unordered_map&lt;CounterType, string&gt; FlexCounterManager::counter_id_field_lo
+     { CounterType::TUNNEL,          TUNNEL_COUNTER_ID_LIST },
+     { CounterType::HOSTIF_TRAP,     FLOW_COUNTER_ID_LIST },
+     { CounterType::ROUTE,           FLOW_COUNTER_ID_LIST },
+<span class="f2">+    { CounterType::OTAI_ATTENUATOR_STATS,   ATTENUATOR_COUNTER_STATS_LIST },</span>
+<span class="f2">+    { CounterType::OTAI_OA_STATS,           OA_COUNTER_STATS_LIST },</span>
+<span class="f2">+    { CounterType::OTAI_OCM_STATS,          OCM_COUNTER_STATS_LIST },</span>
+<span class="f2">+    { CounterType::OTAI_OSC_STATS,          OSC_COUNTER_STATS_LIST },</span>
+<span class="f2">+    { CounterType::OTAI_OTDR_STATS,         OTDR_COUNTER_STATS_LIST }</span>
+ };
+ 
+ FlexManagerDirectory g_FlexManagerDirectory;
+<span class="bold">diff --git a/orchagent/flex_counter/flex_counter_manager.h b/orchagent/flex_counter/flex_counter_manager.h</span>
+<span class="bold">index 38bf8290..ba4252c6 100644</span>
+<span class="bold">--- a/orchagent/flex_counter/flex_counter_manager.h</span>
+<span class="bold">+++ b/orchagent/flex_counter/flex_counter_manager.h</span>
+<span class="f6">@@ -32,6 +32,11 @@</span> enum class CounterType
+     TUNNEL,
+     HOSTIF_TRAP,
+     ROUTE,
+<span class="f2">+    OTAI_ATTENUATOR_STATS,</span>
+<span class="f2">+    OTAI_OA_STATS,</span>
+<span class="f2">+    OTAI_OCM_STATS,</span>
+<span class="f2">+    OTAI_OSC_STATS,</span>
+<span class="f2">+    OTAI_OTDR_STATS</span>
+ };
+ 
+ // FlexCounterManager allows users to manage a group of flex counters.
+<span class="bold">diff --git a/orchagent/main.cpp b/orchagent/main.cpp</span>
+<span class="bold">index 0add517a..f21da9a6 100644</span>
+<span class="bold">--- a/orchagent/main.cpp</span>
+<span class="bold">+++ b/orchagent/main.cpp</span>
+<span class="f6">@@ -30,6 +30,9 @@</span> extern &quot;C&quot; {
+ #include &quot;warm_restart.h&quot;
+ #include &quot;gearboxutils.h&quot;
+ 
+<span class="f2">+#include &quot;otaihelper.h&quot;</span>
+<span class="f2">+#include &quot;otaiorchdaemon.h&quot;</span>
+<span class="f2">+</span>
+ using namespace std;
+ using namespace swss;
+ 
+<span class="f6">@@ -173,7 +176,7 @@</span> void getCfgSwitchType(DBConnector *cfgDb, string &amp;switch_type)
+         switch_type = &quot;switch&quot;;
+     }
+ 
+<span class="f1">-    if (switch_type != &quot;voq&quot; &amp;&amp; switch_type != &quot;fabric&quot; &amp;&amp; switch_type != &quot;chassis-packet&quot; &amp;&amp; switch_type != &quot;switch&quot; &amp;&amp; switch_type != &quot;dpu&quot;)</span>
+<span class="f2">+    if (switch_type != &quot;voq&quot; &amp;&amp; switch_type != &quot;fabric&quot; &amp;&amp; switch_type != &quot;chassis-packet&quot; &amp;&amp; switch_type != &quot;switch&quot; &amp;&amp; switch_type != &quot;dpu&quot; &amp;&amp; switch_type != &quot;ot&quot;)</span>
+     {
+         SWSS_LOG_ERROR(&quot;Invalid switch type %s configured&quot;, switch_type.c_str());
+     	//If configured switch type is none of the supported, assume regular switch
+<span class="f6">@@ -444,7 +447,7 @@</span> int main(int argc, char **argv)
+     Recorder::Instance().sairedis.setFileName(sairedis_rec_filename);
+ 
+     /* Initialize sairedis */
+<span class="f1">-    initSaiApi();</span>
+<span class="f2">+    initOtaiApi();</span>
+     initSaiRedis();
+ 
+     /* Initialize remaining recorder parameters  */
+<span class="f6">@@ -736,7 +739,11 @@</span> int main(int argc, char **argv)
+     }
+ 
+     shared_ptr&lt;OrchDaemon&gt; orchDaemon;
+<span class="f1">-    if (gMySwitchType != &quot;fabric&quot;)</span>
+<span class="f2">+    if(gMySwitchType == &quot;ot&quot;)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        orchDaemon = make_shared&lt;OtaiOrchDaemon&gt;(&amp;appl_db, &amp;config_db, &amp;state_db, chassis_app_db.get());</span>
+<span class="f2">+    }</span>
+<span class="f2">+    else if (gMySwitchType != &quot;fabric&quot;)</span>
+     {
+         orchDaemon = make_shared&lt;OrchDaemon&gt;(&amp;appl_db, &amp;config_db, &amp;state_db, chassis_app_db.get(), zmq_server.get());
+         if (gMySwitchType == &quot;voq&quot;)
+<span class="bold">diff --git a/orchagent/oaorch.cpp b/orchagent/oaorch.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..d9ee1d30</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/oaorch.cpp</span>
+<span class="f6">@@ -0,0 +1,72 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2023 Alibaba Group Holding Limited</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;oaorch.h&quot;</span>
+<span class="f2">+#include &quot;sai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;otai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;schema.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+extern sai_otai_oa_api_t    *sai_otai_oa_api;</span>
+<span class="f2">+</span>
+<span class="f2">+#define OA_NOTIFICATION                         &quot;OA_NOTIFICATION&quot;</span>
+<span class="f2">+#define OA_REPLY                                &quot;OA_REPLY&quot;</span>
+<span class="f2">+#define OA_STAT_FLEX_COUNTER_GROUP              &quot;OA_STAT_COUNTER&quot;</span>
+<span class="f2">+#define OA_COUNTER_DEFAULT_POLLING_INTERVAL_MS  10000 // ms</span>
+<span class="f2">+#define OA_COUNTER_DEFAULT_ENABLED_STATE        true</span>
+<span class="f2">+</span>
+<span class="f2">+OaOrch::OaOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names) :</span>
+<span class="f2">+    OtaiObjectOrch(db, table_names, (sai_object_type_t)SAI_OBJECT_TYPE_OTAI_OA)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    string scriptPath = &quot;oa_stats.lua&quot;;</span>
+<span class="f2">+    loadFlexCounterScript(scriptPath,</span>
+<span class="f2">+                         OA_STATS_PLUGIN_FIELD,</span>
+<span class="f2">+                         OA_STAT_FLEX_COUNTER_GROUP,</span>
+<span class="f2">+                         StatsMode::READ,</span>
+<span class="f2">+                         OA_COUNTER_DEFAULT_POLLING_INTERVAL_MS,</span>
+<span class="f2">+                         OA_COUNTER_DEFAULT_ENABLED_STATE);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+    m_stateTable = unique_ptr&lt;Table&gt;(new Table(m_stateDb.get(), STATE_OA_TABLE_NAME));</span>
+<span class="f2">+    m_nameMapTable = unique_ptr&lt;Table&gt;(new Table(m_countersDb.get(), COUNTERS_OA_NAME_MAP));</span>
+<span class="f2">+</span>
+<span class="f2">+    m_notificationConsumer = new NotificationConsumer(db, OA_NOTIFICATION);</span>
+<span class="f2">+    auto notifier = new Notifier(m_notificationConsumer, this, OA_NOTIFICATION);</span>
+<span class="f2">+    Orch::addExecutor(notifier);</span>
+<span class="f2">+    m_notificationProducer = new NotificationProducer(db, OA_REPLY);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_createFunc = sai_otai_oa_api-&gt;create_otai_oa;</span>
+<span class="f2">+    m_removeFunc = sai_otai_oa_api-&gt;remove_otai_oa;</span>
+<span class="f2">+    m_setFunc = sai_otai_oa_api-&gt;set_otai_oa_attribute;</span>
+<span class="f2">+    m_getFunc = sai_otai_oa_api-&gt;get_otai_oa_attribute;</span>
+<span class="f2">+</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OaOrch::setFlexCounter(sai_object_id_t id)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    std::unordered_set&lt;std::string&gt; counter_stats;</span>
+<span class="f2">+    for (const auto&amp; it : m_statValues) {</span>
+<span class="f2">+        counter_stats.emplace(it.first);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    m_flex_stat_manager-&gt;setCounterIdList(id, CounterType::OA_STATS, counter_stats);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/oaorch.h b/orchagent/oaorch.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..7f458cc6</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/oaorch.h</span>
+<span class="f6">@@ -0,0 +1,10 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;otaiobjectorch.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+class OaOrch: public OtaiObjectOrch</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    OaOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names);</span>
+<span class="f2">+    void setFlexCounter(sai_object_id_t id);</span>
+<span class="f2">+};</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/ocmorch.cpp b/orchagent/ocmorch.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..0c0a1d05</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/ocmorch.cpp</span>
+<span class="f6">@@ -0,0 +1,72 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2023 Alibaba Group Holding Limited</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;ocmorch.h&quot;</span>
+<span class="f2">+#include &quot;sai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;otai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;schema.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+extern sai_otai_ocm_api_t    *sai_otai_ocm_api;</span>
+<span class="f2">+</span>
+<span class="f2">+#define OCM_NOTIFICATION                         &quot;OCM_NOTIFICATION&quot;</span>
+<span class="f2">+#define OCM_REPLY                                &quot;OCM_REPLY&quot;</span>
+<span class="f2">+#define OCM_STAT_FLEX_COUNTER_GROUP              &quot;OCM_STAT_COUNTER&quot;</span>
+<span class="f2">+#define OCM_COUNTER_DEFAULT_POLLING_INTERVAL_MS  10000 // ms</span>
+<span class="f2">+#define OCM_COUNTER_DEFAULT_ENABLED_STATE        true</span>
+<span class="f2">+</span>
+<span class="f2">+OcmOrch::OcmOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names) :</span>
+<span class="f2">+    OtaiObjectOrch(db, table_names, (sai_object_type_t)SAI_OBJECT_TYPE_OTAI_OCM)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    string scriptPath = &quot;ocm_stats.lua&quot;;</span>
+<span class="f2">+    loadFlexCounterScript(scriptPath,</span>
+<span class="f2">+                         OCM_STATS_PLUGIN_FIELD,</span>
+<span class="f2">+                         OCM_STAT_FLEX_COUNTER_GROUP,</span>
+<span class="f2">+                         StatsMode::READ,</span>
+<span class="f2">+                         OCM_COUNTER_DEFAULT_POLLING_INTERVAL_MS,</span>
+<span class="f2">+                         OCM_COUNTER_DEFAULT_ENABLED_STATE);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+    m_stateTable = unique_ptr&lt;Table&gt;(new Table(m_stateDb.get(), STATE_OCM_TABLE_NAME));</span>
+<span class="f2">+    m_nameMapTable = unique_ptr&lt;Table&gt;(new Table(m_countersDb.get(), COUNTERS_OCM_NAME_MAP));</span>
+<span class="f2">+</span>
+<span class="f2">+    m_notificationConsumer = new NotificationConsumer(db, OCM_NOTIFICATION);</span>
+<span class="f2">+    auto notifier = new Notifier(m_notificationConsumer, this, OCM_NOTIFICATION);</span>
+<span class="f2">+    Orch::addExecutor(notifier);</span>
+<span class="f2">+    m_notificationProducer = new NotificationProducer(db, OCM_REPLY);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_createFunc = sai_otai_ocm_api-&gt;create_otai_ocm;</span>
+<span class="f2">+    m_removeFunc = sai_otai_ocm_api-&gt;remove_otai_ocm;</span>
+<span class="f2">+    m_setFunc = sai_otai_ocm_api-&gt;set_otai_ocm_attribute;</span>
+<span class="f2">+    m_getFunc = sai_otai_ocm_api-&gt;get_otai_ocm_attribute;</span>
+<span class="f2">+</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OcmOrch::setFlexCounter(sai_object_id_t id)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    std::unordered_set&lt;std::string&gt; counter_stats;</span>
+<span class="f2">+    for (const auto&amp; it : m_statValues) {</span>
+<span class="f2">+        counter_stats.emplace(it.first);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    m_flex_stat_manager-&gt;setCounterIdList(id, CounterType::OCM_STATS, counter_stats);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/ocmorch.h b/orchagent/ocmorch.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..f16e09b3</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/ocmorch.h</span>
+<span class="f6">@@ -0,0 +1,10 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;otaiobjectorch.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+class OcmOrch: public OtaiObjectOrch</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    OcmOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names);</span>
+<span class="f2">+    void setFlexCounter(sai_object_id_t id);</span>
+<span class="f2">+};</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/orchfsm.cpp b/orchagent/orchfsm.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..bbd3390a</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/orchfsm.cpp</span>
+<span class="f6">@@ -0,0 +1,34 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2023 Alibaba Group Holding Limited</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;orchfsm.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+OrchFSM &amp;OrchFSM::getInstance()</span>
+<span class="f2">+{</span>
+<span class="f2">+    static OrchFSM m_orchStateInst;</span>
+<span class="f2">+    return m_orchStateInst;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OrchFSM::setState(OrchState state)</span>
+<span class="f2">+{</span>
+<span class="f2">+    getInstance().m_state = state;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+OrchState OrchFSM::getState()</span>
+<span class="f2">+{</span>
+<span class="f2">+    return getInstance().m_state;</span>
+<span class="f2">+}</span>
+<span class="bold">diff --git a/orchagent/orchfsm.h b/orchagent/orchfsm.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..b227e7f2</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/orchfsm.h</span>
+<span class="f6">@@ -0,0 +1,26 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+#include &lt;atomic&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+enum OrchState {</span>
+<span class="f2">+    ORCH_STATE_NOT_READY,</span>
+<span class="f2">+    ORCH_STATE_READY,</span>
+<span class="f2">+    ORCH_STATE_WORK,</span>
+<span class="f2">+    ORCH_STATE_PAUSE,</span>
+<span class="f2">+};</span>
+<span class="f2">+</span>
+<span class="f2">+class OrchFSM</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    static OrchFSM &amp;getInstance();</span>
+<span class="f2">+    static void setState(OrchState state);</span>
+<span class="f2">+    static OrchState getState();</span>
+<span class="f2">+</span>
+<span class="f2">+private:</span>
+<span class="f2">+    OrchFSM() = default;</span>
+<span class="f2">+    ~OrchFSM() = default;</span>
+<span class="f2">+</span>
+<span class="f2">+    //TODO: Should sync state with line card later.</span>
+<span class="f2">+    //std::atomic&lt;OrchState&gt; m_state = { ORCH_STATE_NOT_READY };</span>
+<span class="f2">+    std::atomic&lt;OrchState&gt; m_state = { ORCH_STATE_WORK };</span>
+<span class="f2">+};</span>
+<span class="f2">+</span>
+<span class="bold">diff --git a/orchagent/oscorch.cpp b/orchagent/oscorch.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..a258af94</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/oscorch.cpp</span>
+<span class="f6">@@ -0,0 +1,72 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2023 Alibaba Group Holding Limited</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;oscorch.h&quot;</span>
+<span class="f2">+#include &quot;sai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;otai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;schema.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+extern sai_otai_osc_api_t    *sai_otai_osc_api;</span>
+<span class="f2">+</span>
+<span class="f2">+#define OSC_NOTIFICATION                         &quot;OSC_NOTIFICATION&quot;</span>
+<span class="f2">+#define OSC_REPLY                                &quot;OSC_REPLY&quot;</span>
+<span class="f2">+#define OSC_STAT_FLEX_COUNTER_GROUP              &quot;OSC_STAT_COUNTER&quot;</span>
+<span class="f2">+#define OSC_COUNTER_DEFAULT_POLLING_INTERVAL_MS  10000 // ms</span>
+<span class="f2">+#define OSC_COUNTER_DEFAULT_ENABLED_STATE        true</span>
+<span class="f2">+</span>
+<span class="f2">+OscOrch::OscOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names) :</span>
+<span class="f2">+    OtaiObjectOrch(db, table_names, (sai_object_type_t)SAI_OBJECT_TYPE_OTAI_OSC)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    string scriptPath = &quot;osc_stats.lua&quot;;</span>
+<span class="f2">+    loadFlexCounterScript(scriptPath,</span>
+<span class="f2">+                         OSC_STATS_PLUGIN_FIELD,</span>
+<span class="f2">+                         OSC_STAT_FLEX_COUNTER_GROUP,</span>
+<span class="f2">+                         StatsMode::READ,</span>
+<span class="f2">+                         OSC_COUNTER_DEFAULT_POLLING_INTERVAL_MS,</span>
+<span class="f2">+                         OSC_COUNTER_DEFAULT_ENABLED_STATE);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+    m_stateTable = unique_ptr&lt;Table&gt;(new Table(m_stateDb.get(), STATE_OSC_TABLE_NAME));</span>
+<span class="f2">+    m_nameMapTable = unique_ptr&lt;Table&gt;(new Table(m_countersDb.get(), COUNTERS_OSC_NAME_MAP));</span>
+<span class="f2">+</span>
+<span class="f2">+    m_notificationConsumer = new NotificationConsumer(db, OSC_NOTIFICATION);</span>
+<span class="f2">+    auto notifier = new Notifier(m_notificationConsumer, this, OSC_NOTIFICATION);</span>
+<span class="f2">+    Orch::addExecutor(notifier);</span>
+<span class="f2">+    m_notificationProducer = new NotificationProducer(db, OSC_REPLY);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_createFunc = sai_otai_osc_api-&gt;create_otai_osc;</span>
+<span class="f2">+    m_removeFunc = sai_otai_osc_api-&gt;remove_otai_osc;</span>
+<span class="f2">+    m_setFunc = sai_otai_osc_api-&gt;set_otai_osc_attribute;</span>
+<span class="f2">+    m_getFunc = sai_otai_osc_api-&gt;get_otai_osc_attribute;</span>
+<span class="f2">+</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OscOrch::setFlexCounter(sai_object_id_t id)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    std::unordered_set&lt;std::string&gt; counter_stats;</span>
+<span class="f2">+    for (const auto&amp; it : m_statValues) {</span>
+<span class="f2">+        counter_stats.emplace(it.first);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    m_flex_stat_manager-&gt;setCounterIdList(id, CounterType::OSC_STATS, counter_stats);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/oscorch.h b/orchagent/oscorch.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..490d3e25</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/oscorch.h</span>
+<span class="f6">@@ -0,0 +1,10 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;otaiobjectorch.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+class OscOrch: public OtaiObjectOrch</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    OscOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names);</span>
+<span class="f2">+    void setFlexCounter(sai_object_id_t id);</span>
+<span class="f2">+};</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/otaihelper.cpp b/orchagent/otaihelper.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..92bf73e3</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otaihelper.cpp</span>
+<span class="f6">@@ -0,0 +1,66 @@</span>
+<span class="f2">+extern &quot;C&quot; {</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;sai.h&quot;</span>
+<span class="f2">+#include &quot;saistatus.h&quot;</span>
+<span class="f2">+#include &quot;saiextensions.h&quot;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;string.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;map&gt;</span>
+<span class="f2">+#include &lt;logger.h&gt;</span>
+<span class="f2">+#include &lt;sairedis.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;otaihelper.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+</span>
+<span class="f2">+/* Initialize all otai api pointers */</span>
+<span class="f2">+extern sai_switch_api_t*           sai_switch_api;</span>
+<span class="f2">+extern sai_router_interface_api_t* sai_router_intfs_api;</span>
+<span class="f2">+sai_otai_attenuator_api_t*  sai_otai_attenuator_api;</span>
+<span class="f2">+sai_otai_oa_api_t*          sai_otai_oa_api;</span>
+<span class="f2">+sai_otai_ocm_api_t*         sai_otai_ocm_api;</span>
+<span class="f2">+sai_otai_osc_api_t*         sai_otai_osc_api;</span>
+<span class="f2">+sai_otai_otdr_api_t*        sai_otai_otdr_api;</span>
+<span class="f2">+</span>
+<span class="f2">+</span>
+<span class="f2">+extern const char *test_profile_get_value (</span>
+<span class="f2">+    _In_ sai_switch_profile_id_t profile_id,</span>
+<span class="f2">+    _In_ const char *variable);</span>
+<span class="f2">+</span>
+<span class="f2">+extern int test_profile_get_next_value (</span>
+<span class="f2">+    _In_ sai_switch_profile_id_t profile_id,</span>
+<span class="f2">+    _Out_ const char **variable,</span>
+<span class="f2">+    _Out_ const char **value);</span>
+<span class="f2">+</span>
+<span class="f2">+</span>
+<span class="f2">+void initOtaiApi()</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_service_method_table_t services = {</span>
+<span class="f2">+        test_profile_get_value,</span>
+<span class="f2">+        test_profile_get_next_value</span>
+<span class="f2">+    };</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_api_initialize(0, (const sai_service_method_table_t *)&amp;services);</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_api_query(SAI_API_SWITCH,                       (void **)&amp;sai_switch_api);</span>
+<span class="f2">+    sai_api_query(SAI_API_ROUTER_INTERFACE,             (void **)&amp;sai_router_intfs_api);</span>
+<span class="f2">+    sai_api_query((sai_api_t)SAI_API_OTAI_ATTENUATOR,   (void **)&amp;sai_otai_attenuator_api);</span>
+<span class="f2">+    sai_api_query((sai_api_t)SAI_API_OTAI_OA,           (void **)&amp;sai_otai_oa_api);</span>
+<span class="f2">+    sai_api_query((sai_api_t)SAI_API_OTAI_OCM,          (void **)&amp;sai_otai_ocm_api);</span>
+<span class="f2">+    sai_api_query((sai_api_t)SAI_API_OTAI_OSC,          (void **)&amp;sai_otai_osc_api);</span>
+<span class="f2">+    sai_api_query((sai_api_t)SAI_API_OTAI_OTDR,         (void **)&amp;sai_otai_otdr_api);</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_log_set(SAI_API_SWITCH,                         SAI_LOG_LEVEL_NOTICE);</span>
+<span class="f2">+    sai_log_set(SAI_API_ROUTER_INTERFACE,               SAI_LOG_LEVEL_NOTICE);</span>
+<span class="f2">+    sai_log_set((sai_api_t)SAI_API_OTAI_ATTENUATOR,     SAI_LOG_LEVEL_NOTICE);</span>
+<span class="f2">+    sai_log_set((sai_api_t)SAI_API_OTAI_OA,             SAI_LOG_LEVEL_NOTICE);</span>
+<span class="f2">+    sai_log_set((sai_api_t)SAI_API_OTAI_OCM,            SAI_LOG_LEVEL_NOTICE);</span>
+<span class="f2">+    sai_log_set((sai_api_t)SAI_API_OTAI_OSC,            SAI_LOG_LEVEL_NOTICE);</span>
+<span class="f2">+    sai_log_set((sai_api_t)SAI_API_OTAI_OTDR,           SAI_LOG_LEVEL_NOTICE);</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/otaihelper.h b/orchagent/otaihelper.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..a537d7a4</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otaihelper.h</span>
+<span class="f6">@@ -0,0 +1,3 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+void initOtaiApi();</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/otaiobjectorch.cpp b/orchagent/otaiobjectorch.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..60a417cb</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otaiobjectorch.cpp</span>
+<span class="f6">@@ -0,0 +1,658 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2023 Alibaba Group Holding Limited</span>
+<span class="f2">+ * Copyright (c) 2023 Accelink Technologies Co., Ltd.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;algorithm&gt;</span>
+<span class="f2">+#include &lt;fstream&gt;</span>
+<span class="f2">+#include &lt;iostream&gt;</span>
+<span class="f2">+#include &lt;string&gt;</span>
+<span class="f2">+#include &lt;inttypes.h&gt;</span>
+<span class="f2">+#include &lt;stdexcept&gt;</span>
+<span class="f2">+#include &lt;sys/time.h&gt;</span>
+<span class="f2">+#include &quot;timestamp.h&quot;</span>
+<span class="f2">+#include &quot;otaiobjectorch.h&quot;</span>
+<span class="f2">+#include &quot;sai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;flexcounterorch.h&quot;</span>
+<span class="f2">+#include &quot;converter.h&quot;</span>
+<span class="f2">+#include &quot;subscriberstatetable.h&quot;</span>
+<span class="f2">+#include &quot;tokenize.h&quot;</span>
+<span class="f2">+#include &quot;logger.h&quot;</span>
+<span class="f2">+#include &quot;consumerstatetable.h&quot;</span>
+<span class="f2">+#include &quot;orchfsm.h&quot;</span>
+<span class="f2">+#include &quot;redisapi.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+extern sai_object_id_t gSwitchId;</span>
+<span class="f2">+extern FlexManagerDirectory g_FlexManagerDirectory;</span>
+<span class="f2">+</span>
+<span class="f2">+void OtaiObjectOrch::localDataInit(DBConnector* db)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    const char *objectName = sai_metadata_get_object_type_name(m_objectType);</span>
+<span class="f2">+    if (objectName == NULL)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Invalid object type %u&quot;, m_objectType);</span>
+<span class="f2">+        return;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    m_objectName = objectName;</span>
+<span class="f2">+    m_stateDb = shared_ptr&lt;DBConnector&gt;(new DBConnector(&quot;STATE_DB&quot;, 0));</span>
+<span class="f2">+    m_countersDb = shared_ptr&lt;DBConnector&gt;(new DBConnector(&quot;COUNTERS_DB&quot;, 0));</span>
+<span class="f2">+    m_vid2NameTable = unique_ptr&lt;Table&gt;(new Table(m_countersDb.get(), &quot;VID2NAME&quot;));</span>
+<span class="f2">+</span>
+<span class="f2">+    m_count = 0;</span>
+<span class="f2">+</span>
+<span class="f2">+    /* Initialize local data from meta data, save the short names to match openconfig keys */</span>
+<span class="f2">+    const sai_object_type_info_t* oi = sai_metadata_all_object_type_infos[m_objectType];</span>
+<span class="f2">+    for (size_t index = 0; index &lt; oi-&gt;enummetadata-&gt;valuescount; index++)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        string name(oi-&gt;enummetadata-&gt;valuesshortnames[index]);</span>
+<span class="f2">+        std::transform(name.begin(), name.end(), name.begin(), ::tolower);</span>
+<span class="f2">+        std::replace(name.begin(), name.end(), '_', '-');</span>
+<span class="f2">+        sai_attr_id_t id = oi-&gt;enummetadata-&gt;values[index];</span>
+<span class="f2">+        const sai_attr_metadata_t * const attr = oi-&gt;attrmetadata[index];</span>
+<span class="f2">+        if (attr-&gt;ismandatoryoncreate)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            m_mandatoryAttrs[name] = id;</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        if (attr-&gt;iscreateonly)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            m_createonlyAttrs[name] = id;</span>
+<span class="f2">+        }</span>
+<span class="f2">+        else if (attr-&gt;iscreateandset)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            m_createandsetAttrs[name] = id;</span>
+<span class="f2">+        }</span>
+<span class="f2">+        else if (attr-&gt;isreadonly)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            m_readonlyAttrs[name] = id;</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        if (attr-&gt;isenum)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            for (size_t i = 0; i &lt; attr-&gt;enummetadata-&gt;valuescount; i++)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                m_enumValues[attr-&gt;enummetadata-&gt;valuesshortnames[i]] = attr-&gt;enummetadata-&gt;valuesnames[i];</span>
+<span class="f2">+            }</span>
+<span class="f2">+        }</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    /* Save stats values for flex counter */</span>
+<span class="f2">+    for (size_t index = 0; index &lt; oi-&gt;statenum-&gt;valuescount; index++)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        m_statValues[oi-&gt;statenum-&gt;valuesnames[index]] = oi-&gt;statenum-&gt;values[index];</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    /* Set create and set attributes to state cache list */</span>
+<span class="f2">+    for (auto it : m_createandsetAttrs)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        m_needToCache.insert(it.first);</span>
+<span class="f2">+    }</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+OtaiObjectOrch::OtaiObjectOrch(DBConnector* db,</span>
+<span class="f2">+    const vector&lt;string&gt;&amp; table_names,</span>
+<span class="f2">+    sai_object_type_t obj_type)</span>
+<span class="f2">+    : Orch(db, table_names), m_objectType(obj_type)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    localDataInit(db);</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+OtaiObjectOrch::OtaiObjectOrch(DBConnector* db,</span>
+<span class="f2">+    vector&lt;TableConnector&gt; &amp;connectors,</span>
+<span class="f2">+    sai_object_type_t obj_type)</span>
+<span class="f2">+    : Orch(connectors), m_objectType(obj_type)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    localDataInit(db);</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OtaiObjectOrch::doTask(NotificationConsumer&amp; consumer)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    std::string op;</span><span class="b1"> </span>
+<span class="f2">+    std::string data;</span>
+<span class="f2">+    sai_status_t status;</span>
+<span class="f2">+    std::vector&lt;swss::FieldValueTuple&gt; values;</span>
+<span class="f2">+    sai_object_id_t oid = SAI_NULL_OBJECT_ID;</span>
+<span class="f2">+</span>
+<span class="f2">+    if (&amp;consumer != m_notificationConsumer)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        return;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    if (OrchFSM::getState() != ORCH_STATE_WORK)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        goto error;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    consumer.pop(op, data, values);</span>
+<span class="f2">+</span>
+<span class="f2">+    if (m_key2oid.find(data) == m_key2oid.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to get oid, key=%s|%s&quot;, m_objectName.c_str(), data.c_str());</span>
+<span class="f2">+        goto error;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    oid = m_key2oid[data];</span>
+<span class="f2">+</span>
+<span class="f2">+    if (op == &quot;set&quot;)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        for (unsigned i = 0; i &lt; values.size(); i++)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            string &amp;value = fvValue(values[i]);</span>
+<span class="f2">+            string &amp;field = fvField(values[i]);</span>
+<span class="f2">+</span>
+<span class="f2">+            if (m_irrecoverableAttrs.find(field) == m_irrecoverableAttrs.end())</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_ERROR(&quot;Cannot use redis-channel to set recoverable attr, %s&quot;,</span>
+<span class="f2">+                               field.c_str());</span>
+<span class="f2">+                goto error;</span>
+<span class="f2">+            }</span>
+<span class="f2">+</span><span class="b1"> </span>
+<span class="f2">+            status = setOtaiObjectAttr(oid, field, value);</span>
+<span class="f2">+            if (status != SAI_STATUS_SUCCESS)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_ERROR(&quot;Failed to set attr, field=%s, value=%s, status=%d&quot;,</span>
+<span class="f2">+                    field.c_str(), value.c_str(), status);</span>
+<span class="f2">+                goto error;</span>
+<span class="f2">+            }</span>
+<span class="f2">+        }</span>
+<span class="f2">+        op = &quot;SUCCESS&quot;;</span>
+<span class="f2">+        m_notificationProducer-&gt;send(op, data, values);</span>
+<span class="f2">+</span>
+<span class="f2">+        return;</span><span class="b1"> </span>
+<span class="f2">+    }</span>
+<span class="f2">+    else if (op == &quot;get&quot;)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        for (unsigned i = 0; i &lt; values.size(); i++)</span>
+<span class="f2">+        {</span><span class="b1">   </span>
+<span class="f2">+            string &amp;value = fvValue(values[i]);</span>
+<span class="f2">+            string &amp;field = fvField(values[i]);</span>
+<span class="f2">+</span>
+<span class="f2">+            status = getOtaiObjectAttr(oid, field, value);</span>
+<span class="f2">+            if (status != SAI_STATUS_SUCCESS)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_ERROR(&quot;Failed to get attr, field=%s, status=%d&quot;,</span>
+<span class="f2">+                    field.c_str(), status);</span>
+<span class="f2">+                goto error;</span>
+<span class="f2">+            }</span>
+<span class="f2">+         }</span>
+<span class="f2">+         op = &quot;SUCCESS&quot;;</span>
+<span class="f2">+         m_notificationProducer-&gt;send(op, data, values);</span>
+<span class="f2">+</span>
+<span class="f2">+         return;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+error:</span>
+<span class="f2">+    op = &quot;FAILED&quot;;</span>
+<span class="f2">+    m_notificationProducer-&gt;send(op, data, values);</span>
+<span class="f2">+</span>
+<span class="f2">+    return;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+bool OtaiObjectOrch::createOtaiObject(const string &amp;key)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_status_t status;</span>
+<span class="f2">+    sai_attribute_t attr;</span>
+<span class="f2">+    vector&lt;sai_attribute_t&gt; attrs;</span>
+<span class="f2">+    sai_object_id_t oid;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, string&gt; &amp;createonly_attrs = m_key2createonlyAttrs[key];</span>
+<span class="f2">+    for (auto fv: createonly_attrs)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        if (translateOtaiObjectAttr(fv.first, fv.second, attr) == false)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            SWSS_LOG_ERROR(&quot;Failed to translate attr, %s|%s&quot;,</span>
+<span class="f2">+                           m_objectName.c_str(), fv.first.c_str());</span>
+<span class="f2">+            continue;</span>
+<span class="f2">+        }</span>
+<span class="f2">+        attrs.push_back(attr);</span><span class="b1"> </span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    addExtraAttrsOnCreate(attrs);</span>
+<span class="f2">+</span>
+<span class="f2">+    status = m_createFunc(&amp;oid, gSwitchId, static_cast&lt;uint32_t&gt;(attrs.size()), attrs.data());</span>
+<span class="f2">+    if (status != SAI_STATUS_SUCCESS)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to create %s|%s, rv=%d&quot;, m_objectName.c_str(), key.c_str(), status);</span>
+<span class="f2">+        return false;</span>
+<span class="f2">+    }</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;Create %s|%s oid:%&quot; PRIx64, m_objectName.c_str(), key.c_str(), oid);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_key2oid[key] = oid;</span>
+<span class="f2">+</span>
+<span class="f2">+    if (!setOtaiObjectAttrs(key, m_key2createandsetAttrs[key]))</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to set fields, %s&quot;, key.c_str());</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    FieldValueTuple tuple(sai_serialize_object_id(oid), key);</span>
+<span class="f2">+    vector&lt;FieldValueTuple&gt; fields;</span>
+<span class="f2">+    fields.push_back(tuple);</span>
+<span class="f2">+    m_nameMapTable-&gt;set(&quot;&quot;, fields);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_vid2NameTable-&gt;set(&quot;&quot;, fields);</span>
+<span class="f2">+</span>
+<span class="f2">+    setFlexCounter(oid);</span>
+<span class="f2">+</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;Initialized %s&quot;, key.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+    return true;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OtaiObjectOrch::publishOperationResult(string channel, sai_status_t status_code, string message)</span><span class="b1"> </span>
+<span class="f2">+{</span>
+<span class="f2">+    swss::NotificationProducer notifications(m_stateDb.get(), channel);</span>
+<span class="f2">+    std::vector&lt;swss::FieldValueTuple&gt; entry;</span>
+<span class="f2">+    auto sent_clients = notifications.send(to_string(status_code), message, entry);</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;publishresult %d, %s to %ld client on channel %s&quot;,</span><span class="b1"> </span>
+<span class="f2">+            status_code, message.c_str(), sent_clients, channel.c_str());</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+bool OtaiObjectOrch::setOtaiObjectAttrs(const string&amp; key, map&lt;string, string&gt;&amp; field_values, string operation_id)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    bool rv = true;</span>
+<span class="f2">+</span>
+<span class="f2">+    if (OrchFSM::getState() != ORCH_STATE_WORK)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Orch isn't in working status&quot;);</span>
+<span class="f2">+        return false;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    if (m_key2oid.find(key) == m_key2oid.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to get oid, key=%s|%s&quot;, m_objectName.c_str(), key.c_str());</span>
+<span class="f2">+        return false;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    string error_msg;</span>
+<span class="f2">+    sai_status_t status = SAI_STATUS_SUCCESS;</span>
+<span class="f2">+</span>
+<span class="f2">+    for (auto fv : field_values)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        string channel = fv.first + &quot;-&quot; + operation_id;</span>
+<span class="f2">+</span>
+<span class="f2">+        SWSS_LOG_NOTICE(&quot;set field=%s value=%s&quot;, fv.first.c_str(), fv.second.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+        status = setOtaiObjectAttr(m_key2oid[key], fv.first, fv.second);</span>
+<span class="f2">+        if (status != SAI_STATUS_SUCCESS)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            SWSS_LOG_ERROR(&quot;Failed to set %s|%s %s to %s, status=%d&quot;,</span>
+<span class="f2">+                m_objectName.c_str(),</span>
+<span class="f2">+                key.c_str(),</span>
+<span class="f2">+                fv.first.c_str(),</span>
+<span class="f2">+                fv.second.c_str(),</span>
+<span class="f2">+                status);</span>
+<span class="f2">+</span>
+<span class="f2">+            rv = false;</span>
+<span class="f2">+            error_msg = &quot;Failed to set &quot; + key + &quot; &quot; + fv.first + &quot; to &quot; + fv.second;</span>
+<span class="f2">+        }</span>
+<span class="f2">+        else</span>
+<span class="f2">+        {</span>
+<span class="f2">+            SWSS_LOG_NOTICE(&quot;Set %s|%s %s to %s&quot;,</span>
+<span class="f2">+                m_objectName.c_str(),</span>
+<span class="f2">+                key.c_str(),</span>
+<span class="f2">+                fv.first.c_str(),</span>
+<span class="f2">+                fv.second.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+            if (m_needToCache.find(fv.first) != m_needToCache.end())</span>
+<span class="f2">+            {</span>
+<span class="f2">+                vector&lt;FieldValueTuple&gt; fvs;</span>
+<span class="f2">+                fvs.push_back(fv);</span>
+<span class="f2">+                m_stateTable-&gt;set(key, fvs);</span>
+<span class="f2">+            }</span>
+<span class="f2">+            error_msg = &quot;Set &quot; + key + &quot; &quot; + fv.first + &quot; to &quot; + fv.second;</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        publishOperationResult(channel, status, error_msg);</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    return rv;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+bool OtaiObjectOrch::translateOtaiObjectAttr(</span>
+<span class="f2">+    _In_ const string &amp;field,</span>
+<span class="f2">+    _In_ const string &amp;value,</span>
+<span class="f2">+    _Out_ sai_attribute_t &amp;attr)</span>
+<span class="f2">+{</span>
+<span class="f2">+    if (m_createandsetAttrs.find(field) != m_createandsetAttrs.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        attr.id = m_createandsetAttrs[field];</span>
+<span class="f2">+    }</span>
+<span class="f2">+    else if (m_createonlyAttrs.find(field) != m_createonlyAttrs.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        attr.id = m_createonlyAttrs[field];</span>
+<span class="f2">+    }</span>
+<span class="f2">+    else</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Unrecognized attr, %s|%s&quot;, m_objectName.c_str(), field.c_str());</span>
+<span class="f2">+        return false;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    auto meta = sai_metadata_get_attr_metadata(m_objectType, attr.id);</span>
+<span class="f2">+    if (meta == NULL)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_THROW(&quot;Unable to get %s metadata, attr=%d&quot;, m_objectName.c_str(), attr.id);</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    /* Value translate */</span>
+<span class="f2">+    string newValue(value);</span>
+<span class="f2">+    if (m_enumValues.find(value) != m_enumValues.end()) {</span>
+<span class="f2">+        newValue = m_enumValues[value];</span>
+<span class="f2">+        SWSS_LOG_NOTICE(&quot;translateOtaiObjectAttr, field = %s, value = %s&quot;, field.c_str(), newValue.c_str());</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    try</span>
+<span class="f2">+    {</span>
+<span class="f2">+        sai_deserialize_attr_value(newValue, *meta, attr);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    catch (...)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Unrecongnized attr value, %s|%s|%s&quot;,</span>
+<span class="f2">+                       m_objectName.c_str(), field.c_str(), newValue.c_str());</span>
+<span class="f2">+        return false;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    return true;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+sai_status_t OtaiObjectOrch::setOtaiObjectAttr(</span>
+<span class="f2">+    sai_object_id_t oid,</span>
+<span class="f2">+    const string &amp;field,</span>
+<span class="f2">+    const string &amp;value)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_status_t status;</span>
+<span class="f2">+    sai_attribute_t attr;</span>
+<span class="f2">+</span>
+<span class="f2">+    if (m_createandsetAttrs.find(field) == m_createandsetAttrs.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Unsupported attr, %s|%s&quot;, m_objectName.c_str(), field.c_str());</span>
+<span class="f2">+        return SAI_STATUS_FAILURE;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    attr.id = m_createandsetAttrs[field];</span>
+<span class="f2">+</span>
+<span class="f2">+    if (translateOtaiObjectAttr(field, value, attr) == false)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to translate attr, %s|%s&quot;,</span>
+<span class="f2">+                       m_objectName.c_str(), field.c_str());</span>
+<span class="f2">+        return SAI_STATUS_FAILURE;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    status = m_setFunc(oid, &amp;attr);</span>
+<span class="f2">+    if (status != SAI_STATUS_SUCCESS)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to set %s attr, field=%s, value=%s, status=%d&quot;,</span>
+<span class="f2">+                       m_objectName.c_str(), field.c_str(), value.c_str(), status);</span>
+<span class="f2">+        return status;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;Set %s attr, pid:%&quot; PRIx64 &quot; field=%s, value=%s&quot;,</span>
+<span class="f2">+                     m_objectName.c_str(), oid, field.c_str(), value.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+    return SAI_STATUS_SUCCESS;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+sai_status_t OtaiObjectOrch::getOtaiObjectAttr(sai_object_id_t oid, const string &amp;field, string &amp;value)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_status_t status;</span>
+<span class="f2">+    sai_attribute_t attr;</span>
+<span class="f2">+    if (m_readonlyAttrs.find(field) == m_readonlyAttrs.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Unsupported attr, %s|%s&quot;, m_objectName.c_str(), field.c_str());</span>
+<span class="f2">+        return SAI_STATUS_FAILURE;</span>
+<span class="f2">+    }</span>
+<span class="f2">+    attr.id = m_readonlyAttrs[field];</span>
+<span class="f2">+</span>
+<span class="f2">+    status = m_getFunc(oid, 1, &amp;attr);</span>
+<span class="f2">+    if (status != SAI_STATUS_SUCCESS)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to get %s attr, field=%s, status=%d&quot;,</span>
+<span class="f2">+                       m_objectName.c_str(), field.c_str(), status);</span>
+<span class="f2">+        return status;</span>
+<span class="f2">+    }</span>
+<span class="f2">+    auto meta = sai_metadata_get_attr_metadata(m_objectType, attr.id);</span>
+<span class="f2">+    if (meta == NULL)</span>
+<span class="f2">+    {</span><span class="b1">   </span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Unable to get %s metadata, attr=%d&quot;, m_objectName.c_str(), attr.id);</span>
+<span class="f2">+        return SAI_STATUS_FAILURE;</span><span class="b1"> </span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    try</span>
+<span class="f2">+    {</span>
+<span class="f2">+        value = sai_serialize_attr_value(*meta, attr, false);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    catch (...)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_ERROR(&quot;Failed to serialize attr value, %s|%s|%s&quot;,</span>
+<span class="f2">+                       m_objectName.c_str(), field.c_str(), value.c_str());</span>
+<span class="f2">+        return SAI_STATUS_FAILURE;</span>
+<span class="f2">+    }</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;Get %s attr successed, pid:%&quot; PRIx64 &quot; field=%s, value=%s&quot;,</span>
+<span class="f2">+                    m_objectName.c_str(), oid, field.c_str(), value.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+    return SAI_STATUS_SUCCESS;</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OtaiObjectOrch::doTask(Consumer &amp;consumer)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    if (OrchFSM::getState() &lt;= ORCH_STATE_READY)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        return;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    // TODO: The flex counter orch for OTAI would be implemented later.</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    if (!gFlexCounterOrch-&gt;checkFlexCounterInit())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        return;</span>
+<span class="f2">+    }</span>
+<span class="f2">+#endif</span>
+<span class="f2">+</span>
+<span class="f2">+    if (consumer.getDbName() == &quot;STATE_DB&quot;)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        doStateTask(consumer);</span>
+<span class="f2">+        return;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    auto it = consumer.m_toSync.begin();</span>
+<span class="f2">+    while (it != consumer.m_toSync.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        auto &amp;t = it-&gt;second;</span>
+<span class="f2">+</span>
+<span class="f2">+        string key = kfvKey(t);</span>
+<span class="f2">+        string op = kfvOp(t);</span>
+<span class="f2">+</span>
+<span class="f2">+        SWSS_LOG_NOTICE(&quot;doTask: Table = %s, key = %s, op = %s&quot;, m_objectName.c_str(), key.c_str(), op.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+        if (op == SET_COMMAND)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            string operation_id = key;</span>
+<span class="f2">+</span>
+<span class="f2">+            map&lt;string, string&gt; createonly_attrs;</span>
+<span class="f2">+            map&lt;string, string&gt; createandset_attrs;</span>
+<span class="f2">+</span><span class="b1"> </span>
+<span class="f2">+            for (auto i : kfvFieldsValues(t))</span>
+<span class="f2">+            {</span>
+<span class="f2">+                if (m_createonlyAttrs.find(fvField(i)) != m_createonlyAttrs.end())</span>
+<span class="f2">+                {</span>
+<span class="f2">+                    createonly_attrs[fvField(i)] = fvValue(i);</span>
+<span class="f2">+                }</span>
+<span class="f2">+                else if (m_createandsetAttrs.find(fvField(i)) != m_createandsetAttrs.end())</span>
+<span class="f2">+                {</span>
+<span class="f2">+                    createandset_attrs[fvField(i)] = fvValue(i);</span>
+<span class="f2">+                    SWSS_LOG_NOTICE(&quot;OtaiObjectOrch::doTask, key=%s, value=%s&quot;, fvField(i).c_str(), fvValue(i).c_str());</span>
+<span class="f2">+                }</span>
+<span class="f2">+            }</span>
+<span class="f2">+</span>
+<span class="f2">+            if (m_keys.find(key) == m_keys.end())</span>
+<span class="f2">+            {</span>
+<span class="f2">+                //Add create only attribute.</span>
+<span class="f2">+                m_keys.insert(key);</span>
+<span class="f2">+                m_key2createandsetAttrs[key] = createandset_attrs;</span>
+<span class="f2">+                m_key2createonlyAttrs[key] = createonly_attrs;</span>
+<span class="f2">+            }</span>
+<span class="f2">+</span>
+<span class="f2">+            it = consumer.m_toSync.erase(it);</span>
+<span class="f2">+</span>
+<span class="f2">+            /* Create object if needed */</span>
+<span class="f2">+            if (m_key2oid.find(key) == m_key2oid.end())</span>
+<span class="f2">+            {</span>
+<span class="f2">+                if (!createOtaiObject(key))</span>
+<span class="f2">+                {</span>
+<span class="f2">+                    SWSS_LOG_THROW(&quot;Failed to create object&quot;);</span>
+<span class="f2">+                }</span>
+<span class="f2">+</span>
+<span class="f2">+                continue;</span>
+<span class="f2">+            }</span>
+<span class="f2">+</span>
+<span class="f2">+            if (!setOtaiObjectAttrs(key, createandset_attrs, operation_id))</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_ERROR(&quot;Failed to set attributes, %s&quot;, key.c_str());</span>
+<span class="f2">+            }</span>
+<span class="f2">+        }</span>
+<span class="f2">+        else if (op == DEL_COMMAND)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            SWSS_LOG_NOTICE(&quot;Deleting %s&quot;, key.c_str());</span>
+<span class="f2">+            it = consumer.m_toSync.erase(it);</span>
+<span class="f2">+        }</span>
+<span class="f2">+        else</span>
+<span class="f2">+        {</span>
+<span class="f2">+            SWSS_LOG_ERROR(&quot;Unknown operation type %s&quot;, op.c_str());</span>
+<span class="f2">+            it = consumer.m_toSync.erase(it);</span>
+<span class="f2">+        }</span>
+<span class="f2">+    }</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OtaiObjectOrch::doStateTask(Consumer &amp;consumer)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    auto it = consumer.m_toSync.begin();</span>
+<span class="f2">+    while (it != consumer.m_toSync.end())</span>
+<span class="f2">+    {</span>
+<span class="f2">+        auto &amp;t = it-&gt;second;</span>
+<span class="f2">+</span>
+<span class="f2">+        string key = kfvKey(t);</span>
+<span class="f2">+        string op = kfvOp(t);</span>
+<span class="f2">+</span>
+<span class="f2">+        bool has_present_field = false;</span>
+<span class="f2">+        string present_value;</span>
+<span class="f2">+</span>
+<span class="f2">+        SWSS_LOG_INFO(&quot;%s, key = %s, op = %s&quot;, m_objectName.c_str(),</span>
+<span class="f2">+                      key.c_str(), op.c_str());</span>
+<span class="f2">+</span>
+<span class="f2">+        if (m_key2oid.find(key) == m_key2oid.end())</span>
+<span class="f2">+        {</span>
+<span class="f2">+            it = consumer.m_toSync.erase(it);</span>
+<span class="f2">+            continue;</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        for (auto i : kfvFieldsValues(t))</span>
+<span class="f2">+        {</span>
+<span class="f2">+            if (fvField(i) == &quot;present&quot;)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                has_present_field = true;</span>
+<span class="f2">+                present_value = fvValue(i);</span>
+<span class="f2">+                break;</span>
+<span class="f2">+            }</span>
+<span class="f2">+        }</span>
+<span class="f2">+        if (has_present_field == false)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            it = consumer.m_toSync.erase(it);</span>
+<span class="f2">+            continue;</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        sai_object_id_t id = m_key2oid[key];</span>
+<span class="f2">+</span>
+<span class="f2">+        string present;</span>
+<span class="f2">+</span>
+<span class="f2">+        if (m_key2present.find(key) != m_key2present.end())</span>
+<span class="f2">+        {</span>
+<span class="f2">+            present = m_key2present[key];</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        if (present_value != present)</span>
+<span class="f2">+        {</span>
+<span class="f2">+            if (present_value == &quot;PRESENT&quot;)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_NOTICE(&quot;setCounterIdList 0x%lx, key = %s&quot;, id, key.c_str());</span>
+<span class="f2">+                setFlexCounter(id);</span>
+<span class="f2">+            }</span>
+<span class="f2">+            else if (present_value == &quot;NOT_PRESENT&quot;)</span>
+<span class="f2">+            {</span>
+<span class="f2">+                SWSS_LOG_NOTICE(&quot;clearCounterIdList 0x%lx, key = %s&quot;, id, key.c_str());</span>
+<span class="f2">+                clearFlexCounter(id, key);</span>
+<span class="f2">+            }</span>
+<span class="f2">+</span>
+<span class="f2">+            doSubobjectStateTask(key, present_value);</span>
+<span class="f2">+            m_key2present[key] = present_value;</span>
+<span class="f2">+        }</span>
+<span class="f2">+</span>
+<span class="f2">+        it = consumer.m_toSync.erase(it);</span>
+<span class="f2">+    }</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+bool OtaiObjectOrch::loadFlexCounterScript(</span>
+<span class="f2">+    _In_ const std::string&amp; script_path,</span>
+<span class="f2">+    _In_ const std::string&amp; plugin_field,</span>
+<span class="f2">+    _In_ const std::string&amp; group_name,</span>
+<span class="f2">+    _In_ const StatsMode stats_mode,</span>
+<span class="f2">+    _In_ const uint polling_interval,</span>
+<span class="f2">+    _In_ const bool enabled)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+</span>
+<span class="f2">+    FieldValueTuple fv_stat;</span>
+<span class="f2">+</span>
+<span class="f2">+    try</span>
+<span class="f2">+    {</span>
+<span class="f2">+        string path(&quot;/usr/share/sonic/platform/&quot;);</span>
+<span class="f2">+        path += script_path;</span>
+<span class="f2">+        string att_script = swss::readTextFile(path);</span>
+<span class="f2">+        string att_sha = swss::loadRedisScript(m_countersDb.get(), att_script);</span>
+<span class="f2">+        fv_stat = FieldValueTuple(plugin_field, att_sha);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    catch (const runtime_error &amp;e)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        SWSS_LOG_WARN(&quot;%s group plugins was not set successfully: %s&quot;, group_name.c_str(), e.what());</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+<span class="f2">+    m_flex_stat_manager = g_FlexManagerDirectory.createFlexCounterManager(</span>
+<span class="f2">+        group_name, stats_mode, polling_interval, enabled, fv_stat);</span>
+<span class="f2">+</span>
+<span class="f2">+    return m_flex_stat_manager != NULL;</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/otaiobjectorch.h b/orchagent/otaiobjectorch.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..7697a726</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otaiobjectorch.h</span>
+<span class="f6">@@ -0,0 +1,169 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;string&gt;</span>
+<span class="f2">+#include &lt;vector&gt;</span>
+<span class="f2">+#include &lt;map&gt;</span>
+<span class="f2">+#include &lt;tuple&gt;</span>
+<span class="f2">+#include &quot;orch.h&quot;</span>
+<span class="f2">+#include &quot;saihelper.h&quot;</span>
+<span class="f2">+#include &quot;notifier.h&quot;</span>
+<span class="f2">+#include &quot;notificationproducer.h&quot;</span>
+<span class="f2">+#include &quot;notifications.h&quot;</span>
+<span class="f2">+#include &quot;timer.h&quot;</span>
+<span class="f2">+#include &quot;flex_counter_manager.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+typedef sai_status_t (*CreateObjectFunc)(</span>
+<span class="f2">+        sai_object_id_t *oid,</span>
+<span class="f2">+        sai_object_id_t linecard_id,</span>
+<span class="f2">+        uint32_t attr_count,</span>
+<span class="f2">+        const sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+typedef sai_status_t (*RemoveObjectFunc)(</span>
+<span class="f2">+        sai_object_id_t oid);</span>
+<span class="f2">+</span>
+<span class="f2">+typedef sai_status_t (*SetObjectAttrFunc)(</span>
+<span class="f2">+        sai_object_id_t oid,</span>
+<span class="f2">+        const sai_attribute_t *attr);</span>
+<span class="f2">+</span>
+<span class="f2">+typedef sai_status_t (*GetObjectAttrFunc)(</span>
+<span class="f2">+        sai_object_id_t oid,</span>
+<span class="f2">+        uint32_t attr_count,</span>
+<span class="f2">+        sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+typedef enum _ConfigState_E</span>
+<span class="f2">+{</span>
+<span class="f2">+    CONFIG_MISSING = 0,</span>
+<span class="f2">+    CONFIG_RECEIVED,</span>
+<span class="f2">+    CONFIG_CREATED,</span>
+<span class="f2">+    CONFIG_DONE,</span>
+<span class="f2">+} ConfigState_E;</span>
+<span class="f2">+</span>
+<span class="f2">+class OtaiObjectOrch: public Orch</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    OtaiObjectOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names): Orch(db, table_names) {}</span>
+<span class="f2">+</span>
+<span class="f2">+    OtaiObjectOrch(DBConnector *db,</span>
+<span class="f2">+                  const vector&lt;string&gt; &amp;table_names,</span>
+<span class="f2">+                  sai_object_type_t obj_type);</span>
+<span class="f2">+</span>
+<span class="f2">+    OtaiObjectOrch(DBConnector *db,</span>
+<span class="f2">+                  vector&lt;TableConnector&gt; &amp;connectors,</span>
+<span class="f2">+                  sai_object_type_t obj_type);</span>
+<span class="f2">+</span>
+<span class="f2">+    void localDataInit(DBConnector* db);</span>
+<span class="f2">+</span>
+<span class="f2">+    void doTask(Consumer &amp;consumer);</span>
+<span class="f2">+</span>
+<span class="f2">+    virtual void doTask(NotificationConsumer&amp; consumer);</span>
+<span class="f2">+</span>
+<span class="f2">+    void doStateTask(Consumer &amp;consumer);</span>
+<span class="f2">+</span>
+<span class="f2">+    bool createOtaiObject(const string &amp;key);</span>
+<span class="f2">+</span>
+<span class="f2">+    virtual void addExtraAttrsOnCreate(vector&lt;sai_attribute_t&gt; &amp;attrs) {};</span>
+<span class="f2">+</span>
+<span class="f2">+    bool setOtaiObjectAttrs(const string &amp;key,</span>
+<span class="f2">+                           map&lt;string, string&gt; &amp;field_values,</span>
+<span class="f2">+                           string operation_id=&quot;&quot;);</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_status_t setOtaiObjectAttr(sai_object_id_t oid, const string &amp;field, const string &amp;value);</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_status_t getOtaiObjectAttr(sai_object_id_t oid, const string &amp;field, string &amp;value);</span>
+<span class="f2">+</span>
+<span class="f2">+    virtual void setFlexCounter(sai_object_id_t id){};</span>
+<span class="f2">+</span>
+<span class="f2">+    virtual void clearFlexCounter(sai_object_id_t id, string key){};</span>
+<span class="f2">+</span>
+<span class="f2">+    virtual void doSubobjectStateTask(const string &amp;key, const string &amp;present){};</span>
+<span class="f2">+</span>
+<span class="f2">+    void publishOperationResult(string operation_id, int status_code, string message);</span>
+<span class="f2">+</span>
+<span class="f2">+    bool translateOtaiObjectAttr(_In_ const string &amp;field,</span>
+<span class="f2">+                                _In_ const string &amp;value,</span>
+<span class="f2">+                                _Out_ sai_attribute_t &amp;attr);</span>
+<span class="f2">+</span>
+<span class="f2">+    bool loadFlexCounterScript(_In_ const std::string&amp; script_path,</span>
+<span class="f2">+                              _In_ const std::string&amp; plugin_field,</span>
+<span class="f2">+                              _In_ const std::string&amp; group_name,</span>
+<span class="f2">+                              _In_ const StatsMode stats_mode,</span>
+<span class="f2">+                              _In_ const uint polling_interval,</span>
+<span class="f2">+                              _In_ const bool enabled);</span>
+<span class="f2">+</span>
+<span class="f2">+protected:</span>
+<span class="f2">+</span>
+<span class="f2">+    shared_ptr&lt;DBConnector&gt; m_stateDb;</span>
+<span class="f2">+</span>
+<span class="f2">+    unique_ptr&lt;Table&gt; m_stateTable;</span>
+<span class="f2">+</span>
+<span class="f2">+    shared_ptr&lt;DBConnector&gt; m_countersDb;</span>
+<span class="f2">+</span>
+<span class="f2">+    unique_ptr&lt;Table&gt; m_nameMapTable;</span>
+<span class="f2">+</span>
+<span class="f2">+    unique_ptr&lt;Table&gt; m_vid2NameTable;</span>
+<span class="f2">+</span>
+<span class="f2">+    CreateObjectFunc m_createFunc;</span>
+<span class="f2">+</span>
+<span class="f2">+    RemoveObjectFunc m_removeFunc;</span>
+<span class="f2">+</span>
+<span class="f2">+    SetObjectAttrFunc m_setFunc;</span>
+<span class="f2">+</span>
+<span class="f2">+    GetObjectAttrFunc m_getFunc;</span>
+<span class="f2">+</span>
+<span class="f2">+    sai_object_type_t m_objectType;</span>
+<span class="f2">+</span>
+<span class="f2">+    string m_objectName;</span>
+<span class="f2">+</span>
+<span class="f2">+    /*</span>
+<span class="f2">+     * Attributes that can be modified by OTAI at anytime.</span>
+<span class="f2">+     */</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, sai_attr_id_t&gt; m_createandsetAttrs;</span>
+<span class="f2">+</span>
+<span class="f2">+    /*</span>
+<span class="f2">+     * Attributes that can only be set during creation.</span>
+<span class="f2">+     */</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, sai_attr_id_t&gt; m_createonlyAttrs;</span>
+<span class="f2">+</span>
+<span class="f2">+    /*</span>
+<span class="f2">+     * Irrecoverable attributes like OTAI_LINECARD_ATTR_RESET.</span>
+<span class="f2">+     * These attributes are modified by notification channels instead of config table.</span>
+<span class="f2">+     */</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, sai_attr_id_t&gt; m_irrecoverableAttrs;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, sai_attr_id_t&gt; m_mandatoryAttrs;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, sai_attr_id_t&gt; m_readonlyAttrs;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, string&gt; m_enumValues;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, sai_stat_id_t&gt; m_statValues;</span>
+<span class="f2">+</span>
+<span class="f2">+    ConfigState_E m_configState = CONFIG_MISSING;</span>
+<span class="f2">+</span>
+<span class="f2">+    uint32_t m_count;</span>
+<span class="f2">+</span>
+<span class="f2">+    set&lt;string&gt; m_keys;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, sai_object_id_t&gt; m_key2oid;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, map&lt;string, string&gt;&gt; m_key2createonlyAttrs;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, map&lt;string, string&gt;&gt; m_key2createandsetAttrs;</span>
+<span class="f2">+</span>
+<span class="f2">+    map&lt;string, string&gt; m_key2present;</span>
+<span class="f2">+</span>
+<span class="f2">+    set&lt;string&gt; m_needToCache;</span>
+<span class="f2">+</span>
+<span class="f2">+    NotificationConsumer *m_notificationConsumer;</span>
+<span class="f2">+</span>
+<span class="f2">+    NotificationProducer *m_notificationProducer;</span>
+<span class="f2">+</span>
+<span class="f2">+    FlexCounterManager *m_flex_stat_manager;</span>
+<span class="f2">+};</span>
+<span class="f2">+</span>
+<span class="bold">diff --git a/orchagent/otaiorchdaemon.cpp b/orchagent/otaiorchdaemon.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..339a76e9</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otaiorchdaemon.cpp</span>
+<span class="f6">@@ -0,0 +1,64 @@</span>
+<span class="f2">+#include &quot;otaiorchdaemon.h&quot;</span>
+<span class="f2">+#include &quot;attenuatororch.h&quot;</span>
+<span class="f2">+#include &quot;oaorch.h&quot;</span>
+<span class="f2">+#include &quot;ocmorch.h&quot;</span>
+<span class="f2">+#include &quot;oscorch.h&quot;</span>
+<span class="f2">+#include &quot;otdrorch.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+OtaiOrchDaemon::OtaiOrchDaemon(DBConnector *applDb, DBConnector *configDb, DBConnector *stateDb, DBConnector *chassisAppDb) :</span>
+<span class="f2">+    OrchDaemon(applDb, configDb, stateDb, chassisAppDb),</span>
+<span class="f2">+    m_applDb(applDb),</span>
+<span class="f2">+    m_configDb(configDb)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;OtaiOrchDaemon starting...&quot;);</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+bool OtaiOrchDaemon::init()</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+    SWSS_LOG_NOTICE(&quot;OtaiOrchDaemon init&quot;);</span>
+<span class="f2">+</span>
+<span class="f2">+    /* attenuator */</span>
+<span class="f2">+    const vector&lt;string&gt; attenuator_tables = {</span>
+<span class="f2">+        APP_ATTENUATOR_TABLE_NAME</span>
+<span class="f2">+    };</span>
+<span class="f2">+    AttenuatorOrch *attenuatorOrch = new AttenuatorOrch(m_applDb, attenuator_tables);</span>
+<span class="f2">+    addOrchList(attenuatorOrch);</span>
+<span class="f2">+</span>
+<span class="f2">+    /* OA */</span>
+<span class="f2">+    const vector&lt;string&gt; oa_tables = {</span>
+<span class="f2">+        APP_OA_TABLE_NAME</span>
+<span class="f2">+    };</span>
+<span class="f2">+    OaOrch *oaOrch = new OaOrch(m_applDb, oa_tables);</span>
+<span class="f2">+    addOrchList(oaOrch);</span>
+<span class="f2">+</span>
+<span class="f2">+    /* OCM */</span>
+<span class="f2">+    const vector&lt;string&gt; ocm_tables = {</span>
+<span class="f2">+        APP_OCM_TABLE_NAME</span>
+<span class="f2">+    };</span>
+<span class="f2">+    OcmOrch *ocmOrch = new OcmOrch(m_applDb, ocm_tables);</span>
+<span class="f2">+    addOrchList(ocmOrch);</span>
+<span class="f2">+</span>
+<span class="f2">+    /* OSC */</span>
+<span class="f2">+    const vector&lt;string&gt; osc_tables = {</span>
+<span class="f2">+        APP_OSC_TABLE_NAME</span>
+<span class="f2">+    };</span>
+<span class="f2">+    OscOrch *oscOrch = new OscOrch(m_applDb, osc_tables);</span>
+<span class="f2">+    addOrchList(oscOrch);</span>
+<span class="f2">+</span>
+<span class="f2">+    /* OTDR */</span>
+<span class="f2">+    const vector&lt;string&gt; otdr_tables = {</span>
+<span class="f2">+        APP_OTDR_TABLE_NAME</span>
+<span class="f2">+    };</span>
+<span class="f2">+    OtdrOrch *otdrOrch = new OtdrOrch(m_applDb, otdr_tables);</span>
+<span class="f2">+    addOrchList(otdrOrch);</span>
+<span class="f2">+</span>
+<span class="f2">+    /* Flex counter */</span>
+<span class="f2">+    vector&lt;string&gt; flex_counter_tables = {</span>
+<span class="f2">+        CFG_FLEX_COUNTER_TABLE_NAME</span>
+<span class="f2">+    };</span>
+<span class="f2">+    addOrchList(new FlexCounterOrch(m_configDb, flex_counter_tables));</span>
+<span class="f2">+</span>
+<span class="f2">+    return true;</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/otaiorchdaemon.h b/orchagent/otaiorchdaemon.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..aa15c3c1</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otaiorchdaemon.h</span>
+<span class="f6">@@ -0,0 +1,13 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+#include &quot;orchdaemon.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+class OtaiOrchDaemon : public OrchDaemon</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    OtaiOrchDaemon(DBConnector *applDb, DBConnector *configDb, DBConnector *stateDb, DBConnector *chassisAppDb);</span>
+<span class="f2">+    bool init() override;</span>
+<span class="f2">+</span>
+<span class="f2">+private:</span>
+<span class="f2">+    DBConnector *m_applDb;</span>
+<span class="f2">+    DBConnector *m_configDb;</span>
+<span class="f2">+};</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/otdrorch.cpp b/orchagent/otdrorch.cpp</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..eebbad61</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otdrorch.cpp</span>
+<span class="f6">@@ -0,0 +1,72 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2023 Alibaba Group Holding Limited</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;otdrorch.h&quot;</span>
+<span class="f2">+#include &quot;sai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;otai_serialize.h&quot;</span>
+<span class="f2">+#include &quot;schema.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+using namespace std;</span>
+<span class="f2">+using namespace swss;</span>
+<span class="f2">+</span>
+<span class="f2">+extern sai_otai_otdr_api_t    *sai_otai_otdr_api;</span>
+<span class="f2">+</span>
+<span class="f2">+#define OTDR_NOTIFICATION                         &quot;OTDR_NOTIFICATION&quot;</span>
+<span class="f2">+#define OTDR_REPLY                                &quot;OTDR_REPLY&quot;</span>
+<span class="f2">+#define OTDR_STAT_FLEX_COUNTER_GROUP              &quot;OTDR_STAT_COUNTER&quot;</span>
+<span class="f2">+#define OTDR_COUNTER_DEFAULT_POLLING_INTERVAL_MS  10000 // ms</span>
+<span class="f2">+#define OTDR_COUNTER_DEFAULT_ENABLED_STATE        true</span>
+<span class="f2">+</span>
+<span class="f2">+OtdrOrch::OtdrOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names) :</span>
+<span class="f2">+    OtaiObjectOrch(db, table_names, (sai_object_type_t)SAI_OBJECT_TYPE_OTAI_OTDR)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    string scriptPath = &quot;otdr_stats.lua&quot;;</span>
+<span class="f2">+    loadFlexCounterScript(scriptPath,</span>
+<span class="f2">+                         OTDR_COUNTER_STATS_LIST,</span>
+<span class="f2">+                         OTDR_STAT_FLEX_COUNTER_GROUP,</span>
+<span class="f2">+                         StatsMode::READ,</span>
+<span class="f2">+                         OTDR_COUNTER_DEFAULT_POLLING_INTERVAL_MS,</span>
+<span class="f2">+                         OTDR_COUNTER_DEFAULT_ENABLED_STATE);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+    m_stateTable = unique_ptr&lt;Table&gt;(new Table(m_stateDb.get(), STATE_OTDR_TABLE_NAME));</span>
+<span class="f2">+    m_nameMapTable = unique_ptr&lt;Table&gt;(new Table(m_countersDb.get(), COUNTERS_OTDR_NAME_MAP));</span>
+<span class="f2">+</span>
+<span class="f2">+    m_notificationConsumer = new NotificationConsumer(db, OTDR_NOTIFICATION);</span>
+<span class="f2">+    auto notifier = new Notifier(m_notificationConsumer, this, OTDR_NOTIFICATION);</span>
+<span class="f2">+    Orch::addExecutor(notifier);</span>
+<span class="f2">+    m_notificationProducer = new NotificationProducer(db, OTDR_REPLY);</span>
+<span class="f2">+</span>
+<span class="f2">+    m_createFunc = sai_otai_otdr_api-&gt;create_otai_otdr;</span>
+<span class="f2">+    m_removeFunc = sai_otai_otdr_api-&gt;remove_otai_otdr;</span>
+<span class="f2">+    m_setFunc = sai_otai_otdr_api-&gt;set_otai_otdr_attribute;</span>
+<span class="f2">+    m_getFunc = sai_otai_otdr_api-&gt;get_otai_otdr_attribute;</span>
+<span class="f2">+</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+void OtdrOrch::setFlexCounter(sai_object_id_t id)</span>
+<span class="f2">+{</span>
+<span class="f2">+    SWSS_LOG_ENTER();</span>
+<span class="f2">+#if 0</span>
+<span class="f2">+    std::unordered_set&lt;std::string&gt; counter_stats;</span>
+<span class="f2">+    for (const auto&amp; it : m_statValues) {</span>
+<span class="f2">+        counter_stats.emplace(it.first);</span>
+<span class="f2">+    }</span>
+<span class="f2">+    m_flex_stat_manager-&gt;setCounterIdList(id, CounterType::OTDR_STATS, counter_stats);</span>
+<span class="f2">+#endif</span>
+<span class="f2">+}</span>
+\ No newline at end of file
+<span class="bold">diff --git a/orchagent/otdrorch.h b/orchagent/otdrorch.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 00000000..0e97c160</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/orchagent/otdrorch.h</span>
+<span class="f6">@@ -0,0 +1,10 @@</span>
+<span class="f2">+#pragma once</span>
+<span class="f2">+</span>
+<span class="f2">+#include &quot;otaiobjectorch.h&quot;</span>
+<span class="f2">+</span>
+<span class="f2">+class OtdrOrch: public OtaiObjectOrch</span>
+<span class="f2">+{</span>
+<span class="f2">+public:</span>
+<span class="f2">+    OtdrOrch(DBConnector *db, const vector&lt;string&gt; &amp;table_names);</span>
+<span class="f2">+    void setFlexCounter(sai_object_id_t id);</span>
+<span class="f2">+};</span>
+\ No newline at end of file
+</pre>
+</body>
+</html>

@@ -1,5 +1,6 @@
 import os
 import shutil
+import subprocess
 
 
 def RemoveFolder(path):
@@ -10,6 +11,17 @@ def RemoveFolder(path):
 def CreateFolder(path):
     if not os.path.exists(path):
         os.mkdir(path)
+
+
+def CopyFolder(src, dest):
+    name = src.strip()
+    if name[-1] == '/':
+        name = name[:-1]
+
+    name = os.path.basename(name)
+    path = MergePath(dest, name)
+    RemoveFolder(path)
+    shutil.copytree(src, path, symlinks=True)
 
 
 def CopyFiles(filelist, dir):
@@ -70,7 +82,7 @@ def InsertContext(file, filters, contexts, options, rfind):
 
 
 def MergePath(parent, child):
-    path = parent
+    path = parent.strip()
     if path[-1] != '/':
         path += '/'
     path += child
@@ -88,3 +100,38 @@ def CheckClean(argv):
     if len(argv) > 2 and argv[2] == 'clean':
         return True
     return False
+
+
+def ShellCmd(cmd):
+    result = subprocess.run(cmd, capture_output=True, shell=True)
+    return result.stdout.decode().strip()
+
+
+def GitSha(path):
+     cmd = 'cd ' + path
+     cmd += '; '
+     cmd += 'git rev-parse HEAD'
+     return ShellCmd(cmd)
+
+
+def GitAdd(path, files):
+    cmd = 'cd ' + path
+    for file in files:
+        cmd += '; '
+        cmd += 'git add ' + file
+    ShellCmd(cmd)
+
+
+def GitCommit(path):
+    cmd = 'cd ' + path
+    cmd += '; '
+    cmd += 'git commit -m "Support SONiC OT"'
+    ShellCmd(cmd)
+
+
+def GitReset(path, sha):
+    cmd = 'cd ' + path
+    cmd += '; '
+    cmd += 'git reset '
+    cmd += sha
+    ShellCmd(cmd)

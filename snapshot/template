@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<header>
+    <div id="top-header">
+        <div id="title">
+            <h1>SONiC OT Code Change Snapshot</h1>
+        </div>
+        <nav>
+            <div id="menu">
+                <ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

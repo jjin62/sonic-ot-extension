@@ -61,6 +61,8 @@ def main(argv):
     for file, filter, context, option, rfind in zip(files, filters, contexts, options, rfinds):
         InsertContext(file, filter, context, option, rfind)
 
+    GitAdd(path, files)
+
 
 if __name__ == "__main__":
     main(sys.argv)

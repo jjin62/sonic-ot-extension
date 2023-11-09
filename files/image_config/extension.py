@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../..')
+sys.path.append('../..')
 from exten_util import *
 
 def main(argv):
@@ -7,13 +7,10 @@ def main(argv):
         return
 
     clean = CheckClean(argv)
-    path = MergePath(argv[1], 'files/image_config/optical')
-
-    CreateFolder(path)
+    path = MergePath(argv[1], 'files/image_config')
 
     if not clean:
-        copys = [['./optical-config.service', './optical-config.sh']]
-        CopyFiles(copys, path)
+        CopyFolder('./optical', path)
 
     path = MergePath(argv[1], 'files/build_templates')
     files = ['sonic_debian_extension.j2']
@@ -41,6 +38,9 @@ echo "optical-config.service" | sudo tee -a $GENERATED_SERVICE_FILE\n'''
 
     for file, filter, context, option, rfind in zip(files, filters, contexts, options, rfinds):
         InsertContext(file, filter, context, option, rfind)
+
+    GitAdd(path, ['optical'])
+    GitAdd(path, files)
 
 
 if __name__ == "__main__":

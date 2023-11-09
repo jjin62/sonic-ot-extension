@@ -1,0 +1,2452 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+pre { white-space: pre-wrap; }
+.ef0,.f0 { color: #000000; } .eb0,.b0 { background-color: #000000; }
+.ef1,.f1 { color: #AA0000; } .eb1,.b1 { background-color: #AA0000; }
+.ef2,.f2 { color: #00AA00; } .eb2,.b2 { background-color: #00AA00; }
+.ef3,.f3 { color: #AA5500; } .eb3,.b3 { background-color: #AA5500; }
+.ef4,.f4 { color: #0000AA; } .eb4,.b4 { background-color: #0000AA; }
+.ef5,.f5 { color: #AA00AA; } .eb5,.b5 { background-color: #AA00AA; }
+.ef6,.f6 { color: #00AAAA; } .eb6,.b6 { background-color: #00AAAA; }
+.ef7,.f7 { color: #AAAAAA; } .eb7,.b7 { background-color: #AAAAAA; }
+.ef8, .f0 > .bold,.bold > .f0 { color: #555555; font-weight: normal; }
+.ef9, .f1 > .bold,.bold > .f1 { color: #FF5555; font-weight: normal; }
+.ef10,.f2 > .bold,.bold > .f2 { color: #55FF55; font-weight: normal; }
+.ef11,.f3 > .bold,.bold > .f3 { color: #FFFF55; font-weight: normal; }
+.ef12,.f4 > .bold,.bold > .f4 { color: #5555FF; font-weight: normal; }
+.ef13,.f5 > .bold,.bold > .f5 { color: #FF55FF; font-weight: normal; }
+.ef14,.f6 > .bold,.bold > .f6 { color: #55FFFF; font-weight: normal; }
+.ef15,.f7 > .bold,.bold > .f7 { color: #FFFFFF; font-weight: normal; }
+.eb8  { background-color: #555555; }
+.eb9  { background-color: #FF5555; }
+.eb10 { background-color: #55FF55; }
+.eb11 { background-color: #FFFF55; }
+.eb12 { background-color: #5555FF; }
+.eb13 { background-color: #FF55FF; }
+.eb14 { background-color: #55FFFF; }
+.eb15 { background-color: #FFFFFF; }
+.ef16 { color: #000000; } .eb16 { background-color: #000000; }
+.ef17 { color: #00005f; } .eb17 { background-color: #00005f; }
+.ef18 { color: #000087; } .eb18 { background-color: #000087; }
+.ef19 { color: #0000af; } .eb19 { background-color: #0000af; }
+.ef20 { color: #0000d7; } .eb20 { background-color: #0000d7; }
+.ef21 { color: #0000ff; } .eb21 { background-color: #0000ff; }
+.ef22 { color: #005f00; } .eb22 { background-color: #005f00; }
+.ef23 { color: #005f5f; } .eb23 { background-color: #005f5f; }
+.ef24 { color: #005f87; } .eb24 { background-color: #005f87; }
+.ef25 { color: #005faf; } .eb25 { background-color: #005faf; }
+.ef26 { color: #005fd7; } .eb26 { background-color: #005fd7; }
+.ef27 { color: #005fff; } .eb27 { background-color: #005fff; }
+.ef28 { color: #008700; } .eb28 { background-color: #008700; }
+.ef29 { color: #00875f; } .eb29 { background-color: #00875f; }
+.ef30 { color: #008787; } .eb30 { background-color: #008787; }
+.ef31 { color: #0087af; } .eb31 { background-color: #0087af; }
+.ef32 { color: #0087d7; } .eb32 { background-color: #0087d7; }
+.ef33 { color: #0087ff; } .eb33 { background-color: #0087ff; }
+.ef34 { color: #00af00; } .eb34 { background-color: #00af00; }
+.ef35 { color: #00af5f; } .eb35 { background-color: #00af5f; }
+.ef36 { color: #00af87; } .eb36 { background-color: #00af87; }
+.ef37 { color: #00afaf; } .eb37 { background-color: #00afaf; }
+.ef38 { color: #00afd7; } .eb38 { background-color: #00afd7; }
+.ef39 { color: #00afff; } .eb39 { background-color: #00afff; }
+.ef40 { color: #00d700; } .eb40 { background-color: #00d700; }
+.ef41 { color: #00d75f; } .eb41 { background-color: #00d75f; }
+.ef42 { color: #00d787; } .eb42 { background-color: #00d787; }
+.ef43 { color: #00d7af; } .eb43 { background-color: #00d7af; }
+.ef44 { color: #00d7d7; } .eb44 { background-color: #00d7d7; }
+.ef45 { color: #00d7ff; } .eb45 { background-color: #00d7ff; }
+.ef46 { color: #00ff00; } .eb46 { background-color: #00ff00; }
+.ef47 { color: #00ff5f; } .eb47 { background-color: #00ff5f; }
+.ef48 { color: #00ff87; } .eb48 { background-color: #00ff87; }
+.ef49 { color: #00ffaf; } .eb49 { background-color: #00ffaf; }
+.ef50 { color: #00ffd7; } .eb50 { background-color: #00ffd7; }
+.ef51 { color: #00ffff; } .eb51 { background-color: #00ffff; }
+.ef52 { color: #5f0000; } .eb52 { background-color: #5f0000; }
+.ef53 { color: #5f005f; } .eb53 { background-color: #5f005f; }
+.ef54 { color: #5f0087; } .eb54 { background-color: #5f0087; }
+.ef55 { color: #5f00af; } .eb55 { background-color: #5f00af; }
+.ef56 { color: #5f00d7; } .eb56 { background-color: #5f00d7; }
+.ef57 { color: #5f00ff; } .eb57 { background-color: #5f00ff; }
+.ef58 { color: #5f5f00; } .eb58 { background-color: #5f5f00; }
+.ef59 { color: #5f5f5f; } .eb59 { background-color: #5f5f5f; }
+.ef60 { color: #5f5f87; } .eb60 { background-color: #5f5f87; }
+.ef61 { color: #5f5faf; } .eb61 { background-color: #5f5faf; }
+.ef62 { color: #5f5fd7; } .eb62 { background-color: #5f5fd7; }
+.ef63 { color: #5f5fff; } .eb63 { background-color: #5f5fff; }
+.ef64 { color: #5f8700; } .eb64 { background-color: #5f8700; }
+.ef65 { color: #5f875f; } .eb65 { background-color: #5f875f; }
+.ef66 { color: #5f8787; } .eb66 { background-color: #5f8787; }
+.ef67 { color: #5f87af; } .eb67 { background-color: #5f87af; }
+.ef68 { color: #5f87d7; } .eb68 { background-color: #5f87d7; }
+.ef69 { color: #5f87ff; } .eb69 { background-color: #5f87ff; }
+.ef70 { color: #5faf00; } .eb70 { background-color: #5faf00; }
+.ef71 { color: #5faf5f; } .eb71 { background-color: #5faf5f; }
+.ef72 { color: #5faf87; } .eb72 { background-color: #5faf87; }
+.ef73 { color: #5fafaf; } .eb73 { background-color: #5fafaf; }
+.ef74 { color: #5fafd7; } .eb74 { background-color: #5fafd7; }
+.ef75 { color: #5fafff; } .eb75 { background-color: #5fafff; }
+.ef76 { color: #5fd700; } .eb76 { background-color: #5fd700; }
+.ef77 { color: #5fd75f; } .eb77 { background-color: #5fd75f; }
+.ef78 { color: #5fd787; } .eb78 { background-color: #5fd787; }
+.ef79 { color: #5fd7af; } .eb79 { background-color: #5fd7af; }
+.ef80 { color: #5fd7d7; } .eb80 { background-color: #5fd7d7; }
+.ef81 { color: #5fd7ff; } .eb81 { background-color: #5fd7ff; }
+.ef82 { color: #5fff00; } .eb82 { background-color: #5fff00; }
+.ef83 { color: #5fff5f; } .eb83 { background-color: #5fff5f; }
+.ef84 { color: #5fff87; } .eb84 { background-color: #5fff87; }
+.ef85 { color: #5fffaf; } .eb85 { background-color: #5fffaf; }
+.ef86 { color: #5fffd7; } .eb86 { background-color: #5fffd7; }
+.ef87 { color: #5fffff; } .eb87 { background-color: #5fffff; }
+.ef88 { color: #870000; } .eb88 { background-color: #870000; }
+.ef89 { color: #87005f; } .eb89 { background-color: #87005f; }
+.ef90 { color: #870087; } .eb90 { background-color: #870087; }
+.ef91 { color: #8700af; } .eb91 { background-color: #8700af; }
+.ef92 { color: #8700d7; } .eb92 { background-color: #8700d7; }
+.ef93 { color: #8700ff; } .eb93 { background-color: #8700ff; }
+.ef94 { color: #875f00; } .eb94 { background-color: #875f00; }
+.ef95 { color: #875f5f; } .eb95 { background-color: #875f5f; }
+.ef96 { color: #875f87; } .eb96 { background-color: #875f87; }
+.ef97 { color: #875faf; } .eb97 { background-color: #875faf; }
+.ef98 { color: #875fd7; } .eb98 { background-color: #875fd7; }
+.ef99 { color: #875fff; } .eb99 { background-color: #875fff; }
+.ef100 { color: #878700; } .eb100 { background-color: #878700; }
+.ef101 { color: #87875f; } .eb101 { background-color: #87875f; }
+.ef102 { color: #878787; } .eb102 { background-color: #878787; }
+.ef103 { color: #8787af; } .eb103 { background-color: #8787af; }
+.ef104 { color: #8787d7; } .eb104 { background-color: #8787d7; }
+.ef105 { color: #8787ff; } .eb105 { background-color: #8787ff; }
+.ef106 { color: #87af00; } .eb106 { background-color: #87af00; }
+.ef107 { color: #87af5f; } .eb107 { background-color: #87af5f; }
+.ef108 { color: #87af87; } .eb108 { background-color: #87af87; }
+.ef109 { color: #87afaf; } .eb109 { background-color: #87afaf; }
+.ef110 { color: #87afd7; } .eb110 { background-color: #87afd7; }
+.ef111 { color: #87afff; } .eb111 { background-color: #87afff; }
+.ef112 { color: #87d700; } .eb112 { background-color: #87d700; }
+.ef113 { color: #87d75f; } .eb113 { background-color: #87d75f; }
+.ef114 { color: #87d787; } .eb114 { background-color: #87d787; }
+.ef115 { color: #87d7af; } .eb115 { background-color: #87d7af; }
+.ef116 { color: #87d7d7; } .eb116 { background-color: #87d7d7; }
+.ef117 { color: #87d7ff; } .eb117 { background-color: #87d7ff; }
+.ef118 { color: #87ff00; } .eb118 { background-color: #87ff00; }
+.ef119 { color: #87ff5f; } .eb119 { background-color: #87ff5f; }
+.ef120 { color: #87ff87; } .eb120 { background-color: #87ff87; }
+.ef121 { color: #87ffaf; } .eb121 { background-color: #87ffaf; }
+.ef122 { color: #87ffd7; } .eb122 { background-color: #87ffd7; }
+.ef123 { color: #87ffff; } .eb123 { background-color: #87ffff; }
+.ef124 { color: #af0000; } .eb124 { background-color: #af0000; }
+.ef125 { color: #af005f; } .eb125 { background-color: #af005f; }
+.ef126 { color: #af0087; } .eb126 { background-color: #af0087; }
+.ef127 { color: #af00af; } .eb127 { background-color: #af00af; }
+.ef128 { color: #af00d7; } .eb128 { background-color: #af00d7; }
+.ef129 { color: #af00ff; } .eb129 { background-color: #af00ff; }
+.ef130 { color: #af5f00; } .eb130 { background-color: #af5f00; }
+.ef131 { color: #af5f5f; } .eb131 { background-color: #af5f5f; }
+.ef132 { color: #af5f87; } .eb132 { background-color: #af5f87; }
+.ef133 { color: #af5faf; } .eb133 { background-color: #af5faf; }
+.ef134 { color: #af5fd7; } .eb134 { background-color: #af5fd7; }
+.ef135 { color: #af5fff; } .eb135 { background-color: #af5fff; }
+.ef136 { color: #af8700; } .eb136 { background-color: #af8700; }
+.ef137 { color: #af875f; } .eb137 { background-color: #af875f; }
+.ef138 { color: #af8787; } .eb138 { background-color: #af8787; }
+.ef139 { color: #af87af; } .eb139 { background-color: #af87af; }
+.ef140 { color: #af87d7; } .eb140 { background-color: #af87d7; }
+.ef141 { color: #af87ff; } .eb141 { background-color: #af87ff; }
+.ef142 { color: #afaf00; } .eb142 { background-color: #afaf00; }
+.ef143 { color: #afaf5f; } .eb143 { background-color: #afaf5f; }
+.ef144 { color: #afaf87; } .eb144 { background-color: #afaf87; }
+.ef145 { color: #afafaf; } .eb145 { background-color: #afafaf; }
+.ef146 { color: #afafd7; } .eb146 { background-color: #afafd7; }
+.ef147 { color: #afafff; } .eb147 { background-color: #afafff; }
+.ef148 { color: #afd700; } .eb148 { background-color: #afd700; }
+.ef149 { color: #afd75f; } .eb149 { background-color: #afd75f; }
+.ef150 { color: #afd787; } .eb150 { background-color: #afd787; }
+.ef151 { color: #afd7af; } .eb151 { background-color: #afd7af; }
+.ef152 { color: #afd7d7; } .eb152 { background-color: #afd7d7; }
+.ef153 { color: #afd7ff; } .eb153 { background-color: #afd7ff; }
+.ef154 { color: #afff00; } .eb154 { background-color: #afff00; }
+.ef155 { color: #afff5f; } .eb155 { background-color: #afff5f; }
+.ef156 { color: #afff87; } .eb156 { background-color: #afff87; }
+.ef157 { color: #afffaf; } .eb157 { background-color: #afffaf; }
+.ef158 { color: #afffd7; } .eb158 { background-color: #afffd7; }
+.ef159 { color: #afffff; } .eb159 { background-color: #afffff; }
+.ef160 { color: #d70000; } .eb160 { background-color: #d70000; }
+.ef161 { color: #d7005f; } .eb161 { background-color: #d7005f; }
+.ef162 { color: #d70087; } .eb162 { background-color: #d70087; }
+.ef163 { color: #d700af; } .eb163 { background-color: #d700af; }
+.ef164 { color: #d700d7; } .eb164 { background-color: #d700d7; }
+.ef165 { color: #d700ff; } .eb165 { background-color: #d700ff; }
+.ef166 { color: #d75f00; } .eb166 { background-color: #d75f00; }
+.ef167 { color: #d75f5f; } .eb167 { background-color: #d75f5f; }
+.ef168 { color: #d75f87; } .eb168 { background-color: #d75f87; }
+.ef169 { color: #d75faf; } .eb169 { background-color: #d75faf; }
+.ef170 { color: #d75fd7; } .eb170 { background-color: #d75fd7; }
+.ef171 { color: #d75fff; } .eb171 { background-color: #d75fff; }
+.ef172 { color: #d78700; } .eb172 { background-color: #d78700; }
+.ef173 { color: #d7875f; } .eb173 { background-color: #d7875f; }
+.ef174 { color: #d78787; } .eb174 { background-color: #d78787; }
+.ef175 { color: #d787af; } .eb175 { background-color: #d787af; }
+.ef176 { color: #d787d7; } .eb176 { background-color: #d787d7; }
+.ef177 { color: #d787ff; } .eb177 { background-color: #d787ff; }
+.ef178 { color: #d7af00; } .eb178 { background-color: #d7af00; }
+.ef179 { color: #d7af5f; } .eb179 { background-color: #d7af5f; }
+.ef180 { color: #d7af87; } .eb180 { background-color: #d7af87; }
+.ef181 { color: #d7afaf; } .eb181 { background-color: #d7afaf; }
+.ef182 { color: #d7afd7; } .eb182 { background-color: #d7afd7; }
+.ef183 { color: #d7afff; } .eb183 { background-color: #d7afff; }
+.ef184 { color: #d7d700; } .eb184 { background-color: #d7d700; }
+.ef185 { color: #d7d75f; } .eb185 { background-color: #d7d75f; }
+.ef186 { color: #d7d787; } .eb186 { background-color: #d7d787; }
+.ef187 { color: #d7d7af; } .eb187 { background-color: #d7d7af; }
+.ef188 { color: #d7d7d7; } .eb188 { background-color: #d7d7d7; }
+.ef189 { color: #d7d7ff; } .eb189 { background-color: #d7d7ff; }
+.ef190 { color: #d7ff00; } .eb190 { background-color: #d7ff00; }
+.ef191 { color: #d7ff5f; } .eb191 { background-color: #d7ff5f; }
+.ef192 { color: #d7ff87; } .eb192 { background-color: #d7ff87; }
+.ef193 { color: #d7ffaf; } .eb193 { background-color: #d7ffaf; }
+.ef194 { color: #d7ffd7; } .eb194 { background-color: #d7ffd7; }
+.ef195 { color: #d7ffff; } .eb195 { background-color: #d7ffff; }
+.ef196 { color: #ff0000; } .eb196 { background-color: #ff0000; }
+.ef197 { color: #ff005f; } .eb197 { background-color: #ff005f; }
+.ef198 { color: #ff0087; } .eb198 { background-color: #ff0087; }
+.ef199 { color: #ff00af; } .eb199 { background-color: #ff00af; }
+.ef200 { color: #ff00d7; } .eb200 { background-color: #ff00d7; }
+.ef201 { color: #ff00ff; } .eb201 { background-color: #ff00ff; }
+.ef202 { color: #ff5f00; } .eb202 { background-color: #ff5f00; }
+.ef203 { color: #ff5f5f; } .eb203 { background-color: #ff5f5f; }
+.ef204 { color: #ff5f87; } .eb204 { background-color: #ff5f87; }
+.ef205 { color: #ff5faf; } .eb205 { background-color: #ff5faf; }
+.ef206 { color: #ff5fd7; } .eb206 { background-color: #ff5fd7; }
+.ef207 { color: #ff5fff; } .eb207 { background-color: #ff5fff; }
+.ef208 { color: #ff8700; } .eb208 { background-color: #ff8700; }
+.ef209 { color: #ff875f; } .eb209 { background-color: #ff875f; }
+.ef210 { color: #ff8787; } .eb210 { background-color: #ff8787; }
+.ef211 { color: #ff87af; } .eb211 { background-color: #ff87af; }
+.ef212 { color: #ff87d7; } .eb212 { background-color: #ff87d7; }
+.ef213 { color: #ff87ff; } .eb213 { background-color: #ff87ff; }
+.ef214 { color: #ffaf00; } .eb214 { background-color: #ffaf00; }
+.ef215 { color: #ffaf5f; } .eb215 { background-color: #ffaf5f; }
+.ef216 { color: #ffaf87; } .eb216 { background-color: #ffaf87; }
+.ef217 { color: #ffafaf; } .eb217 { background-color: #ffafaf; }
+.ef218 { color: #ffafd7; } .eb218 { background-color: #ffafd7; }
+.ef219 { color: #ffafff; } .eb219 { background-color: #ffafff; }
+.ef220 { color: #ffd700; } .eb220 { background-color: #ffd700; }
+.ef221 { color: #ffd75f; } .eb221 { background-color: #ffd75f; }
+.ef222 { color: #ffd787; } .eb222 { background-color: #ffd787; }
+.ef223 { color: #ffd7af; } .eb223 { background-color: #ffd7af; }
+.ef224 { color: #ffd7d7; } .eb224 { background-color: #ffd7d7; }
+.ef225 { color: #ffd7ff; } .eb225 { background-color: #ffd7ff; }
+.ef226 { color: #ffff00; } .eb226 { background-color: #ffff00; }
+.ef227 { color: #ffff5f; } .eb227 { background-color: #ffff5f; }
+.ef228 { color: #ffff87; } .eb228 { background-color: #ffff87; }
+.ef229 { color: #ffffaf; } .eb229 { background-color: #ffffaf; }
+.ef230 { color: #ffffd7; } .eb230 { background-color: #ffffd7; }
+.ef231 { color: #ffffff; } .eb231 { background-color: #ffffff; }
+.ef232 { color: #080808; } .eb232 { background-color: #080808; }
+.ef233 { color: #121212; } .eb233 { background-color: #121212; }
+.ef234 { color: #1c1c1c; } .eb234 { background-color: #1c1c1c; }
+.ef235 { color: #262626; } .eb235 { background-color: #262626; }
+.ef236 { color: #303030; } .eb236 { background-color: #303030; }
+.ef237 { color: #3a3a3a; } .eb237 { background-color: #3a3a3a; }
+.ef238 { color: #444444; } .eb238 { background-color: #444444; }
+.ef239 { color: #4e4e4e; } .eb239 { background-color: #4e4e4e; }
+.ef240 { color: #585858; } .eb240 { background-color: #585858; }
+.ef241 { color: #626262; } .eb241 { background-color: #626262; }
+.ef242 { color: #6c6c6c; } .eb242 { background-color: #6c6c6c; }
+.ef243 { color: #767676; } .eb243 { background-color: #767676; }
+.ef244 { color: #808080; } .eb244 { background-color: #808080; }
+.ef245 { color: #8a8a8a; } .eb245 { background-color: #8a8a8a; }
+.ef246 { color: #949494; } .eb246 { background-color: #949494; }
+.ef247 { color: #9e9e9e; } .eb247 { background-color: #9e9e9e; }
+.ef248 { color: #a8a8a8; } .eb248 { background-color: #a8a8a8; }
+.ef249 { color: #b2b2b2; } .eb249 { background-color: #b2b2b2; }
+.ef250 { color: #bcbcbc; } .eb250 { background-color: #bcbcbc; }
+.ef251 { color: #c6c6c6; } .eb251 { background-color: #c6c6c6; }
+.ef252 { color: #d0d0d0; } .eb252 { background-color: #d0d0d0; }
+.ef253 { color: #dadada; } .eb253 { background-color: #dadada; }
+.ef254 { color: #e4e4e4; } .eb254 { background-color: #e4e4e4; }
+.ef255 { color: #eeeeee; } .eb255 { background-color: #eeeeee; }
+
+.f9 { color: #000000; }
+.b9 { background-color: #FFFFFF; }
+.f9 > .bold,.bold > .f9, body.f9 > pre > .bold {
+  /* Bold is heavy black on white, or bright white
+     depending on the default background */
+  color: #000000;
+  font-weight: bold;
+}
+.reverse {
+  /* CSS does not support swapping fg and bg colours unfortunately,
+     so just hardcode something that will look OK on all backgrounds. */
+  color: #000000; background-color: #AAAAAA;
+}
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.blink { text-decoration: blink; }
+
+/* Avoid pixels between adjacent span elements.
+   Note this only works for lines less than 80 chars
+   where we close span elements on the same line.
+span { display: inline-block; }
+*/
+</style>
+</head>
+
+<body class="f9 b9">
+<pre>
+<span class="f3">commit 2b87486517940b41fb707c5af987b5ff3278d024</span>
+Author: Lu.Mao &lt;lu.mao@molex.com&gt;
+Date:   Thu Nov 9 00:11:42 2023 -0800
+
+    Support SONiC OT
+
+<span class="bold">diff --git a/experimental/saiexperimentalotaiattenuator.h b/experimental/saiexperimentalotaiattenuator.h
+new file mode 100644</span>
+<span class="bold">index 0000000..709c513</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/experimental/saiexperimentalotaiattenuator.h</span>
+<span class="f6">@@ -0,0 +1,297 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2014 Microsoft Open Technologies, Inc.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Microsoft would like to thank the following companies for their review and</span>
+<span class="f2">+ *    assistance with these files: Intel Corporation, Mellanox Technologies Ltd,</span>
+<span class="f2">+ *    Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * AUTOGENERATED FILE! DO NOT EDIT</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Copyright (c) 2021 Alibaba Group.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @file    saiexperimentalotaiattenuator.h</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @brief   This module defines the attenuator for the OTAI</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#if !defined (__SAIEXPERIMENTALOTAIATTENUATOR_H_)</span>
+<span class="f2">+#define __SAIEXPERIMENTALOTAIATTENUATOR_H_</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;saitypes.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @defgroup SAIEXPERIMENTALOTAIATTENUATOR SAI - OTAI Attenuator specific API definitions</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @{</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+/** @brief Attenuation mode */</span>
+<span class="f2">+typedef enum _sai_otai_attenuator_attenuation_mode_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTENUATION_MODE_CONSTANT_POWER,</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTENUATION_MODE_CONSTANT_ATTENUATION,</span>
+<span class="f2">+} sai_otai_attenuator_attenuation_mode_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Attenuator attribute IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_attenuator_attr_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief ID</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags MANDATORY_ON_CREATE | CREATE_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_ID = SAI_OTAI_ATTENUATOR_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Attenuation mode</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_otai_attenuator_attenuation_mode_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_ATTENUATION_MODE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Target output power</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_TARGET_OUTPUT_POWER,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Attenuation</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_ATTENUATION,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Enabled</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_ENABLED,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Ingress port</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type char</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_INGRESS_PORT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Egress port</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type char</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_EGRESS_PORT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Fix attenuation</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_FIX_ATTENUATION,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_END,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** Custom range base value */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_CUSTOM_RANGE_START = 0x10000000,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** End of custom range base */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_ATTR_CUSTOM_RANGE_END</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_attenuator_attr_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief ATTENUATOR stat IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_attenuator_stat_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Actual attenuation</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_STAT_ACTUAL_ATTENUATION = SAI_OTAI_ATTENUATOR_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output power total</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_STAT_OUTPUT_POWER_TOTAL,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Optical return loss</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_STAT_OPTICAL_RETURN_LOSS,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_ATTENUATOR_STAT_END,</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_attenuator_stat_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Create ATTENUATOR.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Allocates and initializes a attenuator.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[out] otai_attenuator_id ATTENUATOR id</span>
+<span class="f2">+ * @param[in] switch_id Switch id on which the attenuator exists</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[in] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_create_otai_attenuator_fn)(</span>
+<span class="f2">+        _Out_ sai_object_id_t *otai_attenuator_id,</span>
+<span class="f2">+        _In_ sai_object_id_t switch_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Remove attenuator</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_attenuator_id ATTENUATOR id</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_remove_otai_attenuator_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_attenuator_id);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Set attenuator attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_attenuator_id ATTENUATOR id</span>
+<span class="f2">+ * @param[in] attr Attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_set_otai_attenuator_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_attenuator_id,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get attenuator attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_attenuator_id ATTENUATOR id</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[inout] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_attenuator_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_attenuator_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _Inout_ sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get attenuator statistics.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_attenuator_id ATTENUATOR id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_attenuator_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_attenuator_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get attenuator statistics extended.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_attenuator_id ATTENUATOR id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[in] mode Statistics mode</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_attenuator_stats_ext_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_attenuator_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _In_ sai_stats_mode_t mode,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Clear attenuator statistics counters.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_attenuator_id ATTENUATOR id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_clear_otai_attenuator_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_attenuator_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Routing interface methods table retrieved with sai_api_query()</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef struct _sai_otai_attenuator_api_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    sai_create_otai_attenuator_fn                create_otai_attenuator;</span>
+<span class="f2">+    sai_remove_otai_attenuator_fn                remove_otai_attenuator;</span>
+<span class="f2">+    sai_set_otai_attenuator_attribute_fn         set_otai_attenuator_attribute;</span>
+<span class="f2">+    sai_get_otai_attenuator_attribute_fn         get_otai_attenuator_attribute;</span>
+<span class="f2">+    sai_get_otai_attenuator_stats_fn             get_otai_attenuator_stats;</span>
+<span class="f2">+    sai_get_otai_attenuator_stats_ext_fn         get_otai_attenuator_stats_ext;</span>
+<span class="f2">+    sai_clear_otai_attenuator_stats_fn           clear_otai_attenuator_stats;</span>
+<span class="f2">+} sai_otai_attenuator_api_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @}</span>
+<span class="f2">+ */</span>
+<span class="f2">+#endif /** __SAIEXPERIMENTALOTAIATTENUATOR_H_ */</span>
+<span class="bold">diff --git a/experimental/saiexperimentalotaioa.h b/experimental/saiexperimentalotaioa.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 0000000..8be9e95</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/experimental/saiexperimentalotaioa.h</span>
+<span class="f6">@@ -0,0 +1,558 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2014 Microsoft Open Technologies, Inc.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Microsoft would like to thank the following companies for their review and</span>
+<span class="f2">+ *    assistance with these files: Intel Corporation, Mellanox Technologies Ltd,</span>
+<span class="f2">+ *    Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * AUTOGENERATED FILE! DO NOT EDIT</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Copyright (c) 2021 Alibaba Group.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @file    saiexperimentalotaioa.h</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @brief   This module defines the OA for the OTAI</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#if !defined (__SAIEXPERIMENTALOTAIOA_H_)</span>
+<span class="f2">+#define __SAIEXPERIMENTALOTAIOA_H_</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;saitypes.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @defgroup SAIEXPERIMENTALOTAIOA SAI - OTAI OA specific API definitions</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @{</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+/** @brief OA type */</span>
+<span class="f2">+typedef enum _sai_otai_oa_type_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    SAI_OTAI_OA_TYPE_EDFA,</span>
+<span class="f2">+    SAI_OTAI_OA_TYPE_FORWARD_RAMAN,</span>
+<span class="f2">+    SAI_OTAI_OA_TYPE_BACKWARD_RAMAN,</span>
+<span class="f2">+    SAI_OTAI_OA_TYPE_HYBRID,</span>
+<span class="f2">+} sai_otai_oa_type_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/** @brief OA gain range */</span>
+<span class="f2">+typedef enum _sai_otai_oa_gain_range_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    SAI_OTAI_OA_GAIN_RANGE_LOW_GAIN_RANGE,</span>
+<span class="f2">+    SAI_OTAI_OA_GAIN_RANGE_MID_GAIN_RANGE,</span>
+<span class="f2">+    SAI_OTAI_OA_GAIN_RANGE_HIGH_GAIN_RANGE,</span>
+<span class="f2">+    SAI_OTAI_OA_GAIN_RANGE_FIXED_GAIN_RANGE,</span>
+<span class="f2">+} sai_otai_oa_gain_range_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/** @brief OA amp mode */</span>
+<span class="f2">+typedef enum _sai_otai_oa_amp_mode_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    SAI_OTAI_OA_AMP_MODE_CONSTANT_POWER,</span>
+<span class="f2">+    SAI_OTAI_OA_AMP_MODE_CONSTANT_GAIN,</span>
+<span class="f2">+    SAI_OTAI_OA_AMP_MODE_DYNAMIC_GAIN,</span>
+<span class="f2">+    SAI_OTAI_OA_AMP_MODE_DYNAMIC_POWER,</span>
+<span class="f2">+} sai_otai_oa_amp_mode_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/** @brief OA fiber type profile */</span>
+<span class="f2">+typedef enum _sai_otai_oa_fiber_type_profile_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    SAI_OTAI_OA_FIBER_TYPE_PROFILE_DSF,</span>
+<span class="f2">+    SAI_OTAI_OA_FIBER_TYPE_PROFILE_LEAF,</span>
+<span class="f2">+    SAI_OTAI_OA_FIBER_TYPE_PROFILE_SSMF,</span>
+<span class="f2">+    SAI_OTAI_OA_FIBER_TYPE_PROFILE_TWC,</span>
+<span class="f2">+    SAI_OTAI_OA_FIBER_TYPE_PROFILE_TWRS,</span>
+<span class="f2">+} sai_otai_oa_fiber_type_profile_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/** @brief OA working state */</span>
+<span class="f2">+typedef enum _sai_otai_oa_working_state_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    SAI_OTAI_OA_WORKING_STATE_LOS_A,</span>
+<span class="f2">+    SAI_OTAI_OA_WORKING_STATE_LOS_N,</span>
+<span class="f2">+} sai_otai_oa_working_state_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OA attribute IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_oa_attr_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief ID</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags MANDATORY_ON_CREATE | CREATE_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_ID = SAI_OTAI_OA_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Type</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_otai_oa_type_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_TYPE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Target gain</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_TARGET_GAIN,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Min gain</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_MIN_GAIN,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Max gain</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_MAX_GAIN,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Target gain tilt</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_TARGET_GAIN_TILT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Gain range</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_otai_oa_gain_range_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_GAIN_RANGE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Amp mode</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_otai_oa_amp_mode_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_AMP_MODE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Target output power</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_TARGET_OUTPUT_POWER,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Max output power</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_MAX_OUTPUT_POWER,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Enabled</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_ENABLED,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Fiber type profile</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_otai_oa_fiber_type_profile_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_FIBER_TYPE_PROFILE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Ingress port</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type char</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_INGRESS_PORT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Egress port</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type char</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_EGRESS_PORT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Working state</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_otai_oa_working_state_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_WORKING_STATE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input LOS threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_INPUT_LOS_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input LOS hysteresis</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_INPUT_LOS_HYSTERESIS,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output LOS threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_OUTPUT_LOS_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output LOS hysteresis</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_OUTPUT_LOS_HYSTERESIS,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Gain low threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_GAIN_LOW_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Gain low hysteresis</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_GAIN_LOW_HYSTERESIS,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input low threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_INPUT_LOW_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output low threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_OUTPUT_LOW_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Enable APR node</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_APR_NODE_ENABLE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief APR node reflection threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_APR_NODE_REFLECTION_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Enable APR line</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_APR_LINE_ENABLE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_END,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** Custom range base value */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_CUSTOM_RANGE_START = 0x10000000,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** End of custom range base */</span>
+<span class="f2">+    SAI_OTAI_OA_ATTR_CUSTOM_RANGE_END</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_oa_attr_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OA stat IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_oa_stat_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Temperature</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_TEMPERATURE = SAI_OTAI_OA_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Actual gain</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_ACTUAL_GAIN,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Actual gain tilt</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_ACTUAL_GAIN_TILT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input power total</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_INPUT_POWER_TOTAL,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input power C band</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_INPUT_POWER_C_BAND,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input power L band</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_INPUT_POWER_L_BAND,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output power total</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_OUTPUT_POWER_TOTAL,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output power C band</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_OUTPUT_POWER_C_BAND,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output power L band</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_OUTPUT_POWER_L_BAND,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Laser bias current</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_LASER_BIAS_CURRENT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Optical return loss</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_OPTICAL_RETURN_LOSS,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Laser temperature</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_LASER_TEMPERATURE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel input power primary-line rx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_PANEL_INPUT_POWER_LINEP_RX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel output power primary-line tx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_PANEL_OUTPUT_POWER_LINEP_TX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel input power secondary-line rx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_PANEL_INPUT_POWER_LINES_RX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel output power secondary-line tx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_PANEL_OUTPUT_POWER_LINES_TX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Laser TEC current</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_LASER_TEC_CURRENT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Ingress VOA attenuation</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_INGRESS_VOTAI_OA_ATTEN,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Monitor port output power</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_MON_OUTPUT_POWER,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OA_STAT_END,</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_oa_stat_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Create OA.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Allocates and initializes a OA.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[out] otai_oa_id OA id</span>
+<span class="f2">+ * @param[in] switch_id Switch id on which the OA exists</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[in] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_create_otai_oa_fn)(</span>
+<span class="f2">+        _Out_ sai_object_id_t *otai_oa_id,</span>
+<span class="f2">+        _In_ sai_object_id_t switch_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Remove OA</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_oa_id OA id</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_remove_otai_oa_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_oa_id);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Set OA attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_oa_id OA id</span>
+<span class="f2">+ * @param[in] attr Attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_set_otai_oa_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_oa_id,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OA attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_oa_id OA id</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[inout] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_oa_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_oa_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _Inout_ sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OA statistics.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_oa_id OA id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_oa_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_oa_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OA statistics extended.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_oa_id OA id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[in] mode Statistics mode</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_oa_stats_ext_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_oa_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _In_ sai_stats_mode_t mode,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Clear OA statistics counters.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_oa_id OA id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_clear_otai_oa_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_oa_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Routing interface methods table retrieved with sai_api_query()</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef struct _sai_otai_oa_api_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    sai_create_otai_oa_fn                create_otai_oa;</span>
+<span class="f2">+    sai_remove_otai_oa_fn                remove_otai_oa;</span>
+<span class="f2">+    sai_set_otai_oa_attribute_fn         set_otai_oa_attribute;</span>
+<span class="f2">+    sai_get_otai_oa_attribute_fn         get_otai_oa_attribute;</span>
+<span class="f2">+    sai_get_otai_oa_stats_fn             get_otai_oa_stats;</span>
+<span class="f2">+    sai_get_otai_oa_stats_ext_fn         get_otai_oa_stats_ext;</span>
+<span class="f2">+    sai_clear_otai_oa_stats_fn           clear_otai_oa_stats;</span>
+<span class="f2">+} sai_otai_oa_api_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @}</span>
+<span class="f2">+ */</span>
+<span class="f2">+#endif /** __SAIEXPERIMENTALOTAIOA_H_ */</span>
+<span class="bold">diff --git a/experimental/saiexperimentalotaiocm.h b/experimental/saiexperimentalotaiocm.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 0000000..7379635</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/experimental/saiexperimentalotaiocm.h</span>
+<span class="f6">@@ -0,0 +1,240 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2014 Microsoft Open Technologies, Inc.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Microsoft would like to thank the following companies for their review and</span>
+<span class="f2">+ *    assistance with these files: Intel Corporation, Mellanox Technologies Ltd,</span>
+<span class="f2">+ *    Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * AUTOGENERATED FILE! DO NOT EDIT</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Copyright (c) 2021 Alibaba Group.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @file    saiexperimentalotaiocm.h</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @brief   This module defines the OCM for the OTAI</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#if !defined (__SAIEXPERIMENTALOTAIOCM_H_)</span>
+<span class="f2">+#define __SAIEXPERIMENTALOTAIOCM_H_</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;saitypes.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @defgroup SAIEXPERIMENTALOTAIOCM SAI - OTAI OCM specific API definitions</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @{</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OCM attribute IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_ocm_attr_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Id</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags MANDATORY_ON_CREATE | CREATE_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_ATTR_ID = SAI_OTAI_OCM_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Scan</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_ATTR_SCAN,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Frequency granularity in MHz</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint64_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_ATTR_FREQUENCY_GRANULARITY,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_ATTR_END,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** Custom range base value */</span>
+<span class="f2">+    SAI_OTAI_OCM_ATTR_CUSTOM_RANGE_START = 0x10000000,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** End of custom range base */</span>
+<span class="f2">+    SAI_OTAI_OCM_ATTR_CUSTOM_RANGE_END</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_ocm_attr_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OCM stat IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_ocm_stat_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief A placeholder</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_STAT_NOT_USE = SAI_OTAI_OCM_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OCM_STAT_END,</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_ocm_stat_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Create OCM.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Allocates and initializes a OCM.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[out] otai_ocm_id OCM id</span>
+<span class="f2">+ * @param[in] switch_id Switch id on which the OCM exists</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[in] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_create_otai_ocm_fn)(</span>
+<span class="f2">+        _Out_ sai_object_id_t *otai_ocm_id,</span>
+<span class="f2">+        _In_ sai_object_id_t switch_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Remove OCM</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_ocm_id OCM id</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_remove_otai_ocm_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_ocm_id);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Set OCM attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_ocm_id OCM id</span>
+<span class="f2">+ * @param[in] attr Attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_set_otai_ocm_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_ocm_id,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OCM attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_ocm_id OCM id</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[inout] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_ocm_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_ocm_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _Inout_ sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OCM statistics.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_ocm_id OCM id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_ocm_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_ocm_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OCM statistics extended.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_ocm_id OCM id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[in] mode Statistics mode</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_ocm_stats_ext_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_ocm_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _In_ sai_stats_mode_t mode,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Clear OCM statistics counters.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_ocm_id OCM id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_clear_otai_ocm_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_ocm_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Routing interface methods table retrieved with sai_api_query()</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef struct _sai_otai_ocm_api_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    sai_create_otai_ocm_fn                create_otai_ocm;</span>
+<span class="f2">+    sai_remove_otai_ocm_fn                remove_otai_ocm;</span>
+<span class="f2">+    sai_set_otai_ocm_attribute_fn         set_otai_ocm_attribute;</span>
+<span class="f2">+    sai_get_otai_ocm_attribute_fn         get_otai_ocm_attribute;</span>
+<span class="f2">+    sai_get_otai_ocm_stats_fn             get_otai_ocm_stats;</span>
+<span class="f2">+    sai_get_otai_ocm_stats_ext_fn         get_otai_ocm_stats_ext;</span>
+<span class="f2">+    sai_clear_otai_ocm_stats_fn           clear_otai_ocm_stats;</span>
+<span class="f2">+} sai_otai_ocm_api_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @}</span>
+<span class="f2">+ */</span>
+<span class="f2">+#endif /** __SAIEXPERIMENTALOTAIOCM_H_ */</span>
+<span class="bold">diff --git a/experimental/saiexperimentalotaiosc.h b/experimental/saiexperimentalotaiosc.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 0000000..af221a8</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/experimental/saiexperimentalotaiosc.h</span>
+<span class="f6">@@ -0,0 +1,319 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2014 Microsoft Open Technologies, Inc.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Microsoft would like to thank the following companies for their review and</span>
+<span class="f2">+ *    assistance with these files: Intel Corporation, Mellanox Technologies Ltd,</span>
+<span class="f2">+ *    Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * AUTOGENERATED FILE! DO NOT EDIT</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Copyright (c) 2021 Alibaba Group.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @file    saiexperimentalotaiosc.h</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @brief   This module defines the OSC for the OTAI</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#if !defined (__SAIEXPERIMENTALOTAIOSC_H_)</span>
+<span class="f2">+#define __SAIEXPERIMENTALOTAIOSC_H_</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;saitypes.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @defgroup SAIEXPERIMENTALOTAIOSC SAI - OTAI OSC specific API definitions</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @{</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OSC attribute IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_osc_attr_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief ID</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags MANDATORY_ON_CREATE | CREATE_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_ID = SAI_OTAI_OSC_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output frequency</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint64_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_OUTPUT_FREQUENCY,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Enabled</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_ENABLED,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Rx low threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_RX_LOW_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Rx high threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_RX_HIGH_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Tx low threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_TX_LOW_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_END,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** Custom range base value */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_CUSTOM_RANGE_START = 0x10000000,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** End of custom range base */</span>
+<span class="f2">+    SAI_OTAI_OSC_ATTR_CUSTOM_RANGE_END</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_osc_attr_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OSC stat IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_osc_stat_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input power</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_INPUT_POWER = SAI_OTAI_OSC_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Temperature</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_TEMPERATURE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output power</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_OUTPUT_POWER,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input offset primary-line rx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_INPUT_OFFSET_LINEP_RX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output offset primary-line tx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_OUTPUT_OFFSET_LINEP_TX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Input offset secondary-line rx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_INPUT_OFFSET_LINES_RX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output offset secondary-line tx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_OUTPUT_OFFSET_LINES_TX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Laser bias current</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_LASER_BIAS_CURRENT,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel input power primary-line rx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_PANEL_INPUT_POWER_LINEP_RX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel output power primary-line tx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_PANEL_OUTPUT_POWER_LINEP_TX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel input power secondary-line rx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_PANEL_INPUT_POWER_LINES_RX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Panel output power secondary-line tx</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_PANEL_OUTPUT_POWER_LINES_TX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OSC_STAT_END,</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_osc_stat_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Create OSC.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Allocates and initializes a OSC.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[out] otai_osc_id OSC id</span>
+<span class="f2">+ * @param[in] switch_id Switch id on which the OSC exists</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[in] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_create_otai_osc_fn)(</span>
+<span class="f2">+        _Out_ sai_object_id_t *otai_osc_id,</span>
+<span class="f2">+        _In_ sai_object_id_t switch_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Remove OSC</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_osc_id OSC id</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_remove_otai_osc_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_osc_id);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Set OSC attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_osc_id OSC id</span>
+<span class="f2">+ * @param[in] attr Attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_set_otai_osc_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_osc_id,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OSC attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_osc_id OSC id</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[inout] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_osc_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_osc_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _Inout_ sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OSC statistics.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_osc_id OSC id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_osc_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_osc_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OSC statistics extended.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_osc_id OSC id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[in] mode Statistics mode</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_osc_stats_ext_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_osc_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _In_ sai_stats_mode_t mode,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Clear OSC statistics counters.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_osc_id OSC id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_clear_otai_osc_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_osc_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Routing interface methods table retrieved with sai_api_query()</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef struct _sai_otai_osc_api_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    sai_create_otai_osc_fn                create_otai_osc;</span>
+<span class="f2">+    sai_remove_otai_osc_fn                remove_otai_osc;</span>
+<span class="f2">+    sai_set_otai_osc_attribute_fn         set_otai_osc_attribute;</span>
+<span class="f2">+    sai_get_otai_osc_attribute_fn         get_otai_osc_attribute;</span>
+<span class="f2">+    sai_get_otai_osc_stats_fn             get_otai_osc_stats;</span>
+<span class="f2">+    sai_get_otai_osc_stats_ext_fn         get_otai_osc_stats_ext;</span>
+<span class="f2">+    sai_clear_otai_osc_stats_fn           clear_otai_osc_stats;</span>
+<span class="f2">+} sai_otai_osc_api_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @}</span>
+<span class="f2">+ */</span>
+<span class="f2">+#endif /** __SAIEXPERIMENTALOTAIOSC_H_ */</span>
+<span class="bold">diff --git a/experimental/saiexperimentalotaiotdr.h b/experimental/saiexperimentalotaiotdr.h</span>
+<span class="bold">new file mode 100644</span>
+<span class="bold">index 0000000..347d5c6</span>
+<span class="bold">--- /dev/null</span>
+<span class="bold">+++ b/experimental/saiexperimentalotaiotdr.h</span>
+<span class="f6">@@ -0,0 +1,376 @@</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * Copyright (c) 2014 Microsoft Open Technologies, Inc.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Microsoft would like to thank the following companies for their review and</span>
+<span class="f2">+ *    assistance with these files: Intel Corporation, Mellanox Technologies Ltd,</span>
+<span class="f2">+ *    Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * AUTOGENERATED FILE! DO NOT EDIT</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Copyright (c) 2021 Alibaba Group.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+<span class="f2">+ *    not use this file except in compliance with the License. You may obtain</span>
+<span class="f2">+ *    a copy of the License at http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR</span>
+<span class="f2">+ *    CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT</span>
+<span class="f2">+ *    LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS</span>
+<span class="f2">+ *    FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ *    See the Apache Version 2.0 License for specific language governing</span>
+<span class="f2">+ *    permissions and limitations under the License.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @file    saiexperimentalotaiotdr.h</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @brief   This module defines the OTDR for the OTAI</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+#if !defined (__SAIEXPERIMENTALOTAIOTDR_H_)</span>
+<span class="f2">+#define __SAIEXPERIMENTALOTAIOTDR_H_</span>
+<span class="f2">+</span>
+<span class="f2">+#include &lt;saitypes.h&gt;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @defgroup SAIEXPERIMENTALOTAIOTDR SAI - OTAI OTDR specific API definitions</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @{</span>
+<span class="f2">+ */</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OTDR attribute IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_otdr_attr_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Id</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags MANDATORY_ON_CREATE | CREATE_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_ID = SAI_OTAI_OTDR_ATTR_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Refractive index</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_REFRACTIVE_INDEX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Backscatter index</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_BACKSCATTER_INDEX,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Reflection threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_REFLECTION_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Splice loss threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_SPLICE_LOSS_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of fiber threshold</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_END_OF_FIBER_THRESHOLD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Distance range</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_DISTANCE_RANGE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Pulse width</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_PULSE_WIDTH,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Average time</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_AVERAGE_TIME,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Output frequency</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint64_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_OUTPUT_FREQUENCY,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Enabled</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_ENABLED,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Scan</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type bool</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_SCAN,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start time</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type char</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_START_TIME,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Period</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags CREATE_AND_SET</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_PERIOD,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Dynamic range</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_DYNAMIC_RANGE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Distance accuracy</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_DISTANCE_ACCURACY,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Sampling resolution</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_SAMPLING_RESOLUTION,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Loss dead zone</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_LOSS_DEAD_ZONE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Reflection dead zone</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_double_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_REFLECTION_DEAD_ZONE,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Scanning status</span>
+<span class="f2">+     *</span>
+<span class="f2">+     * @type sai_uint32_t</span>
+<span class="f2">+     * @flags READ_ONLY</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_SCANNING_STATUS,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of attributes</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_END,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** Custom range base value */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_CUSTOM_RANGE_START = 0x10000000,</span>
+<span class="f2">+</span>
+<span class="f2">+    /** End of custom range base */</span>
+<span class="f2">+    SAI_OTAI_OTDR_ATTR_CUSTOM_RANGE_END</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_otdr_attr_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief OTDR stat IDs</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef enum _sai_otai_otdr_stat_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Start of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief A placeholder</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_STAT_NOT_USE = SAI_OTAI_OTDR_STAT_START,</span>
+<span class="f2">+</span>
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief End of statistics</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_OTAI_OTDR_STAT_END,</span>
+<span class="f2">+</span>
+<span class="f2">+} sai_otai_otdr_stat_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Create OTDR.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * Allocates and initializes a OTDR.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[out] otai_otdr_id OTDR id</span>
+<span class="f2">+ * @param[in] switch_id Switch id on which the OTDR exists</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[in] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_create_otai_otdr_fn)(</span>
+<span class="f2">+        _Out_ sai_object_id_t *otai_otdr_id,</span>
+<span class="f2">+        _In_ sai_object_id_t switch_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Remove OTDR</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_otdr_id OTDR id</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_remove_otai_otdr_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_otdr_id);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Set OTDR attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_otdr_id OTDR id</span>
+<span class="f2">+ * @param[in] attr Attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_set_otai_otdr_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_otdr_id,</span>
+<span class="f2">+        _In_ const sai_attribute_t *attr);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OTDR attribute</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_otdr_id OTDR id</span>
+<span class="f2">+ * @param[in] attr_count Number of attributes</span>
+<span class="f2">+ * @param[inout] attr_list Array of attributes</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_otdr_attribute_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_otdr_id,</span>
+<span class="f2">+        _In_ uint32_t attr_count,</span>
+<span class="f2">+        _Inout_ sai_attribute_t *attr_list);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OTDR statistics.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_otdr_id OTDR id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_otdr_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_otdr_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Get OTDR statistics extended.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_otdr_id OTDR id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ * @param[in] mode Statistics mode</span>
+<span class="f2">+ * @param[out] counters Array of resulting counter values.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_get_otai_otdr_stats_ext_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_otdr_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids,</span>
+<span class="f2">+        _In_ sai_stats_mode_t mode,</span>
+<span class="f2">+        _Out_ uint64_t *counters);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Clear OTDR statistics counters.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] otai_otdr_id OTDR id</span>
+<span class="f2">+ * @param[in] number_of_counters Number of counters in the array</span>
+<span class="f2">+ * @param[in] counter_ids Specifies the array of counter ids</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return #SAI_STATUS_SUCCESS on success, failure status code on error</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef sai_status_t (*sai_clear_otai_otdr_stats_fn)(</span>
+<span class="f2">+        _In_ sai_object_id_t otai_otdr_id,</span>
+<span class="f2">+        _In_ uint32_t number_of_counters,</span>
+<span class="f2">+        _In_ const sai_stat_id_t *counter_ids);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Routing interface methods table retrieved with sai_api_query()</span>
+<span class="f2">+ */</span>
+<span class="f2">+typedef struct _sai_otai_otdr_api_t</span>
+<span class="f2">+{</span>
+<span class="f2">+    sai_create_otai_otdr_fn                create_otai_otdr;</span>
+<span class="f2">+    sai_remove_otai_otdr_fn                remove_otai_otdr;</span>
+<span class="f2">+    sai_set_otai_otdr_attribute_fn         set_otai_otdr_attribute;</span>
+<span class="f2">+    sai_get_otai_otdr_attribute_fn         get_otai_otdr_attribute;</span>
+<span class="f2">+    sai_get_otai_otdr_stats_fn             get_otai_otdr_stats;</span>
+<span class="f2">+    sai_get_otai_otdr_stats_ext_fn         get_otai_otdr_stats_ext;</span>
+<span class="f2">+    sai_clear_otai_otdr_stats_fn           clear_otai_otdr_stats;</span>
+<span class="f2">+} sai_otai_otdr_api_t;</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @}</span>
+<span class="f2">+ */</span>
+<span class="f2">+#endif /** __SAIEXPERIMENTALOTAIOTDR_H_ */</span>
+<span class="bold">diff --git a/experimental/saiextensions.h b/experimental/saiextensions.h</span>
+<span class="bold">index b88df11..063f197 100644</span>
+<span class="bold">--- a/experimental/saiextensions.h</span>
+<span class="bold">+++ b/experimental/saiextensions.h</span>
+<span class="f6">@@ -45,6 +45,13 @@</span>
+ #include &quot;saiexperimentaldashacl.h&quot;
+ #include &quot;saiexperimentalbmtor.h&quot;
+ 
+<span class="f2">+/* OTAI extension */</span>
+<span class="f2">+#include &quot;saiexperimentalotaiattenuator.h&quot;</span>
+<span class="f2">+#include &quot;saiexperimentalotaioa.h&quot;</span>
+<span class="f2">+#include &quot;saiexperimentalotaiocm.h&quot;</span>
+<span class="f2">+#include &quot;saiexperimentalotaiosc.h&quot;</span>
+<span class="f2">+#include &quot;saiexperimentalotaiotdr.h&quot;</span>
+<span class="f2">+</span>
+ /**
+  * @brief Extensions to SAI APIs
+  *
+<span class="f6">@@ -76,6 +83,16 @@</span> typedef enum _sai_api_extensions_t
+ 
+     SAI_API_DASH_VIP,
+ 
+<span class="f2">+    SAI_API_OTAI_ATTENUATOR,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_API_OTAI_OA,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_API_OTAI_OCM,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_API_OTAI_OSC,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_API_OTAI_OTDR,</span>
+<span class="f2">+</span>
+     /* Add new experimental APIs above this line */
+ 
+     SAI_API_EXTENSIONS_RANGE_END
+<span class="bold">diff --git a/experimental/saitypesextensions.h b/experimental/saitypesextensions.h</span>
+<span class="bold">index 03a943b..6ec1042 100644</span>
+<span class="bold">--- a/experimental/saitypesextensions.h</span>
+<span class="bold">+++ b/experimental/saitypesextensions.h</span>
+<span class="f6">@@ -70,6 +70,16 @@</span> typedef enum _sai_object_type_extensions_t
+ 
+     SAI_OBJECT_TYPE_VIP_ENTRY,
+ 
+<span class="f2">+    SAI_OBJECT_TYPE_OTAI_ATTENUATOR,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_OBJECT_TYPE_OTAI_OA,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_OBJECT_TYPE_OTAI_OCM,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_OBJECT_TYPE_OTAI_OSC,</span>
+<span class="f2">+</span>
+<span class="f2">+    SAI_OBJECT_TYPE_OTAI_OTDR,</span>
+<span class="f2">+</span>
+     /* Add new experimental object types above this line */
+ 
+     SAI_OBJECT_TYPE_EXTENSIONS_RANGE_END
+<span class="bold">diff --git a/inc/saitypes.h b/inc/saitypes.h</span>
+<span class="bold">index dd5d847..c7cce2f 100644</span>
+<span class="bold">--- a/inc/saitypes.h</span>
+<span class="bold">+++ b/inc/saitypes.h</span>
+<span class="f6">@@ -132,6 +132,8 @@</span> typedef uint64_t sai_object_id_t;
+ typedef void *sai_pointer_t;
+ typedef uint64_t sai_api_version_t;
+ 
+<span class="f2">+typedef double sai_double_t;</span>
+<span class="f2">+</span>
+ typedef struct _sai_timespec_t
+ {
+     uint64_t tv_sec;
+<span class="f6">@@ -1364,6 +1366,9 @@</span> typedef union _sai_attribute_value_t
+     /** @validonly meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT64 */
+     sai_int64_t s64;
+ 
+<span class="f2">+    /** @validonly meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_DOUBLE */</span>
+<span class="f2">+    sai_double_t d64;</span>
+<span class="f2">+</span>
+     /** @validonly meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_POINTER */
+     sai_pointer_t ptr;
+ 
+<span class="bold">diff --git a/meta/aspell.en.pws b/meta/aspell.en.pws</span>
+<span class="bold">index 6b29301..6c2fd45 100644</span>
+<span class="bold">--- a/meta/aspell.en.pws</span>
+<span class="bold">+++ b/meta/aspell.en.pws</span>
+<span class="f6">@@ -212,3 +212,15 @@</span> wildcard
+ Wildcard
+ www
+ xconnect
+<span class="f2">+OTAI</span>
+<span class="f2">+ATTENUATOR</span>
+<span class="f2">+AUTOGENERATED</span>
+<span class="f2">+Alibaba</span>
+<span class="f2">+Attenuator</span>
+<span class="f2">+Backscatter</span>
+<span class="f2">+OA</span>
+<span class="f2">+OCM</span>
+<span class="f2">+OSC</span>
+<span class="f2">+OTDR</span>
+<span class="f2">+TEC</span>
+<span class="f2">+attenuator</span>
+<span class="bold">diff --git a/meta/parse.pl b/meta/parse.pl</span>
+<span class="bold">index 156a5b1..976abd8 100755</span>
+<span class="bold">--- a/meta/parse.pl</span>
+<span class="bold">+++ b/meta/parse.pl</span>
+<span class="f6">@@ -72,6 +72,8 @@</span> our %OBJECT_TYPE_BULK_MAP = ();
+ my $FLAGS = &quot;MANDATORY_ON_CREATE|CREATE_ONLY|CREATE_AND_SET|READ_ONLY|KEY&quot;;
+ my $ENUM_FLAGS_TYPES = &quot;(none|strict|mixed|ranges|free)&quot;;
+ 
+<span class="f2">+my $DECIMAL_REGEX = '([+-]?([0-9]*[.])?[0-9]+)';</span>
+<span class="f2">+</span>
+ # TAGS HANDLERS
+ 
+ my %ATTR_TAGS = (
+<span class="f6">@@ -365,6 +367,8 @@</span> sub ProcessTagDefault
+ 
+     return $val if $val =~ /^ffff\:ffff\:ffff\:ffff\:ffff\:ffff\:ffff\:ffff$/;
+ 
+<span class="f2">+    return $val if $val =~ /^$DECIMAL_REGEX$/;</span>
+<span class="f2">+</span>
+     LogError &quot;invalid default tag value '$val' on $type $value&quot;;
+     return undef;
+ }
+<span class="f6">@@ -1492,6 +1496,11 @@</span> sub ProcessType
+         return &quot;SAI_ATTR_VALUE_TYPE_INT32_LIST&quot;;
+     }
+ 
+<span class="f2">+    if ($type eq &quot;sai_double_t&quot;)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        return &quot;SAI_ATTR_VALUE_TYPE_DOUBLE&quot;;</span>
+<span class="f2">+    }</span>
+<span class="f2">+</span>
+     if ($type =~ /^(sai_\w+_t)$/)
+     {
+         my $prefix = &quot;SAI_ATTR_VALUE_TYPE&quot;;
+<span class="f6">@@ -1647,6 +1656,8 @@</span> sub ProcessDefaultValueType
+ 
+     return &quot;SAI_DEFAULT_VALUE_TYPE_CONST&quot; if $default =~ /^ffff\:ffff\:ffff\:ffff\:ffff\:ffff\:ffff\:ffff$/;
+ 
+<span class="f2">+    return &quot;SAI_DEFAULT_VALUE_TYPE_CONST&quot; if $default =~ /^$DECIMAL_REGEX$/;</span>
+<span class="f2">+</span>
+     LogError &quot;invalid default value type '$default' on $attr&quot;;
+ 
+     return &quot;&quot;;
+<span class="f6">@@ -1722,6 +1733,10 @@</span> sub ProcessDefaultValue
+     {
+         WriteSource &quot;$val = { .mac = { 0, 0, 0, 0, 0, 0 } };&quot;;
+     }
+<span class="f2">+    elsif ($default =~ /^$DECIMAL_REGEX$/ and $type =~ /^sai_double_t/)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        WriteSource &quot;$val = { .$VALUE_TYPES{$type} = $default };&quot;;</span>
+<span class="f2">+    }</span>
+     else
+     {
+         LogError &quot;invalid default value '$default' on $attr ($type)&quot;;
+<span class="f6">@@ -4662,6 +4677,7 @@</span> sub ProcessStructItem
+     return if $type =~ /^sai_(u?int\d+|ip[46]|mac|cos|vlan_id|queue_index)_t/; # primitives, we could get that from defines
+     return if $type =~ /^u?int\d+_t/;
+     return if $type =~ /^sai_[su]\d+_list_t/;
+<span class="f2">+    return if $type =~ /^sai_double_t/;</span>
+ 
+     if ($type eq &quot;sai_object_id_t&quot; or $type eq &quot;sai_object_list_t&quot;)
+     {
+<span class="bold">diff --git a/meta/saimetadatatypes.h b/meta/saimetadatatypes.h</span>
+<span class="bold">index b6b81f4..c99f9f9 100644</span>
+<span class="bold">--- a/meta/saimetadatatypes.h</span>
+<span class="bold">+++ b/meta/saimetadatatypes.h</span>
+<span class="f6">@@ -111,6 +111,11 @@</span> typedef enum _sai_attr_value_type_t
+      */
+     SAI_ATTR_VALUE_TYPE_INT64,
+ 
+<span class="f2">+    /**</span>
+<span class="f2">+     * @brief Attribute value is double.</span>
+<span class="f2">+     */</span>
+<span class="f2">+    SAI_ATTR_VALUE_TYPE_DOUBLE,</span>
+<span class="f2">+</span>
+     /**
+      * @brief Attribute value is pointer address.
+      */
+<span class="bold">diff --git a/meta/saimetadatautils.c b/meta/saimetadatautils.c</span>
+<span class="bold">index 3b319bf..f0a4aa1 100644</span>
+<span class="bold">--- a/meta/saimetadatautils.c</span>
+<span class="bold">+++ b/meta/saimetadatautils.c</span>
+<span class="f6">@@ -24,6 +24,7 @@</span>
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;string.h&gt;
+<span class="f2">+#include &lt;math.h&gt;</span>
+ #include &lt;sai.h&gt;
+ #include &quot;saimetadatautils.h&quot;
+ #include &quot;saimetadata.h&quot;
+<span class="f6">@@ -376,6 +377,9 @@</span> static bool sai_metadata_is_condition_value_eq(
+         case SAI_ATTR_VALUE_TYPE_UINT64:
+             return cvalue-&gt;u64 == value-&gt;u64;
+ 
+<span class="f2">+        case SAI_ATTR_VALUE_TYPE_DOUBLE:</span>
+<span class="f2">+            return fabs(cvalue-&gt;d64 - value-&gt;d64) &lt; 1E-6;</span>
+<span class="f2">+</span>
+         default:
+ 
+             /*
+<span class="bold">diff --git a/meta/saisanitycheck.c b/meta/saisanitycheck.c</span>
+<span class="bold">index d2c4ec8..ed5fa72 100644</span>
+<span class="bold">--- a/meta/saisanitycheck.c</span>
+<span class="bold">+++ b/meta/saisanitycheck.c</span>
+<span class="f6">@@ -665,6 +665,7 @@</span> void check_attr_object_type_provided(
+         case SAI_ATTR_VALUE_TYPE_VLAN_LIST:
+         case SAI_ATTR_VALUE_TYPE_UINT32:
+         case SAI_ATTR_VALUE_TYPE_UINT64:
+<span class="f2">+        case SAI_ATTR_VALUE_TYPE_DOUBLE:</span>
+         case SAI_ATTR_VALUE_TYPE_MAC:
+         case SAI_ATTR_VALUE_TYPE_POINTER:
+         case SAI_ATTR_VALUE_TYPE_IP_ADDRESS:
+<span class="f6">@@ -946,6 +947,7 @@</span> void check_attr_default_required(
+         case SAI_ATTR_VALUE_TYPE_UINT16:
+         case SAI_ATTR_VALUE_TYPE_UINT32:
+         case SAI_ATTR_VALUE_TYPE_UINT64:
+<span class="f2">+        case SAI_ATTR_VALUE_TYPE_DOUBLE:</span>
+         case SAI_ATTR_VALUE_TYPE_MAC:
+         case SAI_ATTR_VALUE_TYPE_IP_ADDRESS:
+         case SAI_ATTR_VALUE_TYPE_IP_PREFIX:
+<span class="f6">@@ -1415,6 +1417,7 @@</span> void check_attr_conditions(
+             case SAI_ATTR_VALUE_TYPE_UINT16:
+             case SAI_ATTR_VALUE_TYPE_UINT32:
+             case SAI_ATTR_VALUE_TYPE_UINT64:
+<span class="f2">+            case SAI_ATTR_VALUE_TYPE_DOUBLE:</span>
+ 
+                 /* number conditions */
+ 
+<span class="f6">@@ -1622,6 +1625,7 @@</span> void check_attr_validonly(
+             case SAI_ATTR_VALUE_TYPE_UINT16:
+             case SAI_ATTR_VALUE_TYPE_UINT32:
+             case SAI_ATTR_VALUE_TYPE_UINT64:
+<span class="f2">+            case SAI_ATTR_VALUE_TYPE_DOUBLE:</span>
+                 break;
+ 
+             default:
+<span class="f6">@@ -2517,6 +2521,7 @@</span> void check_attr_existing_objects(
+         case SAI_ATTR_VALUE_TYPE_UINT32:
+         case SAI_ATTR_VALUE_TYPE_UINT64:
+         case SAI_ATTR_VALUE_TYPE_UINT8:
+<span class="f2">+        case SAI_ATTR_VALUE_TYPE_DOUBLE:</span>
+ 
+             /*
+              * Primitives we can skip for now, just left as was set by user
+<span class="f6">@@ -2774,6 +2779,7 @@</span> void check_attr_is_primitive(
+         case SAI_ATTR_VALUE_TYPE_SYSTEM_PORT_CONFIG:
+         case SAI_ATTR_VALUE_TYPE_FABRIC_PORT_REACHABILITY:
+         case SAI_ATTR_VALUE_TYPE_LATCH_STATUS:
+<span class="f2">+        case SAI_ATTR_VALUE_TYPE_DOUBLE:</span>
+ 
+             if (!md-&gt;isprimitive)
+             {
+<span class="bold">diff --git a/meta/saiserialize.c b/meta/saiserialize.c</span>
+<span class="bold">index 21e446b..5682fab 100644</span>
+<span class="bold">--- a/meta/saiserialize.c</span>
+<span class="bold">+++ b/meta/saiserialize.c</span>
+<span class="f6">@@ -1355,3 +1355,17 @@</span> int sai_deserialize_attribute(
+ 
+     return (int)(buf - buffer);
+ }
+<span class="f2">+</span>
+<span class="f2">+int sai_serialize_double(</span>
+<span class="f2">+        _Out_ char *buffer,</span>
+<span class="f2">+        _In_ sai_double_t d64)</span>
+<span class="f2">+{</span>
+<span class="f2">+    return sprintf(buffer, &quot;%.2lf&quot;, d64);</span>
+<span class="f2">+}</span>
+<span class="f2">+</span>
+<span class="f2">+int sai_deserialize_double(</span>
+<span class="f2">+        _In_ const char *buffer,</span>
+<span class="f2">+        _Out_ sai_double_t *d64)</span>
+<span class="f2">+{</span>
+<span class="f2">+    return sscanf(buffer, &quot;%lf&quot;, d64);</span>
+<span class="f2">+}</span>
+<span class="bold">diff --git a/meta/saiserialize.h b/meta/saiserialize.h</span>
+<span class="bold">index bd90ef1..284b192 100644</span>
+<span class="bold">--- a/meta/saiserialize.h</span>
+<span class="bold">+++ b/meta/saiserialize.h</span>
+<span class="f6">@@ -877,6 +877,32 @@</span> void sai_free_attribute(
+         _In_ const sai_attr_metadata_t *meta,
+         _In_ const sai_attribute_t *attribute);
+ 
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Serialize double.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[out] buffer Output buffer for serialized value.</span>
+<span class="f2">+ * @param[in] d64 Double to be serialized.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return Number of characters written to buffer excluding '\0',</span>
+<span class="f2">+ * or #SAI_SERIALIZE_ERROR on error.</span>
+<span class="f2">+ */</span>
+<span class="f2">+int sai_serialize_double(</span>
+<span class="f2">+        _Out_ char *buffer,</span>
+<span class="f2">+        _In_ sai_double_t d64);</span>
+<span class="f2">+</span>
+<span class="f2">+/**</span>
+<span class="f2">+ * @brief Deserialize double.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @param[in] buffer Input buffer to be examined.</span>
+<span class="f2">+ * @param[out] d64 Deserialized value.</span>
+<span class="f2">+ *</span>
+<span class="f2">+ * @return Number of characters consumed from the buffer,</span>
+<span class="f2">+ * or #SAI_SERIALIZE_ERROR on error.</span>
+<span class="f2">+ */</span>
+<span class="f2">+int sai_deserialize_double(</span>
+<span class="f2">+        _In_ const char *buffer,</span>
+<span class="f2">+        _Out_ sai_double_t *d64);</span>
+<span class="f2">+</span>
+ /**
+  * @}
+  */
+<span class="bold">diff --git a/meta/serialize.pm b/meta/serialize.pm</span>
+<span class="bold">index f81383c..bc288b7 100644</span>
+<span class="bold">--- a/meta/serialize.pm</span>
+<span class="bold">+++ b/meta/serialize.pm</span>
+<span class="f6">@@ -313,6 +313,11 @@</span> sub GetTypeInfoForSerialize
+         $TypeInfo{needQuote} = 1;
+         $TypeInfo{deamp} = &quot;&amp;&quot;;
+     }
+<span class="f2">+    elsif ($type =~ m/^sai_double_t$/)</span>
+<span class="f2">+    {</span>
+<span class="f2">+        $TypeInfo{suffix} = &quot;double&quot;;</span>
+<span class="f2">+        $TypeInfo{deamp} = &quot;&amp;&quot;;</span>
+<span class="f2">+    }</span>
+     elsif ($type =~ /^sai_pointer_t$/)
+     {
+         # need quote since &quot;ptr:&quot; is added on serialize
+</pre>
+</body>
+</html>
