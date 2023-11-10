@@ -13,7 +13,9 @@ SUB_DIRS='device
           src/sonic-sairedis/vslib
           src/sonic-sairedis/OTAI
           src/sonic-swss/cfgmgr
-          src/sonic-swss/orchagent'
+          src/sonic-swss/orchagent
+          src/sonic-mgmt-common
+          src/sonic-mgmt-framework'
 
 SCRIPT_FILE='extension.py'
 CUR_PATH=`pwd`
