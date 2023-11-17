@@ -1,6 +1,7 @@
 import os
 import shutil
 import subprocess
+import colorama
 
 
 def RemoveFolder(path):
@@ -135,3 +136,17 @@ def GitReset(path, sha):
     cmd += 'git reset '
     cmd += sha
     ShellCmd(cmd)
+
+
+def RunSubModules(argv, folders):
+    index = 1
+    for f in folders:
+        title = '--Extending ' + str(argv[4]) + '.' + str(index) + ':' + f
+        print(colorama.Fore.CYAN, title)
+
+        path = MergePath(argv[3], f)
+        cmd = 'cd {};python3 extension.py {} {}'.format(path, argv[1], argv[2])
+        rs = ShellCmd(cmd)
+        print(colorama.Fore.RESET, rs)
+
+        index += 1

@@ -13,6 +13,7 @@ SONIC_ALL += $(SONIC_ONE_IMAGE) $(SONIC_KVM_IMAGE) $(SONIC_RAW_IMAGE)
 
 # Inject ot-kvm otai into syncd
 $(SYNCD)_DEPENDS += $(OTKVM_LIBOTAI_DEB)
+$(SYNCD)_DEPENDS += $(LIBSAIMETADATA_DEV)
 
 # Inject ot-kvm hal dependency library into pmon
 $(DOCKER_PLATFORM_MONITOR)_DEPENDS += $(OTKVM_HALCLIENT_DEB)
