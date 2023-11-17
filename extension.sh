@@ -1,19 +1,9 @@
 #!/bin/bash
 
-SUB_DIRS='device
-          dockers/docker-orchagent
-          files/image_config
-          platform
-          rules
+SUB_DIRS='./
           src/sonic-swss-common
-          src/sonic-sairedis/debian
-          src/sonic-sairedis/lib
-          src/sonic-sairedis/meta
-          src/sonic-sairedis/syncd
-          src/sonic-sairedis/vslib
-          src/sonic-sairedis/OTAI
-          src/sonic-swss/cfgmgr
-          src/sonic-swss/orchagent
+          src/sonic-sairedis
+          src/sonic-swss
           src/sonic-mgmt-common
           src/sonic-mgmt-framework'
 
@@ -86,14 +76,14 @@ for dir in $SUB_DIRS; do
     let DIR_IDX=DIR_IDX+1
     if test -e $dir/$SCRIPT_FILE; then
         cd $dir
-        echo "-------------------------$DIR_IDX:$dir-------------------------"
-        python3 $SCRIPT_FILE $BUILD_PATH $OPTION
+        echo -e "\e[32mExtending $DIR_IDX:$dir\e[0m"
+        python3 $SCRIPT_FILE $BUILD_PATH $OPTION ${CUR_PATH}/$dir $DIR_IDX
         cd $CUR_PATH
     fi
 done
 
 #do snapshot
-echo "-------------------------diff snapshot-------------------------"
+echo -e "\e[32mExtending diff snapshot\e[0m"
 cd snapshot
 python3 gen.py $BUILD_PATH $OPTION ${CUR_PATH}/snapshot
 cd $CUR_PATH

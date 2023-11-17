@@ -5,10 +5,12 @@ from exten_util import *
 
 
 g_gits={'./': 'sonic-buildimage',
-          'src/sonic-sairedis': 'sonic-sairedis',
-          'src/sonic-sairedis/SAI': 'SAI',
-          'src/sonic-swss-common': 'sonic-swss-common',
-          'src/sonic-swss': 'sonic-swss'}
+        'src/sonic-sairedis': 'sonic-sairedis',
+        'src/sonic-sairedis/SAI': 'SAI',
+        'src/sonic-swss-common': 'sonic-swss-common',
+        'src/sonic-swss': 'sonic-swss',
+        'src/sonic-mgmt-common': 'sonic-mgmt-common',
+        'src/sonic-mgmt-framework': 'sonic-mgmt-framework'}
 
 
 def diff(cur, sonic):
