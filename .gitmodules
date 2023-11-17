@@ -10,3 +10,6 @@
 [submodule "src/sonic-mgmt-framework"]
 	path = src/sonic-mgmt-framework
 	url = https://kochsource.io/oplinkoms/mgmt-framework-ot-extension
+[submodule "sonic-mlx-debs"]
+	path = sonic-mlx-debs
+	url = https://kochsource.io/oplinkoms/sonic-mlx-debs
