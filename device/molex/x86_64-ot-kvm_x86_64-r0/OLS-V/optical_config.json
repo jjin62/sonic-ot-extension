@@ -40,5 +40,27 @@
       "id": "0",
       "osc-sfp-enable": "true"
     }
+  },
+  "OCM": {
+    "LineT": {
+      "id": "0",
+      "monitor-port": "LineT"
+    },
+    "LineR": {
+      "id": "1",
+      "monitor-port": "LineR"
+    },
+    "MuxT": {
+      "id": "2",
+      "monitor-port": "MuxT"
+    },
+    "MuxR": {
+      "id": "3",
+      "monitor-port": "MuxR"
+    },
+    "OcmR": {
+      "id": "4",
+      "monitor-port": "OcmR"
+    }
   }
 }
