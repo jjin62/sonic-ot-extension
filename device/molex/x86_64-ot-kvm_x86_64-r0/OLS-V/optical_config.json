@@ -40,5 +40,106 @@
       "id": "0",
       "osc-sfp-enabled": "true"
     }
+  },
+  "OCM": {
+    "LineIn": {
+      "id": "0",
+      "monitor-port": "LineIn"
+    },
+    "LineOut": {
+      "id": "1",
+      "monitor-port": "LineOut"
+    },
+    "ClientIn": {
+      "id": "2",
+      "monitor-port": "ClientIn"
+    },
+    "ClientOut": {
+      "id": "3",
+      "monitor-port": "ClientOut"
+    },
+    "OcmIn": {
+      "id": "4",
+      "monitor-port": "OcmIn"
+    }
+  },
+  "OTDR": {
+    "short": {
+      "acquisition-time-s": 60,
+      "range-m": 5,
+      "pulse-width-ns": 3000,
+      "sample-resolution-m": "10",
+      "wavelength-mhz": 200000000,
+      "fiber-type": "SSMF"
+    },
+    "medium": {
+      "acquisition-time-s": 60,
+      "range-m": 60,
+      "pulse-width-ns": 3000,
+      "sample-resolution-m": "10",
+      "wavelength-mhz": 200000000,
+      "fiber-type": "SSMF"
+    },
+    "long": {
+      "acquisition-time-s": 60,
+      "range-m": 120,
+      "pulse-width-ns": 3000,
+      "sample-resolution-m": "10",
+      "wavelength-mhz": 200000000,
+      "fiber-type": "SSMF"
+    }
+  },
+  "FIBER_PROFILE": {
+    "DEFAULT": {
+      "backscatter-index": "0",
+      "fiber-end-threshold": "3",
+      "reflectance-threshold": "-40",
+      "refractive-index": "1.4679",
+      "splice-loss-thr": "2.16"
+    }
+  },
+  "OTDRS": {
+    "LineIn": {
+      "parent-port": "LineIn",
+      "acquisition-time-s": 60,
+      "range-m": 60,
+      "pulse-width-ns": 3000,
+      "sample-resolution-m": "10",
+      "wavelength-mhz": 200000000,
+      "fiber-type": "SSMF",
+      "backscatter-index": "0",
+      "fiber-end-threshold": "3",
+      "reflectance-threshold": "-40",
+      "refractive-index": "1.4679",
+      "splice-loss-thr": "2.16"
+    },
+    "LineOut": {
+      "parent-port": "LineOut",
+      "acquisition-time-s": 60,
+      "range-m": 60,
+      "pulse-width-ns": 3000,
+      "sample-resolution-m": "10",
+      "wavelength-mhz": 200000000,
+      "fiber-type": "SSMF",
+      "backscatter-index": "0",
+      "fiber-end-threshold": "3",
+      "reflectance-threshold": "-40",
+      "refractive-index": "1.4679",
+      "splice-loss-thr": "2.16"
+    },
+    "OtdrOut": {
+      "parent-port": "OtdrOut",
+      "acquisition-time-s": 60,
+      "range-m": 60,
+      "pulse-width-ns": 3000,
+      "sample-resolution-m": "10",
+      "wavelength-mhz": 200000000,
+      "fiber-type": "SSMF",
+      "backscatter-index": "0",
+      "fiber-end-threshold": "3",
+      "reflectance-threshold": "-40",
+      "refractive-index": "1.4679",
+      "splice-loss-thr": "2.16"
+    }
   }
 }
