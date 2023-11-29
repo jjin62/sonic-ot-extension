@@ -63,7 +63,7 @@
       "monitor-port": "OcmIn"
     }
   },
-  "OTDR": {
+  "OTDR-COMMON": {
     "short": {
       "acquisition-time-s": 60,
       "range-m": 5,
@@ -98,8 +98,9 @@
       "splice-loss-thr": "2.16"
     }
   },
-  "OTDRS": {
+  "OTDR": {
     "LineIn": {
+      "id": "0",
       "parent-port": "LineIn",
       "acquisition-time-s": 60,
       "range-m": 60,
@@ -114,6 +115,7 @@
       "splice-loss-thr": "2.16"
     },
     "LineOut": {
+      "id": "1",
       "parent-port": "LineOut",
       "acquisition-time-s": 60,
       "range-m": 60,
@@ -128,6 +130,7 @@
       "splice-loss-thr": "2.16"
     },
     "OtdrOut": {
+      "id": "2",
       "parent-port": "OtdrOut",
       "acquisition-time-s": 60,
       "range-m": 60,
