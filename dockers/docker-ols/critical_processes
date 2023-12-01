@@ -1,3 +1,5 @@
-program:autogaind
+program:syslogalm
+program:operationd
+program:autoctrld
 program:olsmgrd
 program:ols-syncd

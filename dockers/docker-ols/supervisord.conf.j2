@@ -51,7 +51,7 @@ dependent_startup=true
 dependent_startup_wait_for=start:exited
 
 [program:]
-command=/usr/local/bin/autogaind
+command=/usr/local/bin/autoctrld
 priority=3
 autostart=false
 autorestart=false
@@ -61,7 +61,7 @@ dependent_startup=true
 dependent_startup_wait_for=start:exited
 
 [program:waitfor_autogaind_ready]
-command=/usr/bin/waitfor_autogaind_ready.sh
+command=/usr/bin/waitfor_autoctrld_ready.sh
 priority=3
 autostart=false
 autorestart=false
