@@ -28,8 +28,17 @@ def CopyFolder(src, dest):
 def CopyFiles(filelist, dir):
     for files in filelist:
         for file in files:
-            shutil.copy(file, dir)
+            try:
+                shutil.copy(file, dir)
+            except shutil.SameFileError:
+                pass
 
+def CopyFiles1(files, dir):
+    for file in files:
+        try:
+            shutil.copy(file, dir)
+        except shutil.SameFileError:
+            pass
 
 def RestoreFiles(files, dir):
     os.chdir(dir)
@@ -145,7 +154,7 @@ def RunSubModules(argv, folders):
         print(colorama.Fore.CYAN, title)
 
         path = MergePath(argv[3], f)
-        cmd = 'cd {};python3 extension.py {} {}'.format(path, argv[1], argv[2])
+        cmd = 'cd {};python3 extension.py {} {} {}'.format(path, argv[1], argv[2], argv[3])
         rs = ShellCmd(cmd)
         print(colorama.Fore.RESET, rs)
 
