@@ -38,7 +38,7 @@
   "OSC": {
     "OSC": {
       "id": "0",
-      "osc-sfp-enabled": "true"
+      "enabled": "true"
     }
   },
   "OCM": {
