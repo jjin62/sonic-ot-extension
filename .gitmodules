@@ -13,3 +13,6 @@
 [submodule "sonic-mlx-debs"]
 	path = sonic-mlx-debs
 	url = https://kochsource.io/oplinkoms/sonic-mlx-debs
+[submodule "rules/src/sonic-ols"]
+	path = rules/src/sonic-ols
+	url = https://kochsource.io/oplinkoms/sonic-ols
