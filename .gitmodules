@@ -16,3 +16,6 @@
 [submodule "src/sonic-ols"]
 	path = src/sonic-ols
 	url = https://kochsource.io/oplinkoms/sonic-ols
+[submodule "src/sonic-ot-cli"]
+	path = src/sonic-ot-cli
+	url = https://kochsource.io/oplinkoms/sonic-ot-cli.git
