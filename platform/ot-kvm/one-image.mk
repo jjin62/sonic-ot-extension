@@ -4,7 +4,7 @@ SONIC_ONE_IMAGE = sonic-ot-kvm.bin
 $(SONIC_ONE_IMAGE)_MACHINE = ot-kvm
 $(SONIC_ONE_IMAGE)_IMAGE_TYPE = onie
 $(SONIC_ONE_IMAGE)_INSTALLS += $(SYSTEMD_SONIC_GENERATOR) \
-                               $(PYTHON3_THRIFT_0_14_1) \
+                               $(OT_KVM_THRIFT_PYTHON3_DEB) \
                                $(OTKVM_HALCLIENT_DEB)
 $(SONIC_ONE_IMAGE)_LAZY_INSTALLS += $(OTKVM_OLSV_PLATFORM_MODULE)
 ifeq ($(INSTALL_DEBUG_TOOLS),y)

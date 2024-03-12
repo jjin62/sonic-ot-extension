@@ -1,4 +1,5 @@
 #DPKG FRK
+include $(PLATFORM_PATH)/thrift.dep
 include $(PLATFORM_PATH)/hal-server.dep
 include $(PLATFORM_PATH)/hal-client.dep
 include $(PLATFORM_PATH)/otai.dep

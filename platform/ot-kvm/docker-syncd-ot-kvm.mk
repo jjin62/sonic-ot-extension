@@ -4,6 +4,8 @@ DOCKER_SYNCD_PLATFORM_CODE = ot-kvm
 include $(PLATFORM_PATH)/../template/docker-syncd-bullseye.mk
 
 $(DOCKER_SYNCD_BASE)_DEPENDS += $(SYNCD) \
+                                $(OT_KVM_THRIFT_LIB_DEB) \
+                                $(OT_KVM_THRIFT_LIB_DEV_DEB) \
                                 $(OTKVM_LIBOTAI_DEB) \
                                 $(OTKVM_HALSERVER_DEB)
 
