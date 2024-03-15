@@ -17,12 +17,12 @@ def main(argv):
         [['/***** ASIC DATABASE *****/'], ['/***** EVENTS COUNTER KEYS *****/'], ['/***** CONFIGURATION DATABASE *****/'], ['/***** STATE DATABASE *****/'], ['/***** MISC *****/']]
     ]
     contexts = [
-        ['''#define APP_ATTENUATOR_TABLE_NAME            "APP_ATTENUATOR"
-#define APP_OA_TABLE_NAME                    "APP_AMPLIFIER"
-#define APP_OCM_TABLE_NAME                   "APP_OCM"
-#define APP_OCM_CHANNEL_TABLE_NAME           "APP_OCM_CHANNEL"
-#define APP_OSC_TABLE_NAME                   "APP_OSC"
-#define APP_OTDR_TABLE_NAME                  "APP_OTDR"\n\n''',
+        ['''#define APP_ATTENUATOR_TABLE_NAME            "ATTENUATOR_TABLE"
+#define APP_OA_TABLE_NAME                    "AMPLIFIER_TABLE"
+#define APP_OCM_TABLE_NAME                   "OCM_TABLE"
+#define APP_OCM_CHANNEL_TABLE_NAME           "OCM_CHANNEL_TABLE"
+#define APP_OSC_TABLE_NAME                   "OSC_TABLE"
+#define APP_OTDR_TABLE_NAME                  "OTDR_TABLE"\n\n''',
          '''#define COUNTERS_ATTENUATOR_NAME_MAP        "COUNTERS_ATTENUATOR_NAME_MAP"
 #define COUNTERS_OA_NAME_MAP                "COUNTERS_AMPLIFIER_NAME_MAP"
 #define COUNTERS_OCM_NAME_MAP               "COUNTERS_OCM_NAME_MAP"
@@ -48,13 +48,13 @@ def main(argv):
 #define CFG_OSC_TABLE_NAME                          "OSC"
 #define CFG_OTDR_TABLE_NAME                         "OTDR"
 #define CFG_AUTO_TABLE_NAME                         "AUTO_GAIN"\n\n''',
-         '''#define STATE_ATTENUATOR_TABLE_NAME                 "ATTENUATOR"
-#define STATE_OA_TABLE_NAME                         "AMPLIFIER"
-#define STATE_OCM_TABLE_NAME                        "OCM"
-#define STATE_OCM_CHANNEL_TABLE_NAME                "OCM_CHANNEL"
-#define STATE_OSC_TABLE_NAME                        "OSC"
-#define STATE_OTDR_TABLE_NAME                       "OTDR"
-#define STATE_AUTO_GAIN_TABLE_NAME                  "AUTO_GAIN"\n\n'''
+         '''#define STATE_ATTENUATOR_TABLE_NAME                 "ATTENUATOR_TABLE"
+#define STATE_OA_TABLE_NAME                         "AMPLIFIER_TABLE"
+#define STATE_OCM_TABLE_NAME                        "OCM_TABLE"
+#define STATE_OCM_CHANNEL_TABLE_NAME                "OCM_CHANNEL_TABLE"
+#define STATE_OSC_TABLE_NAME                        "OSC_TABLE"
+#define STATE_OTDR_TABLE_NAME                       "OTDR_TABLE"
+#define STATE_AUTO_GAIN_TABLE_NAME                  "AUTO_GAIN_TABLE"\n\n'''
         ]
     ]
     options = [

@@ -29,7 +29,7 @@ local counters_db = ARGV[1]
 local counters_table_name = ARGV[2] 
 local state_db = "6"
 local vid_table_name = "COUNTERS_OSC_NAME_MAP"
-local state_table_name = "OSC"
+local state_table_name = "OSC_TABLE"
 
 
 
