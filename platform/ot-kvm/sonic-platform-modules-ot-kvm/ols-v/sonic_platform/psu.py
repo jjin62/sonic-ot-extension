@@ -247,3 +247,11 @@ class Psu(PsuBase):
         """
 
         return PsuGetRevision(self.name)
+
+    def is_replaceable(self):
+        """
+        Indicate whether this device is replaceable.
+        Returns:
+            bool: True if it is replaceable.
+        """
+        return PsuIsReplaceable(self.name)
