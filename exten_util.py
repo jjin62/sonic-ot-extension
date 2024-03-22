@@ -49,6 +49,11 @@ def RestoreFiles(files, dir):
         os.system(cmd)
 
 
+def RestoreAll(dir):
+    os.chdir(dir)
+    os.system('git checkout .')
+
+
 def InsertContext(file, filters, contexts, options, rfind):
     """
     The options could be before|after|append|insert|replace
