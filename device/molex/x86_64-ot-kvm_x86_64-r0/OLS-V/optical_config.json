@@ -1,20 +1,32 @@
 {
   "ATTENUATOR": {
-    "PADDING-VOA": {
+    "VOA1-0": {
       "id": "0",
       "attenuation": "4.2",
       "attenuation-mode": "CONSTANT_ATTENUATION",
       "enabled": "true"
     },
-    "PA-VOA": {
+    "VOA1-1": {
       "id": "1",
+      "attenuation": "3.2",
+      "attenuation-mode": "CONSTANT_ATTENUATION",
+      "enabled": "true"
+    },
+    "VOA2-0": {
+      "id": "2",
+      "attenuation": "4.2",
+      "attenuation-mode": "CONSTANT_ATTENUATION",
+      "enabled": "true"
+    },
+    "VOA2-1": {
+      "id": "3",
       "attenuation": "3.2",
       "attenuation-mode": "CONSTANT_ATTENUATION",
       "enabled": "true"
     }
   },
   "AMPLIFIER": {
-    "PA": {
+    "OA1-0": {
       "id": "0",
       "target-gain": "4.2",
       "target-gain-tilt": "0.4",
@@ -24,7 +36,7 @@
       "autolos": "true",
       "apr-enabled": "true"
     },
-    "BA": {
+    "OA1-1": {
       "id": "1",
       "target-gain": "5.2",
       "target-gain-tilt": "0.5",
@@ -33,11 +45,35 @@
       "enabled": "true",
       "autolos": "true",
       "apr-enabled": "true"
-    }  
+    }, 
+    "OA2-0": {
+      "id": "2",
+      "target-gain": "4.2",
+      "target-gain-tilt": "0.4",
+      "gain-range": "FIXED_GAIN_RANGE",
+      "amp-mode": "CONSTANT_GAIN",
+      "enabled": "true",
+      "autolos": "true",
+      "apr-enabled": "true"
+    },
+    "OA2-1": {
+      "id": "3",
+      "target-gain": "5.2",
+      "target-gain-tilt": "0.5",
+      "gain-range": "FIXED_GAIN_RANGE",
+      "amp-mode": "CONSTANT_GAIN",
+      "enabled": "true",
+      "autolos": "true",
+      "apr-enabled": "true"
+    } 
   },
   "OSC": {
-    "OSC": {
+    "OSC1-0": {
       "id": "0",
+      "enabled": "true"
+    }, 
+    "OSC2-0": {
+      "id": "1",
       "enabled": "true"
     }
   },
