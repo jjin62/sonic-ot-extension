@@ -1,0 +1,23 @@
+{
+    "OC_COMPONENT": {
+        "SCC": {},
+        "LC0": {},
+        "PSU0": {
+            "enabled": "true"
+        },
+        "PSU1": {
+            "enabled": "true"
+        },
+        "FAN0": {},
+        "FAN1": {},
+        "FAN2": {},
+        "FAN3": {},
+        "VOA0-0": {},
+        "VOA0-1": {},
+        "OA0-0": {},
+        "OA0-1": {},
+        "OCM0-0": {},
+        "OSC0-0": {},
+        "OTDR0-0": {}
+    }
+}
